@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102a43">
+  <meta
+    name="description"
+    content="各国・地域の特許制度を日本語と英語で確認できる実務向けデータベース"
+  >
+
+  <title>Patent Atlas</title>
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
+  <header class="app-header">
+    <div class="brand-block">
+      <button
+        id="sidebar-toggle"
+        class="icon-button sidebar-toggle"
+        type="button"
+        aria-label="国・地域一覧を開く"
+        aria-controls="sidebar"
+        aria-expanded="false"
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <a class="brand" href="#/" aria-label="Patent Atlas ホーム">
+        <span class="brand-mark" aria-hidden="true">P</span>
+
+        <span class="brand-copy">
+          <strong>Patent Atlas</strong>
+          <small data-i18n="appSubtitle">各国特許制度ガイド</small>
+        </span>
+      </a>
+    </div>
+
+    <div class="header-actions">
+      <div class="language-switcher" aria-label="表示言語">
+        <button
+          class="language-button is-active"
+          type="button"
+          data-language="ja"
+          aria-pressed="true"
+        >
+          日本語
+        </button>
+
+        <button
+          class="language-button"
+          type="button"
+          data-language="en"
+          aria-pressed="false"
+        >
+          English
+        </button>
+
+        <div
+          id="optional-language-buttons"
+          class="optional-language-buttons"
+        ></div>
+      </div>
+
+      <button
+        id="install-button"
+        class="secondary-button install-button"
+        type="button"
+        hidden
+        data-i18n="install"
+      >
+        インストール
+      </button>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside
+      id="sidebar"
+      class="sidebar"
+      aria-label="国・地域ナビゲーション"
+    >
+      <div class="sidebar-inner">
+        <div class="search-block">
+          <label
+            class="visually-hidden"
+            for="search-input"
+            data-i18n="searchLabel"
+          >
+            国・制度・FAQを検索
+          </label>
+
+          <div class="search-field">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+
+            <input
+              id="search-input"
+              type="search"
+              inputmode="search"
+              autocomplete="off"
+              placeholder="国・制度・FAQを検索"
+              data-i18n-placeholder="searchPlaceholder"
+            >
+
+            <button
+              id="search-clear"
+              class="search-clear"
+              type="button"
+              aria-label="検索語を消去"
+              hidden
+            >
+              ×
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-block">
+          <label for="region-filter" data-i18n="regionLabel">
+            地域
+          </label>
+
+          <select id="region-filter">
+            <option value="all" data-i18n="regionAll">
+              すべて
+            </option>
+
+            <option value="regional" data-i18n="regionRegional">
+              地域制度
+            </option>
+
+            <option value="asia" data-i18n="regionAsia">
+              アジア
+            </option>
+
+            <option value="europe" data-i18n="regionEurope">
+              欧州
+            </option>
+
+            <option
+              value="north-america"
+              data-i18n="regionNorthAmerica"
+            >
+              北米
+            </option>
+
+            <option
+              value="latin-america"
+              data-i18n="regionLatinAmerica"
+            >
+              中南米
+            </option>
+
+            <option
+              value="middle-east"
+              data-i18n="regionMiddleEast"
+            >
+              中東
+            </option>
+
+            <option value="africa" data-i18n="regionAfrica">
+              アフリカ
+            </option>
+
+            <option value="oceania" data-i18n="regionOceania">
+              オセアニア
+            </option>
+          </select>
+
+          <label class="checkbox-row" for="favorites-only">
+            <input id="favorites-only" type="checkbox">
+            <span aria-hidden="true">★</span>
+            <span data-i18n="favoritesOnly">
+              お気に入りのみ
+            </span>
+          </label>
+        </div>
+
+        <div class="list-heading">
+          <h2 data-i18n="jurisdictions">国・地域</h2>
+
+          <span
+            id="jurisdiction-count"
+            class="count-badge"
+            aria-live="polite"
+          >
+            0
+          </span>
+        </div>
+
+        <nav aria-label="国・地域一覧">
+          <ul
+            id="jurisdiction-list"
+            class="jurisdiction-list"
+          ></ul>
+        </nav>
+
+        <div
+          id="list-empty"
+          class="empty-state compact"
+          hidden
+        >
+          <p data-i18n="noSearchResults">
+            条件に一致する国・地域がありません。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <button
+      id="sidebar-backdrop"
+      class="sidebar-backdrop"
+      type="button"
+      aria-label="一覧を閉じる"
+      hidden
+    ></button>
+
+    <main
+      id="main-content"
+      class="main-content"
+      tabindex="-1"
+    >
+      <div
+        id="loading-view"
+        class="state-panel"
+        role="status"
+      >
+        <div class="spinner" aria-hidden="true"></div>
+
+        <p data-i18n="loading">
+          データを読み込んでいます…
+        </p>
+      </div>
+
+      <section
+        id="error-view"
+        class="state-panel error-panel"
+        hidden
+      >
+        <h1 data-i18n="loadErrorTitle">
+          データを読み込めませんでした
+        </h1>
+
+        <p
+          id="error-message"
+          data-i18n="loadErrorBody"
+        >
+          通信状態またはデータファイルの配置を確認してください。
+        </p>
+
+        <button
+          id="retry-button"
+          class="primary-button"
+          type="button"
+          data-i18n="retry"
+        >
+          再読み込み
+        </button>
+      </section>
+
+      <section
+        id="welcome-view"
+        class="welcome-view"
+        hidden
+      >
+        <div class="welcome-card">
+          <p class="eyebrow">
+            PATENT PRACTICE DATABASE
+          </p>
+
+          <h1 data-i18n="welcomeTitle">
+            国・地域を選択してください
+          </h1>
+
+          <p data-i18n="welcomeBody">
+            出願、審査、登録後の維持、無効・権利行使まで、
+            各法域の特許実務を確認できます。
+          </p>
+
+          <div
+            class="welcome-features"
+            aria-label="主な機能"
+          >
+            <span data-i18n="featureBilingual">
+              日英表示
+            </span>
+
+            <span data-i18n="featureOffline">
+              オフライン対応
+            </span>
+
+            <span data-i18n="featureNotes">
+              端末内メモ
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <article
+        id="detail-view"
+        class="detail-view"
+        hidden
+      >
+        <header class="detail-header">
+          <div class="detail-title-row">
+            <div>
+              <p
+                id="detail-type"
+                class="eyebrow"
+              ></p>
+
+              <h1 id="detail-title"></h1>
+
+              <p
+                id="detail-office"
+                class="detail-office"
+              ></p>
+            </div>
+
+            <button
+              id="favorite-button"
+              class="favorite-button"
+              type="button"
+              aria-label="お気に入りに追加"
+              aria-pressed="false"
+            >
+              <span aria-hidden="true">☆</span>
+            </button>
+          </div>
+
+          <div class="record-meta">
+            <span
+              id="record-status"
+              class="status-badge"
+            ></span>
+
+            <span>
+              <span data-i18n="updated">更新</span>:
+              <time id="record-updated"></time>
+            </span>
+          </div>
+        </header>
+
+        <section aria-labelledby="quick-view-heading">
+          <div class="section-heading">
+            <h2
+              id="quick-view-heading"
+              data-i18n="quickView"
+            >
+              クイックビュー
+            </h2>
+          </div>
+
+          <dl
+            id="quick-view-grid"
+            class="quick-view-grid"
+          ></dl>
+        </section>
+
+        <nav
+          id="section-navigation"
+          class="section-navigation"
+          aria-label="ページ内メニュー"
+        ></nav>
+
+        <div
+          id="detail-sections"
+          class="detail-sections"
+        ></div>
+
+        <section
+          class="record-section notes-section"
+          aria-labelledby="matter-notes-heading"
+        >
+          <div class="section-heading">
+            <h2
+              id="matter-notes-heading"
+              data-i18n="matterNotes"
+            >
+              案件・面談メモ
+            </h2>
+
+            <span
+              class="local-only-label"
+              data-i18n="savedOnDevice"
+            >
+              この端末に保存
+            </span>
+          </div>
+
+          <textarea
+            id="matter-notes"
+            rows="7"
+            placeholder="現地代理人への確認事項や案件メモを入力"
+            data-i18n-placeholder="notesPlaceholder"
+          ></textarea>
+
+          <p
+            id="notes-status"
+            class="save-status"
+            aria-live="polite"
+          ></p>
+        </section>
+
+        <section
+          class="record-section sources-section"
+          aria-labelledby="sources-heading"
+        >
+          <div class="section-heading">
+            <h2
+              id="sources-heading"
+              data-i18n="sources"
+            >
+              出典・参考資料
+            </h2>
+          </div>
+
+          <ul
+            id="source-list"
+            class="source-list"
+          ></ul>
+        </section>
+
+        <footer class="detail-footer">
+          <p data-i18n="disclaimer">
+            本アプリは実務上の概要確認を目的とします。
+            個別案件では、最新の公式資料および現地代理人の
+            見解を確認してください。
+          </p>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <template id="jurisdiction-item-template">
+    <li>
+      <a class="jurisdiction-link" href="#">
+        <span
+          class="jurisdiction-flag"
+          aria-hidden="true"
+        ></span>
+
+        <span class="jurisdiction-copy">
+          <strong class="jurisdiction-name"></strong>
+          <small class="jurisdiction-office"></small>
+        </span>
+
+        <span
+          class="jurisdiction-favorite"
+          aria-hidden="true"
+        ></span>
+      </a>
+    </li>
+  </template>
+
+  <template id="fact-row-template">
+    <div class="fact-row">
+      <dt class="fact-label"></dt>
+      <dd class="fact-value"></dd>
+    </div>
+  </template>
+
+  <noscript>
+    <div class="noscript-message">
+      Patent Atlasを利用するにはJavaScriptを有効にしてください。
+    </div>
+  </noscript>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
