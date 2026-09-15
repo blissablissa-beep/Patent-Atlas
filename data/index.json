@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-09-15",
   "defaultLanguage": "ja",
   "jurisdictions": [
@@ -46,6 +46,70 @@
           "appeal against rejection",
           "patent opposition",
           "invalidation trial",
+          "patent infringement"
+        ]
+      }
+    },
+    {
+      "id": "US",
+      "type": "country",
+      "flag": "🇺🇸",
+      "region": "north-america",
+      "order": 20,
+      "file": "jurisdictions/US.json",
+      "names": {
+        "ja": "米国",
+        "en": "United States"
+      },
+      "office": {
+        "ja": "米国特許商標庁（USPTO）",
+        "en": "United States Patent and Trademark Office (USPTO)"
+      },
+      "availableLanguages": [
+        "ja",
+        "en"
+      ],
+      "searchTerms": {
+        "ja": [
+          "米国特許",
+          "アメリカ特許",
+          "USPTO",
+          "先発明者先願",
+          "グレースピリオド",
+          "外国出願許可",
+          "仮出願",
+          "IDS",
+          "継続出願",
+          "一部継続出願",
+          "CIP",
+          "RCE",
+          "ターミナルディスクレーマー",
+          "Track One",
+          "PTAB",
+          "IPR",
+          "PGR",
+          "特許侵害"
+        ],
+        "en": [
+          "United States patent law",
+          "US patent",
+          "USPTO",
+          "first inventor to file",
+          "grace period",
+          "foreign filing license",
+          "provisional application",
+          "information disclosure statement",
+          "IDS",
+          "continuation",
+          "continuation-in-part",
+          "CIP",
+          "request for continued examination",
+          "RCE",
+          "terminal disclaimer",
+          "Track One",
+          "PTAB",
+          "inter partes review",
+          "post-grant review",
           "patent infringement"
         ]
       }
