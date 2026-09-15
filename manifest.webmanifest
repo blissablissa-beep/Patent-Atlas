@@ -1,0 +1,39 @@
+{
+  "id": "./",
+  "name": "Patent Atlas",
+  "short_name": "Patent Atlas",
+  "description": "A bilingual, offline-ready reference app for comparing patent systems and prosecution practices across jurisdictions.",
+  "lang": "ja",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f6f8fa",
+  "theme_color": "#102a43",
+  "categories": [
+    "business",
+    "productivity",
+    "reference"
+  ],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
