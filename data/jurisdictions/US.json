@@ -1,0 +1,1057 @@
+{
+  "$schema": "../schema.json",
+  "id": "US",
+  "type": "country",
+  "flag": "🇺🇸",
+  "region": "north-america",
+  "names": {
+    "ja": "米国",
+    "en": "United States"
+  },
+  "office": {
+    "ja": "米国特許商標庁（USPTO）",
+    "en": "United States Patent and Trademark Office (USPTO)"
+  },
+  "aliases": {
+    "ja": ["アメリカ合衆国", "米国", "USPTO"],
+    "en": ["United States of America", "United States", "USA", "US", "USPTO"]
+  },
+  "availableLanguages": ["ja", "en"],
+  "optionLanguage": null,
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15",
+  "lastVerifiedAt": "2026-09-15",
+  "status": "review",
+  "summary": {
+    "ja": "米国はAIA下の先発明者先願制度を採用し、通常の実用特許出願は審査請求なしに実体審査される。発明者由来の一定の開示には限定的な1年のグレース期間があり、出願人には特許性に重要な情報をUSPTOへ開示する義務がある。継続出願、CIP、RCE、ターミナルディスクレーマーおよびPTAB手続が実務上重要である。",
+    "en": "The United States applies the AIA first-inventor-to-file system, and ordinary utility applications undergo substantive examination without a separate examination request. A limited one-year grace period may protect certain inventor-originated disclosures, while applicants have a duty to disclose information material to patentability. Continuations, CIPs, RCEs, terminal disclaimers, and PTAB proceedings are central features of U.S. practice."
+  },
+  "searchTerms": {
+    "ja": ["IDS", "継続出願", "一部継続出願", "仮出願", "RCE", "ターミナルディスクレーマー", "PTAB", "IPR", "PGR", "外国出願許可"],
+    "en": ["IDS", "continuation", "continuation-in-part", "provisional application", "RCE", "terminal disclaimer", "PTAB", "IPR", "PGR", "foreign filing license"]
+  },
+  "quickView": [
+    {
+      "key": "national_phase_deadline",
+      "label": {"ja": "PCT国内移行", "en": "PCT national stage"},
+      "value": {"ja": "優先日から原則30か月", "en": "Generally 30 months from the priority date"},
+      "sourceRefs": ["wipo_pct_guide", "us_code"]
+    },
+    {
+      "key": "examination_request",
+      "label": {"ja": "審査請求", "en": "Examination request"},
+      "value": {"ja": "不要。通常出願は自動的に実体審査へ進む", "en": "Not required; a regular application proceeds automatically to substantive examination"},
+      "sourceRefs": ["uspto_process", "mpep"]
+    },
+    {
+      "key": "grace_period",
+      "label": {"ja": "グレースピリオド", "en": "Grace period"},
+      "value": {"ja": "発明者由来の一定の開示について原則1年。ただし限定的", "en": "Generally one year for certain inventor-originated disclosures, but limited in scope"},
+      "sourceRefs": ["us_code", "mpep"]
+    },
+    {
+      "key": "filing_language",
+      "label": {"ja": "出願言語", "en": "Filing language"},
+      "value": {"ja": "英語。非英語明細書による出願には翻訳等の追完が必要", "en": "English; a filing made with a non-English specification requires a translation and related follow-up"},
+      "sourceRefs": ["ecfr", "mpep"]
+    },
+    {
+      "key": "foreign_filing_license",
+      "label": {"ja": "外国出願許可", "en": "Foreign filing license"},
+      "value": {"ja": "米国内でなされた発明は、原則としてUSPTOへの出願後6か月経過または許可取得前の外国出願に制限", "en": "For inventions made in the United States, foreign filing is generally restricted until six months after a U.S. filing or issuance of a license"},
+      "sourceRefs": ["us_code", "mpep"]
+    },
+    {
+      "key": "prior_art_disclosure",
+      "label": {"ja": "IDS・開示義務", "en": "IDS and duty of disclosure"},
+      "value": {"ja": "特許性に重要な情報をUSPTOへ開示する継続的義務がある", "en": "There is a continuing duty to disclose information material to patentability"},
+      "sourceRefs": ["ecfr", "mpep"]
+    },
+    {
+      "key": "continuation",
+      "label": {"ja": "継続実務", "en": "Continuation practice"},
+      "value": {"ja": "継続、分割、CIPおよびRCEが利用可能", "en": "Continuation, divisional, CIP, and RCE practice is available"},
+      "sourceRefs": ["us_code", "mpep"]
+    },
+    {
+      "key": "patent_term",
+      "label": {"ja": "実用特許の存続期間", "en": "Utility patent term"},
+      "value": {"ja": "原則として基準となる非仮出願日から20年。調整・延長・放棄の影響あり", "en": "Generally 20 years from the relevant nonprovisional filing date, subject to adjustment, extension, and disclaimer"},
+      "sourceRefs": ["us_code", "uspto_process"]
+    }
+  ],
+  "sections": [
+    {
+      "id": "system_overview",
+      "title": {"ja": "制度の基本情報", "en": "System overview"},
+      "facts": [
+        {
+          "key": "authority",
+          "label": {"ja": "所管官庁", "en": "Authority"},
+          "value": {"ja": "米国商務省の機関である米国特許商標庁（USPTO）。", "en": "The United States Patent and Trademark Office (USPTO), an agency of the U.S. Department of Commerce."},
+          "sourceRefs": ["uspto_process"]
+        },
+        {
+          "key": "governing_law",
+          "label": {"ja": "主な根拠法令", "en": "Principal legislation"},
+          "value": {"ja": ["合衆国法典第35編（35 U.S.C.）", "連邦規則集第37編（37 C.F.R.）", "America Invents Act（AIA）"], "en": ["Title 35 of the United States Code", "Title 37 of the Code of Federal Regulations", "Leahy-Smith America Invents Act (AIA)"]},
+          "sourceRefs": ["us_code", "ecfr"]
+        },
+        {
+          "key": "protected_rights",
+          "label": {"ja": "保護される特許", "en": "Patent rights available"},
+          "value": {"ja": "実用特許、意匠特許および植物特許がある。実用特許は方法、機械、製造物、組成物およびその改良等を対象とする。", "en": "Utility, design, and plant patents are available. Utility patents may cover processes, machines, manufactures, compositions of matter, and improvements thereof."},
+          "sourceRefs": ["us_code", "uspto_process"]
+        },
+        {
+          "key": "utility_model",
+          "label": {"ja": "実用新案制度", "en": "Utility models"},
+          "value": {"ja": "日本の実用新案に相当する独立した連邦制度はない。", "en": "There is no separate federal utility-model system comparable to the Japanese utility model."},
+          "sourceRefs": ["uspto_process"]
+        },
+        {
+          "key": "paris_convention",
+          "label": {"ja": "パリ条約", "en": "Paris Convention"},
+          "value": {"ja": "加盟。通常、特許・実用新案の優先期間は12か月、意匠は6か月。", "en": "Contracting party. The ordinary priority period is 12 months for patents and utility models and six months for designs."},
+          "sourceRefs": ["wipo_members"]
+        },
+        {
+          "key": "pct_membership",
+          "label": {"ja": "PCT", "en": "PCT"},
+          "value": {"ja": "加盟。USPTOは受理官庁および指定・選択官庁等として機能する。", "en": "Contracting state. The USPTO acts in relevant capacities including as receiving Office and designated/elected Office."},
+          "sourceRefs": ["wipo_pct_guide"]
+        },
+        {
+          "key": "local_agent",
+          "label": {"ja": "代理人", "en": "Representation"},
+          "value": {"ja": "出願人本人による手続も可能だが、他人を代理して特許実務を行えるのはUSPTO登録弁護士または登録特許代理人である。外国居住者については米国代理人の選任が実務上不可欠。", "en": "An applicant may proceed pro se, but only USPTO-registered patent attorneys or agents may represent others in patent matters. Appointment of U.S. counsel is practically essential for foreign applicants."},
+          "sourceRefs": ["ecfr", "uspto_process"]
+        },
+        {
+          "key": "publication_timing",
+          "label": {"ja": "出願公開", "en": "Publication"},
+          "value": {"ja": "原則として最先の優先日から18か月後。一定の場合には非公開請求が可能だが、外国出願との関係で要件・通知義務に注意。", "en": "Generally 18 months from the earliest priority date. A nonpublication request is available in limited circumstances, with conditions and notification duties tied to foreign filing."},
+          "sourceRefs": ["us_code", "mpep"]
+        }
+      ]
+    },
+    {
+      "id": "pre_filing",
+      "title": {"ja": "出願前の重要事項", "en": "Pre-filing considerations"},
+      "facts": [
+        {
+          "key": "first_to_file",
+          "label": {"ja": "先発明者先願制度", "en": "First-inventor-to-file system"},
+          "value": {"ja": "AIAにより、原則として有効な最先の出願日を有する発明者またはその承継人が優先される。真正な発明者であることは引き続き必要であり、冒認にはderivation proceeding等が問題となる。", "en": "Under the AIA, priority generally goes to the inventor or successor having the earliest effective filing date. Proper inventorship remains mandatory, and derivation proceedings may address misappropriation."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "inventor_applicant_eligibility",
+          "label": {"ja": "発明者・出願人", "en": "Inventor and applicant"},
+          "value": {"ja": "発明者は自然人でなければならない。発明者、譲受人、発明者が譲渡義務を負う者、または十分な財産的利益を有する者が一定要件の下で出願人となり得る。", "en": "An inventor must be a natural person. An inventor, assignee, person to whom the inventor is obligated to assign, or a person with sufficient proprietary interest may apply under the applicable conditions."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "employee_inventions",
+          "label": {"ja": "従業者発明", "en": "Employee inventions"},
+          "value": {"ja": "発明の権利は原則として発明者に生じ、雇用契約等による譲渡が重要。事情により使用者にshop rightと呼ばれる非独占的・無償の実施権が認められることがある。", "en": "Rights initially arise with the inventor, making contractual assignment important. Depending on the circumstances, an employer may have a nonexclusive royalty-free 'shop right.'"},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        },
+        {
+          "key": "assignment",
+          "label": {"ja": "譲渡", "en": "Assignment"},
+          "value": {"ja": "特許および出願は書面で譲渡できる。後の有償譲受人に対抗するため、原則として譲渡後3か月以内または後の取得前のUSPTO記録が重要。", "en": "Patents and applications may be assigned in writing. Recordation with the USPTO, generally within three months or before a later purchase, is important against subsequent purchasers for value."},
+          "sourceRefs": ["us_code", "ecfr"]
+        },
+        {
+          "key": "foreign_filing_license",
+          "label": {"ja": "外国出願許可", "en": "Foreign filing license"},
+          "value": {"ja": "米国内でなされた発明を外国出願する場合、原則として、まずUSPTOへ出願して外国出願許可を得るか、米国出願後6か月を経過する必要がある。事前の許可申請や一定の場合の遡及的許可も存在する。", "en": "For an invention made in the United States, a foreign filing generally requires a USPTO license, often obtained through an initial U.S. filing, or passage of six months after that filing. A petition for an advance or, in limited circumstances, retroactive license is available."},
+          "caution": {"ja": "違反は米国特許の取得・有効性や刑事罰に影響し得るため、発明地と最初の提出先を出願前に確認する。", "en": "Violation may affect U.S. patent rights and may carry criminal consequences; verify the place of invention and first filing destination before filing."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "security_review",
+          "label": {"ja": "秘密保持命令", "en": "Secrecy orders"},
+          "value": {"ja": "国家安全保障上有害となり得る発明には秘密保持命令が発せられ、公開・外国出願等が制限されることがある。", "en": "An invention whose disclosure may be detrimental to national security may be placed under a secrecy order restricting disclosure and foreign filing."},
+          "sourceRefs": ["us_code", "ecfr"]
+        },
+        {
+          "key": "grace_period",
+          "label": {"ja": "1年のグレース期間", "en": "One-year grace period"},
+          "value": {"ja": "有効出願日前1年以内の、発明者・共同発明者または発明者から直接・間接に情報を得た者による一定の開示は、35 U.S.C. §102(b)の例外となり得る。", "en": "Certain disclosures made within one year before the effective filing date by an inventor, joint inventor, or another who obtained the subject matter directly or indirectly from an inventor may fall within the exceptions of 35 U.S.C. §102(b)."},
+          "caution": {"ja": "各国の絶対的新規性を救済せず、第三者の介在開示・出願や『同一主題』の範囲を巡るリスクがある。公表前出願が原則。", "en": "The U.S. grace period does not preserve rights in absolute-novelty jurisdictions, and intervening third-party disclosures or filings and the scope of the disclosed subject matter create risk. Filing before disclosure remains the safer rule."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "grace_formalities",
+          "label": {"ja": "例外主張の実務", "en": "Grace-period practice"},
+          "value": {"ja": "日本のような一律の出願時申出・30日証明書制度ではない。ただし審査で先行技術を排除するため、発明者由来を示す宣誓書・宣言書等が必要になる場合がある。", "en": "There is no uniform filing-time statement and 30-day evidence procedure comparable to Japan. During examination, however, an affidavit or declaration may be needed to establish that a disclosure originated from an inventor."},
+          "sourceRefs": ["ecfr", "mpep"]
+        }
+      ]
+    },
+    {
+      "id": "patentability",
+      "title": {"ja": "特許要件", "en": "Patentability"},
+      "facts": [
+        {
+          "key": "patent_eligible_subject_matter",
+          "label": {"ja": "特許適格性", "en": "Patent-eligible subject matter"},
+          "value": {"ja": "35 U.S.C. §101は、新規かつ有用な方法、機械、製造物、組成物およびそれらの改良を掲げる。判例上、自然法則、自然現象および抽象的アイデアは司法上の例外とされる。", "en": "35 U.S.C. §101 identifies new and useful processes, machines, manufactures, compositions of matter, and improvements. Laws of nature, natural phenomena, and abstract ideas are judicial exceptions."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "software_ai",
+          "label": {"ja": "ソフトウェア・AI", "en": "Software and AI"},
+          "value": {"ja": "ソフトウェアやAIであることのみで排除されないが、Alice/Mayo枠組みに基づき、抽象的アイデア等を実用的応用へ統合しているか、またはinventive conceptを含むかが問題となる。発明者は自然人である必要がある。", "en": "Software and AI are not categorically excluded, but the Alice/Mayo framework asks whether a judicial exception is integrated into a practical application or the claim otherwise supplies an inventive concept. Inventors must be natural persons."},
+          "sourceRefs": ["mpep", "uspto_ai"]
+        },
+        {
+          "key": "medical_methods",
+          "label": {"ja": "医療方法", "en": "Medical methods"},
+          "value": {"ja": "治療・診断方法は一律に対象外ではないが、§101の司法上の例外が重要。医療行為者等に対する一定の救済制限が35 U.S.C. §287(c)にある。", "en": "Treatment and diagnostic methods are not categorically excluded, but §101 judicial exceptions are significant. 35 U.S.C. §287(c) limits certain remedies against medical practitioners and related entities."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "novelty",
+          "label": {"ja": "新規性", "en": "Novelty"},
+          "value": {"ja": "有効出願日前に特許、刊行物、公然使用、販売、その他公衆に利用可能となったもの等は原則として先行技術となる。§102(b)の例外を個別に検討する。", "en": "Patents, printed publications, public use, on-sale activity, and other public availability before the effective filing date generally constitute prior art, subject to the specific exceptions in §102(b)."},
+          "sourceRefs": ["us_code", "uspto_process", "mpep"]
+        },
+        {
+          "key": "prior_filed_applications",
+          "label": {"ja": "先願後公開文献", "en": "Earlier-filed patent documents"},
+          "value": {"ja": "他の発明者名義の米国特許・公開出願等は、所定の米国有効出願日に遡って先行技術となり得る。共同所有等の例外がある。", "en": "U.S. patents and published applications naming another inventor may be prior art as of their relevant U.S. effective filing dates, subject to exceptions including certain common-ownership situations."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "inventive_step",
+          "label": {"ja": "非自明性", "en": "Nonobviousness"},
+          "value": {"ja": "35 U.S.C. §103により、発明全体が当業者にとって有効出願日前に自明であった場合は特許を受けられない。Graham要素およびKSR判決を踏まえて判断される。", "en": "Under 35 U.S.C. §103, a claim is unpatentable if the invention as a whole would have been obvious to a person of ordinary skill before the effective filing date. The Graham factors and KSR guide the analysis."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "industrial_applicability",
+          "label": {"ja": "有用性", "en": "Utility"},
+          "value": {"ja": "具体的、実質的かつ信頼できる有用性が求められる。欧州・日本の産業上利用可能性とは表現・分析が異なる。", "en": "Utility must be specific, substantial, and credible. The formulation and analysis differ from industrial-applicability requirements used in Europe and Japan."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "enablement",
+          "label": {"ja": "実施可能要件", "en": "Enablement"},
+          "value": {"ja": "明細書は、当業者が過度の実験なしにクレームされた発明の全範囲を製造・使用できる程度に開示する必要がある。", "en": "The specification must enable a skilled person to make and use the full scope of the claimed invention without undue experimentation."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "support_requirement",
+          "label": {"ja": "記載要件", "en": "Written description"},
+          "value": {"ja": "出願時に発明者がクレーム対象を保有していたことを当業者に示す十分なwritten descriptionが必要。新規事項追加の禁止とも密接に関係する。", "en": "The application must provide sufficient written description to show a skilled person that the inventor possessed the claimed subject matter at filing. This is closely related to the prohibition on new matter."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "clarity",
+          "label": {"ja": "明確性", "en": "Definiteness"},
+          "value": {"ja": "クレームは発明とみなす主題を特定して明確にクレームしなければならない。", "en": "Claims must particularly point out and distinctly claim the subject matter regarded as the invention."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "best_mode",
+          "label": {"ja": "ベストモード", "en": "Best mode"},
+          "value": {"ja": "出願時に発明者が考える最良の実施形態を開示する要件は残るが、AIA後はベストモード不開示のみを特許取消・無効の根拠にはできない。", "en": "The specification must still disclose the best mode contemplated by the inventor, but after the AIA, failure to disclose best mode alone cannot be used to cancel or invalidate a patent claim."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "unity",
+          "label": {"ja": "発明の単一性・restriction", "en": "Unity and restriction"},
+          "value": {"ja": "国内出願では、独立かつ別個の発明にrestriction requirementが発せられ得る。PCT国内段階ではPCT型の単一性基準が関係する。選択しなかった発明は分割出願で追求できる。", "en": "In a national application, the examiner may issue a restriction requirement for independent and distinct inventions. PCT national-stage practice implicates PCT-style unity. Non-elected inventions may be pursued in divisional applications."},
+          "sourceRefs": ["us_code", "mpep"]
+        }
+      ]
+    },
+    {
+      "id": "filing_routes",
+      "title": {"ja": "出願ルート", "en": "Filing routes"},
+      "facts": [
+        {
+          "key": "direct_filing",
+          "label": {"ja": "米国直接出願", "en": "Direct U.S. filing"},
+          "value": {"ja": "Patent Centerを通じた電子出願が標準。実用特許について非仮出願または仮出願を利用できる。", "en": "Electronic filing through Patent Center is standard. Utility inventions may be filed as nonprovisional or provisional applications."},
+          "sourceRefs": ["uspto_process", "ecfr"]
+        },
+        {
+          "key": "paris_filing",
+          "label": {"ja": "パリルート", "en": "Paris-route filing"},
+          "value": {"ja": "通常、外国の第一出願から12か月以内に米国出願を行い優先権を主張する。優先権主張の記載・提出期限および優先権書類に注意。", "en": "A U.S. application normally claims priority within 12 months after the first foreign filing. Observe the deadlines for presenting the claim and supplying the priority document."},
+          "sourceRefs": ["us_code", "ecfr", "wipo_members"]
+        },
+        {
+          "key": "pct_national_phase",
+          "label": {"ja": "PCT国内段階", "en": "PCT national stage"},
+          "value": {"ja": "35 U.S.C. §371に基づく国内段階移行が可能。これとは別に、PCT出願を基礎とする§111(a)継続出願（いわゆるbypass continuation）が用いられることもある。", "en": "National-stage entry is available under 35 U.S.C. §371. Alternatively, applicants sometimes file a §111(a) continuation of the PCT application, commonly called a bypass continuation."},
+          "sourceRefs": ["us_code", "wipo_pct_guide", "mpep"]
+        },
+        {
+          "key": "national_phase_deadline",
+          "label": {"ja": "PCT国内移行期限", "en": "PCT national-stage deadline"},
+          "value": {"ja": "原則として優先日から30か月。少なくとも必要書類・料金等の期限管理を行う。", "en": "Generally 30 months from the priority date. The required documents, fees, and other national-stage requirements must be docketed carefully."},
+          "sourceRefs": ["us_code", "wipo_pct_guide"]
+        },
+        {
+          "key": "late_national_phase",
+          "label": {"ja": "期間徒過後の移行", "en": "Late national-stage entry"},
+          "value": {"ja": "遅延がunintentionalであった場合、請願・手数料等により放棄された出願を回復できる可能性がある。事実関係ごとの審査が必要。", "en": "Where delay was unintentional, revival of an abandoned application may be available by petition, fee, and required submissions. The facts must be assessed case by case."},
+          "caution": {"ja": "救済を前提にせず30か月期限で管理する。", "en": "Docket the 30-month deadline without relying on revival."},
+          "sourceRefs": ["ecfr", "wipo_pct_guide", "mpep"]
+        },
+        {
+          "key": "provisional_application",
+          "label": {"ja": "仮出願", "en": "Provisional application"},
+          "value": {"ja": "クレームや発明者宣誓書を必須としない簡易な出願で、審査・公開されず特許にもならない。利益を維持するには通常12か月以内に対応する非仮出願またはPCT出願が必要で、優先権は仮出願の開示が支える範囲に限られる。", "en": "A provisional application does not require claims or an inventor oath, is not examined or published, and never matures into a patent. A corresponding nonprovisional or PCT filing is ordinarily needed within 12 months, and priority extends only to subject matter adequately supported by the provisional."},
+          "sourceRefs": ["us_code", "uspto_apply", "mpep"]
+        },
+        {
+          "key": "das",
+          "label": {"ja": "優先権書類・DAS", "en": "Priority documents and DAS"},
+          "value": {"ja": "USPTOはWIPO DASを利用する。アクセスコード、参加庁、優先権主張期限および取得状況を確認する。", "en": "The USPTO participates in WIPO DAS. Verify the access code, participating offices, priority-claim deadlines, and successful retrieval."},
+          "sourceRefs": ["uspto_das", "wipo_das"]
+        }
+      ]
+    },
+    {
+      "id": "filing_requirements",
+      "title": {"ja": "出願時の書類・方式", "en": "Filing requirements"},
+      "facts": [
+        {
+          "key": "application_form",
+          "label": {"ja": "主な出願書類", "en": "Principal filing documents"},
+          "value": {"ja": ["明細書", "少なくとも1項のクレーム（非仮実用出願）", "必要な図面", "要約", "application data sheet（実務上推奨）", "発明者宣誓書・宣言書", "所定料金"], "en": ["Specification", "At least one claim for a nonprovisional utility application", "Necessary drawings", "Abstract", "Application data sheet (recommended in practice)", "Inventor oath or declaration", "Required fees"]},
+          "sourceRefs": ["us_code", "ecfr", "uspto_apply"]
+        },
+        {
+          "key": "filing_language",
+          "label": {"ja": "言語", "en": "Language"},
+          "value": {"ja": "手続言語は英語。非英語の明細書でも一定の場合に出願日を確保できるが、通知された期限内に英訳、正確性の宣誓・宣言および追加料金等を提出する。", "en": "Proceedings are in English. A non-English specification may secure a filing date in certain cases, but an English translation, statement of accuracy, surcharge, and other items must be filed within the notified period."},
+          "sourceRefs": ["ecfr", "mpep"]
+        },
+        {
+          "key": "inventor_declaration",
+          "label": {"ja": "発明者宣誓書・宣言書", "en": "Inventor oath or declaration"},
+          "value": {"ja": "各発明者による宣誓書または宣言書が原則必要。署名不能・拒否等の場合には代替陳述書を利用できることがある。提出を遅らせられる場合もあるが、遅くとも発行料金の納付時までに整える必要がある。", "en": "An oath or declaration from each inventor is generally required. A substitute statement may be available where an inventor cannot be found, is legally incapacitated, refuses, or is under an obligation to assign. Filing may sometimes be deferred, but completion is required no later than payment of the issue fee."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "power_of_attorney",
+          "label": {"ja": "委任状", "en": "Power of attorney"},
+          "value": {"ja": "USPTO登録実務家への委任は所定の方式で提出する。出願提出自体と委任状提出の時期は必ずしも同一でない。", "en": "Appointment of a USPTO-registered practitioner is made in the prescribed form. The power of attorney need not always be filed simultaneously with the application."},
+          "sourceRefs": ["ecfr", "mpep"]
+        },
+        {
+          "key": "notarization_legalization",
+          "label": {"ja": "公証・認証", "en": "Notarization and legalization"},
+          "value": {"ja": "通常の出願委任状や譲渡証に領事認証・アポスティーユは通常不要。宣言書は偽証罪の警告の下で署名できる。個別取引・証拠用途は別途確認。", "en": "Consular legalization or an apostille is generally unnecessary for ordinary prosecution powers or assignments. Declarations may be signed under penalty of perjury. Check separately for transaction-specific or evidentiary needs."},
+          "sourceRefs": ["us_code", "ecfr"]
+        },
+        {
+          "key": "sequence_listing",
+          "label": {"ja": "配列表", "en": "Sequence listing"},
+          "value": {"ja": "2022年7月1日以降に提出される対象出願では、原則としてWIPO ST.26準拠のXML配列表を提出する。", "en": "For applicable applications filed on or after July 1, 2022, sequence listings generally must be submitted in XML compliant with WIPO Standard ST.26."},
+          "sourceRefs": ["uspto_st26", "mpep"]
+        },
+        {
+          "key": "prior_art_disclosure",
+          "label": {"ja": "IDS・開示義務", "en": "IDS and duty of disclosure"},
+          "value": {"ja": "出願・審査に実質的に関与する者は、特許性に重要であると知る情報をUSPTOへ開示する誠実義務を負う。通常、Information Disclosure Statement（IDS）で文献等を提出する。義務は出願係属中継続する。", "en": "Each individual substantively involved in preparation or prosecution owes a duty of candor and good faith to disclose information known to be material to patentability. References are ordinarily submitted in an Information Disclosure Statement (IDS), and the duty continues while the application is pending."},
+          "practicalNote": {"ja": "対応外国出願のサーチレポート・拒絶理由、関連米国案件、訴訟・PTABで得た資料を継続的に確認する。提出時期により陳述・料金が追加され、許可後はQIP、RCE等の検討が必要になり得る。", "en": "Continuously review foreign search reports and office actions, related U.S. cases, and materials arising in litigation or PTAB proceedings. Later IDS filings may require statements or fees, and after allowance may call for QPIDS, an RCE, or other action."},
+          "sourceRefs": ["ecfr", "mpep"]
+        }
+      ]
+    },
+    {
+      "id": "claims_format",
+      "title": {"ja": "クレーム形式・補正", "en": "Claims and amendments"},
+      "facts": [
+        {
+          "key": "multiple_claims",
+          "label": {"ja": "独立・従属クレーム", "en": "Independent and dependent claims"},
+          "value": {"ja": "複数の独立・従属クレームを含められる。従属クレームは参照するクレームの全限定を取り込み、さらに限定を加える必要がある。", "en": "Multiple independent and dependent claims are permitted. A dependent claim incorporates all limitations of the referenced claim and must add a further limitation."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "multiple_dependent_claims",
+          "label": {"ja": "多項従属クレーム", "en": "Multiple dependent claims"},
+          "value": {"ja": "択一形式でのみ許容され、多項従属クレームから別の多項従属クレームを引用できない。料金計算上、引用するクレーム数に応じて数える。", "en": "Multiple dependent claims are permitted only in the alternative and may not depend from another multiple dependent claim. For fee purposes, they are counted according to the number of claims referenced."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "omnibus_claims",
+          "label": {"ja": "オムニバスクレーム", "en": "Omnibus claims"},
+          "value": {"ja": "『明細書に記載した発明』のようにクレーム外の記載へ全面的に依存する形式は、通常、明確性・形式上認められない。", "en": "Claims relying wholly on an external reference such as 'the invention as described in the specification' are generally objected to or rejected for indefiniteness and improper form."},
+          "sourceRefs": ["mpep"]
+        },
+        {
+          "key": "excess_claim_fees",
+          "label": {"ja": "超過クレーム料金", "en": "Excess-claim fees"},
+          "value": {"ja": "通常、独立クレーム3項、総クレーム20項を超える部分に追加料金がかかる。多項従属クレームにも別料金がある。料金額は改定されるためUSPTO料金表を確認。", "en": "Additional fees ordinarily apply beyond three independent claims and 20 total claims, with a separate fee for a multiple dependent claim. Consult the current USPTO fee schedule."},
+          "sourceRefs": ["ecfr", "uspto_fees"]
+        },
+        {
+          "key": "means_plus_function",
+          "label": {"ja": "ミーンズ・プラス・ファンクション", "en": "Means-plus-function claiming"},
+          "value": {"ja": "35 U.S.C. §112(f)により、構造を記載せず機能を実行する手段・工程として表現できるが、範囲は明細書記載の対応構造・材料・行為および均等物に限定される。", "en": "Under 35 U.S.C. §112(f), an element may be expressed as a means or step for performing a function without reciting structure, but scope is limited to corresponding structure, material, or acts described in the specification and equivalents thereof."},
+          "sourceRefs": ["us_code", "mpep", "wipo_judicial"]
+        },
+        {
+          "key": "product_by_process",
+          "label": {"ja": "プロダクト・バイ・プロセス", "en": "Product-by-process claims"},
+          "value": {"ja": "製造方法で物を特定する形式は可能だが、特許性判断では原則として製品自体の新規性・非自明性が問われ、権利範囲には判例上の留意点がある。", "en": "A product may be defined by its manufacturing process, but patentability generally turns on the product itself, and case law must be considered when assessing infringement scope."},
+          "sourceRefs": ["mpep", "wipo_judicial"]
+        },
+        {
+          "key": "added_matter",
+          "label": {"ja": "新規事項", "en": "New matter"},
+          "value": {"ja": "出願後にnew matterを明細書へ導入できない。補正クレームは原出願のwritten descriptionによる裏付けが必要。新規事項はCIPで追求することを検討する。", "en": "New matter may not be introduced after filing. Amended claims require written-description support in the original application. A CIP may be considered for later-added subject matter."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "amendment_standard",
+          "label": {"ja": "補正実務", "en": "Amendment practice"},
+          "value": {"ja": "非最終拒絶への応答では補正が比較的広く認められる。最終拒絶後の補正は当然には受理されず、争点を解消するか審判準備に資する等の要件を満たす必要があり、RCE等を要することがある。", "en": "Amendments are relatively available after a non-final rejection. After final rejection, entry is not a matter of right and generally requires placing the application in condition for allowance or better form for appeal; an RCE may be needed."},
+          "sourceRefs": ["ecfr", "mpep"]
+        }
+      ]
+    },
+    {
+      "id": "examination",
+      "title": {"ja": "審査・拒絶対応", "en": "Examination and office-action practice"},
+      "facts": [
+        {
+          "key": "substantive_examination",
+          "label": {"ja": "実体審査", "en": "Substantive examination"},
+          "value": {"ja": "方式要件を満たす非仮出願は審査官へ配属され、§101、§102、§103、§112等が審査される。", "en": "A compliant nonprovisional application is assigned to an examiner for review under requirements including §§101, 102, 103, and 112."},
+          "sourceRefs": ["uspto_process", "mpep"]
+        },
+        {
+          "key": "examination_request",
+          "label": {"ja": "審査請求", "en": "Request for examination"},
+          "value": {"ja": "別個の審査請求は不要。出願・料金・方式が整えば通常の順序で審査に進む。", "en": "No separate request for examination is required. Once filing, fee, and formal requirements are met, the application enters the ordinary examination queue."},
+          "sourceRefs": ["uspto_process", "mpep"]
+        },
+        {
+          "key": "average_grant_time",
+          "label": {"ja": "審査期間", "en": "Pendency"},
+          "value": {"ja": "First Office Action pendencyおよびtotal pendencyは技術分野・年度・優先審査の有無で変動する。固定値ではなくUSPTO Patent Pendency Dataで最新値を確認する。", "en": "First-office-action and total pendency vary by technology, fiscal year, and prioritized status. Consult the USPTO Patent Pendency Data rather than relying on a fixed figure."},
+          "sourceRefs": ["uspto_pendency"]
+        },
+        {
+          "key": "accelerated_examination",
+          "label": {"ja": "Track One優先審査", "en": "Track One prioritized examination"},
+          "value": {"ja": "要件・追加料金を満たす出願について、優先状態付与から12か月以内の最終処分を目標とする。クレーム数制限その他の要件があり、年間上限・料金は最新情報を確認。", "en": "For qualifying applications with the additional fee, Track One targets final disposition within 12 months after prioritized status is granted. Claim limits and other requirements apply; current fees and annual limits should be checked."},
+          "sourceRefs": ["uspto_trackone"]
+        },
+        {
+          "key": "pph",
+          "label": {"ja": "Patent Prosecution Highway", "en": "Patent Prosecution Highway"},
+          "value": {"ja": "対応外国・PCT案件で特許可能と判断されたクレームに基づき、所定要件の下で早期審査を請求できる。クレーム対応関係表等を提出する。", "en": "Expedited examination may be requested based on claims found allowable in a corresponding foreign or PCT case, subject to program requirements including a claim-correspondence table."},
+          "sourceRefs": ["uspto_pph"]
+        },
+        {
+          "key": "third_party_observations",
+          "label": {"ja": "第三者情報提供", "en": "Third-party preissuance submissions"},
+          "value": {"ja": "第三者は、原則として許可通知前かつ法定期間内に、特許・公開文献等と各文献の関連性の簡潔な説明を提出できる。期限は公開後6か月と最初のクレーム拒絶日の遅い方等を基準に判定する。", "en": "A third party may submit patents, published applications, or other printed publications with a concise relevance statement before allowance and within the statutory window, generally measured by the later of six months after publication or the date of the first claim rejection."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "examiner_interview",
+          "label": {"ja": "審査官面接", "en": "Examiner interviews"},
+          "value": {"ja": "電話・ビデオ等による面接が広く利用される。争点、補正案および次の手続を事前に整理し、面接内容を記録に残す必要がある。", "en": "Telephone and video interviews are widely used. Issues, proposed amendments, and next steps should be prepared in advance, and the substance of the interview must be made of record."},
+          "sourceRefs": ["uspto_process", "mpep"]
+        },
+        {
+          "key": "response_deadline",
+          "label": {"ja": "Office Action応答期限", "en": "Office-action response period"},
+          "value": {"ja": "多くの実体的Office Actionでは短縮法定期間が通常3か月に設定され、追加料金により最長6か月の法定上限まで延長できる。通知ごとに期限と延長可否を確認する。", "en": "For many substantive office actions, the shortened statutory period is normally three months and may be extended with fees up to the six-month statutory maximum. Confirm the period and extendability in each notice."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "final_non_final",
+          "label": {"ja": "非最終・最終拒絶", "en": "Non-final and final rejection"},
+          "value": {"ja": "通常、最初の実体的拒絶はnon-final。適切な応答後も維持される拒絶等はfinalとなり得る。最終拒絶後は補正、面接、RCE、審判請求等を戦略的に選択する。", "en": "The first substantive rejection is ordinarily non-final. A maintained rejection after a proper response may become final. After final rejection, applicants strategically choose among amendment, interview, RCE, and appeal."},
+          "sourceRefs": ["ecfr", "mpep"]
+        },
+        {
+          "key": "continued_examination",
+          "label": {"ja": "RCE", "en": "Request for Continued Examination"},
+          "value": {"ja": "審査が閉じられた出願で、料金とsubmissionを伴うRCEにより審査を再開できる。継続出願とは異なり同一出願が継続し、RCEによる遅延はPTAを減少させ得る。", "en": "After prosecution is closed, an RCE with the required fee and submission can reopen examination. Unlike a continuation, it keeps the same application pending, and RCE-related time can reduce patent term adjustment."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        }
+      ]
+    },
+    {
+      "id": "division_continuation",
+      "title": {"ja": "分割・継続出願", "en": "Division and continuation practice"},
+      "facts": [
+        {
+          "key": "continuation",
+          "label": {"ja": "継続出願", "en": "Continuation application"},
+          "value": {"ja": "親出願と同一の開示に基づき、異なるクレームを追求する非仮出願。親出願とのcopendency、適切な利益主張および開示の裏付けが必要。", "en": "A continuation is a nonprovisional application pursuing different claims based on the same disclosure as the parent. Copendency, a proper benefit claim, and disclosure support are required."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "continuation_in_part",
+          "label": {"ja": "一部継続出願（CIP）", "en": "Continuation-in-part (CIP)"},
+          "value": {"ja": "親出願の開示に新規事項を加える継続出願。各クレームの有効出願日は、そのクレームを支える開示に応じて異なり得る。", "en": "A CIP adds new matter to the parent's disclosure. The effective filing date may differ claim by claim depending on where the claimed subject matter is adequately supported."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "divisional_applications",
+          "label": {"ja": "分割出願", "en": "Divisional application"},
+          "value": {"ja": "親出願に開示された別発明を追求する出願で、restriction requirementへの対応に多用される。要件を満たす分割には35 U.S.C. §121のsafe harborが適用される可能性がある。", "en": "A divisional pursues a distinct invention disclosed in the parent and is commonly filed after a restriction requirement. A qualifying divisional may benefit from the safe harbor of 35 U.S.C. §121."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "divisional_deadline",
+          "label": {"ja": "継続・分割の時期", "en": "Timing for continuations and divisionals"},
+          "value": {"ja": "利益主張には、新出願の提出時に親出願が係属していることが必要。親の特許発行・放棄前に余裕をもって提出する。", "en": "To claim the benefit of the parent, the new application must be filed while the parent is pending. File with adequate margin before the parent's issuance or abandonment."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "domestic_priority",
+          "label": {"ja": "国内利益主張", "en": "Domestic benefit claims"},
+          "value": {"ja": "§119(e)、§120、§121、§365(c)、§386(c)等に基づく利益主張はADS等に適切に記載し、参照関係・期限を管理する。", "en": "Benefit claims under provisions such as §§119(e), 120, 121, 365(c), and 386(c) must be properly presented, ordinarily through the ADS, with careful chain and deadline management."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "double_patenting",
+          "label": {"ja": "ダブルパテント", "en": "Double patenting"},
+          "value": {"ja": "同一発明型のstatutory double patentingと、判例法上のobviousness-type double patentingがある。後者は関連特許・出願間の不当な期間延長を防ぐ。", "en": "U.S. law recognizes statutory same-invention double patenting and judicially created obviousness-type double patenting, the latter preventing unjustified term extension across related claims."},
+          "sourceRefs": ["us_code", "mpep"]
+        },
+        {
+          "key": "terminal_disclaimer",
+          "label": {"ja": "ターミナルディスクレーマー", "en": "Terminal disclaimer"},
+          "value": {"ja": "obviousness-type double patenting拒絶の解消に用いられ、通常、参照特許を超える期間を放棄し、権利行使時の共通所有等を要求する。PTAを含む期間に影響し得るため安易な提出は避ける。", "en": "A terminal disclaimer commonly overcomes an obviousness-type double-patenting rejection by disclaiming term beyond a reference patent and requiring common ownership or qualifying enforceability linkage. Because it can affect term including PTA, it should not be filed reflexively."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        }
+      ]
+    },
+    {
+      "id": "refusal_appeal",
+      "title": {"ja": "拒絶・審判・登録", "en": "Rejection, appeal, and issuance"},
+      "facts": [
+        {
+          "key": "reconsideration",
+          "label": {"ja": "審査官による再考", "en": "Examiner reconsideration"},
+          "value": {"ja": "Office Actionへの意見・補正、面接、最終後の補正またはRCEにより審査官の再考を求める。審判請求後もappeal briefを受けて審査官が再検討する段階がある。", "en": "Reconsideration may be sought through argument, amendment, interview, after-final practice, or an RCE. After an appeal is initiated, the examiner also reconsiders the case in light of the appeal brief."},
+          "sourceRefs": ["mpep", "ptab_appeals"]
+        },
+        {
+          "key": "appeal",
+          "label": {"ja": "PTAB審判", "en": "Appeal to the PTAB"},
+          "value": {"ja": "クレームが2回拒絶された後、または最終拒絶後、Patent Trial and Appeal Boardへ審判請求できる。Notice of Appeal、appeal brief、必要に応じreply brief・oral hearing等の段階がある。", "en": "After claims have been twice rejected or finally rejected, the applicant may appeal to the Patent Trial and Appeal Board. The process includes a notice of appeal, appeal brief, and potentially a reply brief and oral hearing."},
+          "sourceRefs": ["us_code", "ecfr", "ptab_appeals"]
+        },
+        {
+          "key": "appeal_deadline",
+          "label": {"ja": "審判期限", "en": "Appeal deadlines"},
+          "value": {"ja": "Notice of AppealはOffice Actionの応答期間内に提出し、appeal briefは原則としてNotice提出から2か月以内。延長・手続変更があり得るため、最新規則と通知を確認する。", "en": "The notice of appeal must be filed within the response period for the office action, and the appeal brief is generally due two months after the notice. Consult current rules and notices for extensions and procedural changes."},
+          "sourceRefs": ["ecfr", "ptab_appeals", "mpep"]
+        },
+        {
+          "key": "judicial_review",
+          "label": {"ja": "司法審査", "en": "Judicial review"},
+          "value": {"ja": "PTABの審判決定について、通常は連邦巡回控訴裁判所（Federal Circuit）への上訴が可能。一定の場合には35 U.S.C. §145の民事訴訟ルートもある。", "en": "A PTAB appeal decision may ordinarily be appealed to the U.S. Court of Appeals for the Federal Circuit. A civil action under 35 U.S.C. §145 is available in certain circumstances."},
+          "sourceRefs": ["us_code", "ecfr", "ptab_appeals"]
+        },
+        {
+          "key": "allowance_formalities",
+          "label": {"ja": "許可後手続", "en": "Post-allowance formalities"},
+          "value": {"ja": "Notice of Allowance受領後、issue fee、必要な図面・宣誓書等を整える。重要情報を新たに把握した場合は、発行停止、QIP、RCE等を含め速やかに対応を検討する。", "en": "After a Notice of Allowance, the issue fee and any outstanding drawings, declarations, or other requirements must be completed. Newly discovered material information may require prompt consideration of withdrawal from issue, QPIDS, an RCE, or other action."},
+          "sourceRefs": ["uspto_process", "ecfr", "mpep"]
+        },
+        {
+          "key": "grant_fee_deadline",
+          "label": {"ja": "発行料金期限", "en": "Issue-fee deadline"},
+          "value": {"ja": "Notice of Allowanceの発行日から3か月以内。", "en": "Three months from the date of the Notice of Allowance."},
+          "sourceRefs": ["us_code", "uspto_process"]
+        },
+        {
+          "key": "grant_fee_extension",
+          "label": {"ja": "発行料金期限の延長", "en": "Extension of issue-fee deadline"},
+          "value": {"ja": "3か月の期限は延長不可。徒過時は放棄となり、unintentional delayに基づく回復請願の可否を検討する。", "en": "The three-month period is not extendable. A missed deadline results in abandonment, subject to possible revival based on unintentional delay."},
+          "sourceRefs": ["us_code", "uspto_process", "ecfr"]
+        }
+      ]
+    },
+    {
+      "id": "post_grant",
+      "title": {"ja": "登録後・存続期間", "en": "Post-grant and patent term"},
+      "facts": [
+        {
+          "key": "term_calculation",
+          "label": {"ja": "実用・植物特許の期間", "en": "Utility and plant patent term"},
+          "value": {"ja": "原則として、最先の有効な米国非仮出願日から20年。仮出願は通常この20年の起算に含まれない。PCT・継続関係、terminal disclaimer、PTA・PTE等を個別に確認する。", "en": "Generally 20 years from the earliest effective U.S. nonprovisional filing date. A provisional application ordinarily does not start this 20-year term. PCT and continuation chains, terminal disclaimers, PTA, and PTE require case-specific analysis."},
+          "sourceRefs": ["us_code", "uspto_process", "mpep"]
+        },
+        {
+          "key": "patent_term",
+          "label": {"ja": "意匠特許の期間", "en": "Design patent term"},
+          "value": {"ja": "2015年5月13日以降に出願された意匠特許は、原則として発行日から15年。維持年金は不要。", "en": "For design applications filed on or after May 13, 2015, the term is generally 15 years from grant, with no maintenance fees."},
+          "sourceRefs": ["us_code", "uspto_apply"]
+        },
+        {
+          "key": "annuities",
+          "label": {"ja": "維持年金", "en": "Maintenance fees"},
+          "value": {"ja": "実用特許には維持料金が必要。植物特許・意匠特許には不要。", "en": "Maintenance fees are required for utility patents, but not for plant or design patents."},
+          "sourceRefs": ["us_code", "uspto_maintenance"]
+        },
+        {
+          "key": "annuity_schedule",
+          "label": {"ja": "維持料金の時期", "en": "Maintenance-fee schedule"},
+          "value": {"ja": "原則として発行日から3年6か月、7年6か月、11年6か月の各時点で納付。各期限の6か月前から通常納付できる。", "en": "Maintenance fees are generally due 3 years and 6 months, 7 years and 6 months, and 11 years and 6 months after grant, with the regular payment window ordinarily opening six months before each due date."},
+          "sourceRefs": ["us_code", "uspto_maintenance"]
+        },
+        {
+          "key": "fee_grace_period",
+          "label": {"ja": "維持料金の猶予・回復", "en": "Maintenance-fee grace and reinstatement"},
+          "value": {"ja": "通常期限後6か月は追加料金付きで納付可能。その後は特許が失効するが、遅延がunintentionalであった場合の回復請願制度がある。中用権等に注意。", "en": "Payment may be made with a surcharge during the six months after the ordinary due date. The patent then expires for nonpayment, though reinstatement may be petitioned where delay was unintentional; intervening rights must be considered."},
+          "sourceRefs": ["us_code", "ecfr", "uspto_maintenance"]
+        },
+        {
+          "key": "term_adjustment",
+          "label": {"ja": "Patent Term Adjustment（PTA）", "en": "Patent Term Adjustment (PTA)"},
+          "value": {"ja": "USPTO側の一定の審査遅延について特許期間を日単位で調整する。出願人遅延、RCE、期間重複およびterminal disclaimer等が計算に影響する。", "en": "PTA adds days for specified USPTO prosecution delays. Applicant delay, RCE practice, overlapping delay, and terminal disclaimers can affect the calculation."},
+          "sourceRefs": ["us_code", "ecfr", "uspto_pta"]
+        },
+        {
+          "key": "term_extension",
+          "label": {"ja": "Patent Term Extension（PTE）", "en": "Patent Term Extension (PTE)"},
+          "value": {"ja": "医薬品等の規制審査期間に対応する35 U.S.C. §156の延長。原則最大5年で、承認後の残存期間等にも上限がある。対象製品、最初の承認、申請期限および特許選択を厳格に確認する。", "en": "35 U.S.C. §156 may extend term for regulatory review of eligible products. The extension is generally capped at five years and is also limited by post-approval term rules. Eligibility, first approval, filing deadline, and patent selection require strict review."},
+          "sourceRefs": ["us_code", "ecfr", "uspto_pte"]
+        },
+        {
+          "key": "correction",
+          "label": {"ja": "訂正証明", "en": "Certificate of correction"},
+          "value": {"ja": "軽微な誤記等はcertificate of correctionで訂正できる場合がある。新規事項や実質的変更には利用できず、reissueの検討が必要となることがある。", "en": "A certificate of correction may address certain clerical or minor errors. It cannot introduce new matter or make impermissible substantive changes, for which reissue may need consideration."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "reissue_reexamination",
+          "label": {"ja": "Reissue・再審査", "en": "Reissue and reexamination"},
+          "value": {"ja": "誤りにより特許が全部または一部無効・実施不能となる場合、欺罔的意図なくreissueを請求できる。クレーム拡張reissueは原特許発行から2年以内。別途ex parte reexamination制度がある。", "en": "A patent rendered wholly or partly inoperative or invalid by error may be surrendered for reissue without deceptive intent. A broadening reissue must be sought within two years after grant. Ex parte reexamination is separately available."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "patent_marking",
+          "label": {"ja": "特許表示", "en": "Patent marking"},
+          "value": {"ja": "特許製品を適切に表示しない場合、原則として侵害者への実通知前の損害賠償が制限される。virtual markingも可能。方法クレームのみの場合等は判例を確認。", "en": "Failure to mark patented articles may generally limit damages for infringement occurring before actual notice. Virtual marking is available. Case law should be checked for method-only claims and other special situations."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        }
+      ]
+    },
+    {
+      "id": "opposition_invalidity",
+      "title": {"ja": "異議・無効化手続", "en": "Post-grant validity proceedings"},
+      "facts": [
+        {
+          "key": "post_grant_opposition",
+          "label": {"ja": "一般的な付与後異議", "en": "General post-grant opposition"},
+          "value": {"ja": "日本・EPO型の単一の『異議申立て』制度はない。代わりにPGR、IPR、ex parte reexamination、derivationおよび連邦裁判所での無効主張等がある。", "en": "There is no single opposition procedure equivalent to Japanese or EPO opposition. Available routes include PGR, IPR, ex parte reexamination, derivation, and invalidity challenges in federal court."},
+          "sourceRefs": ["us_code", "ptab_trials", "wipo_judicial"]
+        },
+        {
+          "key": "invalidation",
+          "label": {"ja": "Post-Grant Review（PGR）", "en": "Post-Grant Review (PGR)"},
+          "value": {"ja": "対象となるAIA特許について、原則として特許発行後9か月以内に請求する。§101、§102、§103、§112等の広い無効理由を利用できるが、適格性、開始基準およびestoppelを確認する。", "en": "For eligible AIA patents, PGR must generally be petitioned within nine months after grant. Grounds may include §§101, 102, 103, and 112, subject to eligibility, institution standards, and estoppel."},
+          "sourceRefs": ["us_code", "ecfr", "ptab_trials"]
+        },
+        {
+          "key": "reexamination_review",
+          "label": {"ja": "Inter Partes Review（IPR）", "en": "Inter Partes Review (IPR)"},
+          "value": {"ja": "原則としてPGR期間終了後に、特許・刊行物に基づく§102または§103理由で請求する。侵害訴状送達後1年のbar、real party in interest、privity、estoppel等が重要。", "en": "After the PGR window, IPR may generally be sought on §§102 or 103 grounds based on patents or printed publications. The one-year bar after service of an infringement complaint, real parties in interest, privies, and estoppel are critical."},
+          "sourceRefs": ["us_code", "ecfr", "ptab_trials"]
+        },
+        {
+          "key": "reissue_reexamination",
+          "label": {"ja": "Ex parte reexamination", "en": "Ex parte reexamination"},
+          "value": {"ja": "特許期間中、誰でも特許・刊行物に基づく実質的に新たな特許性の問題を提示して請求できる。開始後、第三者請求人の関与は限定的。", "en": "At any time during enforceability, any person may request reexamination based on patents or printed publications raising a substantial new question of patentability. Third-party requester participation is limited after institution."},
+          "sourceRefs": ["us_code", "ecfr", "mpep"]
+        },
+        {
+          "key": "invalidity_action",
+          "label": {"ja": "裁判所での無効主張", "en": "Invalidity in court"},
+          "value": {"ja": "侵害訴訟の抗弁・反訴または確認訴訟として無効を争える。発行特許には有効性推定があり、無効立証はclear and convincing evidence基準。", "en": "Invalidity may be asserted as a defense or counterclaim in infringement litigation or in a declaratory-judgment action. Issued claims are presumed valid, and invalidity in court must be shown by clear and convincing evidence."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        },
+        {
+          "key": "standing",
+          "label": {"ja": "請求人適格・禁反言", "en": "Standing and estoppel"},
+          "value": {"ja": "PGR・IPRの請求人、時期、先行訴訟、real party in interest等には複雑な制限がある。最終書面決定後の法定estoppelは後続のUSPTO・ITC・民事訴訟に重大な影響を及ぼす。", "en": "PGR and IPR eligibility, timing, prior litigation, and real-party-in-interest rules are complex. Statutory estoppel after a final written decision can materially affect later USPTO, ITC, and civil proceedings."},
+          "sourceRefs": ["us_code", "ptab_trials", "wipo_judicial"]
+        },
+        {
+          "key": "average_duration",
+          "label": {"ja": "PTABの期間", "en": "PTAB timing"},
+          "value": {"ja": "AIA trialは、原則として開始決定から1年以内に最終書面決定を行い、正当な理由で最大6か月延長可能。請願から開始決定までの期間を別途見込む。", "en": "An AIA trial ordinarily reaches a final written decision within one year after institution, extendable by up to six months for good cause. Additional time from petition to the institution decision must be included."},
+          "sourceRefs": ["us_code", "ptab_trials"]
+        }
+      ]
+    },
+    {
+      "id": "enforcement",
+      "title": {"ja": "権利行使", "en": "Enforcement"},
+      "facts": [
+        {
+          "key": "courts",
+          "label": {"ja": "裁判所・上訴", "en": "Courts and appeals"},
+          "value": {"ja": "侵害訴訟は連邦地方裁判所に提起し、特許事件の上訴は原則としてFederal Circuitが専属的に扱う。最高裁への裁量上訴もあり得る。陪審審理が行われる場合がある。", "en": "Patent infringement actions are brought in federal district courts, with patent appeals generally heard exclusively by the Federal Circuit. Discretionary Supreme Court review is possible, and jury trials may be available."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        },
+        {
+          "key": "specialist_court",
+          "label": {"ja": "専門裁判所・ITC", "en": "Specialist forum and ITC"},
+          "value": {"ja": "Federal Circuitは特許上訴に専門性を有する。輸入品についてはUSITCのSection 337調査を利用でき、排除命令等が中心で損害賠償は扱わない。", "en": "The Federal Circuit specializes in patent appeals. For imported goods, a Section 337 investigation before the USITC may provide exclusionary relief, but not damages."},
+          "sourceRefs": ["wipo_judicial", "usitc_337"]
+        },
+        {
+          "key": "claim_construction",
+          "label": {"ja": "クレーム解釈", "en": "Claim construction"},
+          "value": {"ja": "クレーム解釈は裁判官の法律問題。クレーム文言、明細書、審査経過等のintrinsic evidenceを中心とし、必要に応じ辞書・専門家意見等のextrinsic evidenceを参照する。", "en": "Claim construction is a question of law for the judge. Courts focus on intrinsic evidence—claim language, specification, and prosecution history—and may consider extrinsic evidence such as dictionaries and expert testimony."},
+          "sourceRefs": ["wipo_judicial"]
+        },
+        {
+          "key": "doctrine_of_equivalents",
+          "label": {"ja": "均等論", "en": "Doctrine of equivalents"},
+          "value": {"ja": "文言侵害がなくても、各限定について実質的に同じ機能を同じ方法で行い同じ結果を得る等の場合に均等侵害が成立し得る。all-elements rule、先行技術、dedication等による制限がある。", "en": "Absent literal infringement, equivalence may be found where each limitation performs substantially the same function in substantially the same way to achieve substantially the same result, among other formulations. The all-elements rule, prior art, dedication, and other limits apply."},
+          "sourceRefs": ["wipo_judicial"]
+        },
+        {
+          "key": "prosecution_history_estoppel",
+          "label": {"ja": "審査経過禁反言", "en": "Prosecution history estoppel"},
+          "value": {"ja": "特許性に関係する減縮補正等は均等論を制限し得る。Festo判決に基づく推定と反証可能性を検討する。", "en": "A narrowing amendment related to patentability may limit the doctrine of equivalents. The Festo presumption and possible rebuttal grounds must be considered."},
+          "sourceRefs": ["wipo_judicial"]
+        },
+        {
+          "key": "indirect_infringement",
+          "label": {"ja": "間接侵害", "en": "Indirect infringement"},
+          "value": {"ja": "35 U.S.C. §271(b)の誘引侵害と§271(c)の寄与侵害がある。直接侵害の存在、知識・意図、非侵害用途等の要件を類型別に検討する。", "en": "35 U.S.C. §271(b) provides induced infringement and §271(c) contributory infringement. Direct infringement, knowledge or intent, and substantial noninfringing uses must be analyzed for the relevant theory."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        },
+        {
+          "key": "joint_infringement",
+          "label": {"ja": "複数主体による実施", "en": "Divided infringement"},
+          "value": {"ja": "方法クレームの工程を複数主体が分担する場合、指示・支配または共同事業等を通じて単一主体へ帰属できるかが重要。クレーム作成段階から単一主体実施を意識する。", "en": "Where steps of a method claim are divided among actors, attribution to a single entity through direction or control, or a joint enterprise, becomes important. Draft claims with single-actor performance in mind."},
+          "sourceRefs": ["wipo_judicial"]
+        },
+        {
+          "key": "cross_border_infringement",
+          "label": {"ja": "域外・輸入行為", "en": "Cross-border conduct"},
+          "value": {"ja": "特許法は原則属地主義だが、§271(f)の国外組立向け部品供給、§271(g)の特許方法で製造された物の輸入等の特則がある。ITCも検討する。", "en": "U.S. patent law is generally territorial, but special provisions include §271(f) for supplying components for foreign combination and §271(g) for importing products made by a patented process. ITC relief should also be considered."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        },
+        {
+          "key": "discovery",
+          "label": {"ja": "証拠開示", "en": "Discovery"},
+          "value": {"ja": "連邦訴訟では文書提出、interrogatories、deposition、専門家開示、電子情報開示等の広範なdiscoveryがある。費用・負担が大きく、証拠保全義務とlegal holdが重要。", "en": "Federal litigation permits broad discovery including document production, interrogatories, depositions, expert disclosures, and electronically stored information. Cost and burden can be substantial, making preservation duties and litigation holds critical."},
+          "sourceRefs": ["federal_rules", "wipo_judicial"]
+        },
+        {
+          "key": "preliminary_injunction",
+          "label": {"ja": "仮差止め", "en": "Preliminary injunction"},
+          "value": {"ja": "本案勝訴可能性、回復不能な損害、衡平の比較および公益を考慮する。自動的には認められず、早期の技術・無効資料・市場証拠の準備が必要。", "en": "Courts consider likelihood of success, irreparable harm, the balance of equities, and public interest. Relief is not automatic and requires early preparation of technical, validity, and market evidence."},
+          "sourceRefs": ["federal_rules", "wipo_judicial"]
+        },
+        {
+          "key": "permanent_injunction",
+          "label": {"ja": "終局的差止め", "en": "Permanent injunction"},
+          "value": {"ja": "eBay判決の4要素による衡平判断が必要で、侵害・有効性の立証のみで自動的に差止めとなるわけではない。", "en": "Permanent injunctive relief requires the four-factor equitable analysis under eBay and does not follow automatically from findings of infringement and validity."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        },
+        {
+          "key": "damages",
+          "label": {"ja": "損害賠償", "en": "Damages"},
+          "value": {"ja": "侵害を填補するのに十分な損害額で、少なくとも合理的実施料。逸失利益、合理的実施料等が中心で、表示・実通知、因果関係、apportionment等が重要。", "en": "Damages must be adequate to compensate for infringement and no less than a reasonable royalty. Lost profits and reasonable royalties are principal measures, with marking or actual notice, causation, and apportionment playing major roles."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        },
+        {
+          "key": "enhanced_damages",
+          "label": {"ja": "増額賠償", "en": "Enhanced damages"},
+          "value": {"ja": "裁判所は例外的に損害額を最大3倍まで増額できる。Halo判決後、悪質な故意侵害行為等を踏まえる裁量的救済。", "en": "A court may enhance damages up to three times in exceptional circumstances. After Halo, enhancement is a discretionary remedy directed to egregious infringement behavior."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        },
+        {
+          "key": "attorney_fees",
+          "label": {"ja": "弁護士費用", "en": "Attorney fees"},
+          "value": {"ja": "各当事者負担が原則だが、35 U.S.C. §285によりexceptional caseでは勝訴当事者に合理的弁護士費用を認め得る。", "en": "The default is that each side bears its own fees, but under 35 U.S.C. §285 a court may award reasonable attorney fees to the prevailing party in an exceptional case."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        },
+        {
+          "key": "limitation_period",
+          "label": {"ja": "損害の時間的制限", "en": "Time limit on damages"},
+          "value": {"ja": "侵害訴訟提起前6年より前の侵害については原則として損害賠償を回収できない。これは典型的な出訴期間とは異なり、lachesや表示要件等も別途検討する。", "en": "Damages generally cannot be recovered for infringement committed more than six years before the complaint or counterclaim. This differs from a conventional statute of limitations, and laches and marking issues must be analyzed separately."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        }
+      ]
+    },
+    {
+      "id": "practical_notes",
+      "title": {"ja": "実務上の要点", "en": "Practical notes"},
+      "facts": [
+        {
+          "key": "practical_highlights",
+          "label": {"ja": "日本実務との主な相違", "en": "Key contrasts with Japanese practice"},
+          "value": {"ja": {"bullets": ["審査請求は不要で、通常出願は自動的に審査へ進む", "発明者由来開示への限定的グレース期間があるが、公表前出願が安全", "IDSによる継続的な情報開示管理が必要", "継続・CIP・RCEによりクレーム追求を継続できる", "非最終拒絶と最終拒絶で補正・応答の自由度が異なる", "権利化後はPGR・IPR・再審査・裁判所が並存する"]}, "en": {"bullets": ["No examination request is required; regular applications enter examination automatically", "A limited grace period exists for inventor-originated disclosure, but pre-disclosure filing is safer", "A continuing IDS and disclosure-management process is necessary", "Continuations, CIPs, and RCEs allow claims to be pursued further", "Response and amendment options differ after non-final and final rejection", "PGR, IPR, reexamination, and court litigation coexist after grant"]}},
+          "sourceRefs": ["uspto_process", "mpep", "ptab_trials"]
+        },
+        {
+          "key": "local_practice",
+          "label": {"ja": "案件管理", "en": "Portfolio management"},
+          "value": {"ja": "関連案件表を作り、priority/benefit chain、発明者、譲渡、IDS相互提出、restriction/election、terminal disclaimer、継続出願期限および特許期間を一体管理する。", "en": "Maintain a related-case chart covering priority and benefit chains, inventorship, assignments, cross-citation of IDS materials, restriction and election, terminal disclaimers, continuation deadlines, and patent term."},
+          "sourceRefs": ["mpep"]
+        },
+        {
+          "key": "recent_developments",
+          "label": {"ja": "更新確認が必要な事項", "en": "Items requiring current verification"},
+          "value": {"ja": "§101・AI発明者／AI支援発明のガイダンス、terminal disclaimer実務、PTABの開始裁量・規則、DOCX料金、Track One枠、USPTO料金および審査期間は改訂が続くため、案件時点の公式情報を確認する。", "en": "Verify current official materials on §101, AI inventorship and AI-assisted inventions, terminal-disclaimer practice, PTAB institution and rules, DOCX fees, Track One limits, USPTO fees, and pendency because these areas continue to change."},
+          "sourceRefs": ["uspto_ai", "ptab_trials", "uspto_fees", "uspto_pendency"]
+        },
+        {
+          "key": "warning_letters",
+          "label": {"ja": "警告前の確認", "en": "Pre-assertion checks"},
+          "value": {"ja": "権利帰属、存続・維持料金、クレーム解釈、審査経過、表示、ライセンス、標準必須性、無効資料および相手方の確認訴訟提起可能性を確認する。", "en": "Before assertion, verify ownership, term and maintenance status, claim construction, prosecution history, marking, licenses, standard-essential status, validity evidence, and the risk of a declaratory-judgment action."},
+          "sourceRefs": ["us_code", "wipo_judicial"]
+        }
+      ]
+    },
+    {
+      "id": "local_counsel_faq",
+      "title": {"ja": "現地代理人への確認事項", "en": "Questions for U.S. counsel"},
+      "facts": [
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "優先権・継続関係", "en": "Priority and continuation chain"},
+          "value": {"ja": "各クレームについて、どの出願の開示がwritten descriptionとenablementを満たし、どの有効出願日を主張できるか。継続・分割・CIPのどれが適切か。", "en": "For each claim, which application supplies written-description and enablement support, what effective filing date is available, and should the next filing be a continuation, divisional, or CIP?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "IDS", "en": "IDS"},
+          "value": {"ja": "外国庁通知、関連案件、訴訟・PTAB資料のうち何を、いつ、どの陳述・料金とともに提出すべきか。許可後の場合はQIP、RCEまたは発行停止のどれを選ぶか。", "en": "Which foreign-office actions, related-case materials, and litigation or PTAB documents should be submitted, when, and with what statement or fee? After allowance, should QPIDS, an RCE, or withdrawal from issue be used?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "§101対応", "en": "Section 101 strategy"},
+          "value": {"ja": "対象クレームは現行USPTOガイダンス・Federal Circuit判例上どの司法上の例外に該当し得るか。明細書・クレームでどの技術的改善を具体化すべきか。", "en": "Under current USPTO guidance and Federal Circuit case law, which judicial exception may apply, and what technological improvement should be made concrete in the specification and claims?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "最終拒絶後", "en": "After final rejection"},
+          "value": {"ja": "補正の受理可能性、面接、RCE、審判および継続出願のうち、費用・期間・PTA・estoppelを踏まえた推奨手段は何か。", "en": "Considering cost, timing, PTA, and estoppel, what is the recommended combination of after-final amendment, interview, RCE, appeal, and continuation?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "ダブルパテント", "en": "Double patenting"},
+          "value": {"ja": "拒絶はstatutoryかobviousness-typeか。反論・クレーム修正で解消できるか。terminal disclaimerが特許期間、共通所有および将来の譲渡に与える影響は何か。", "en": "Is the rejection statutory or obviousness-type double patenting? Can it be overcome by argument or amendment, and how would a terminal disclaimer affect term, common ownership, and future transfers?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "PGR・IPR", "en": "PGR and IPR"},
+          "value": {"ja": "請求期限、real party in interest、訴訟との関係、開始可能性、discretionary denial、補正申立ておよびestoppelをどう評価するか。", "en": "How should petition timing, real parties in interest, parallel litigation, institution prospects, discretionary denial, motions to amend, and estoppel be evaluated?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "侵害訴訟・ITC", "en": "District court or ITC"},
+          "value": {"ja": "連邦地裁とITCのどちらが適切か。venue、domestic industry、差止め・排除命令、損害賠償、期間、費用、並行PTAB手続をどう比較するか。", "en": "Is federal district court or the ITC preferable, considering venue, domestic industry, injunction or exclusion, damages, timing, cost, and parallel PTAB proceedings?"}
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "us_code",
+      "title": {"ja": "合衆国法典第35編（特許）", "en": "Title 35, United States Code — Patents"},
+      "publisher": {"ja": "米国下院法律改訂顧問室", "en": "U.S. House Office of the Law Revision Counsel"},
+      "url": "https://uscode.house.gov/view.xhtml?path=/prelim@title35&edition=prelim",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "ecfr",
+      "title": {"ja": "連邦規則集第37編・USPTO規則", "en": "37 CFR Chapter I — USPTO"},
+      "publisher": {"ja": "eCFR", "en": "Electronic Code of Federal Regulations"},
+      "url": "https://www.ecfr.gov/current/title-37/chapter-I",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_process",
+      "title": {"ja": "特許出願方法", "en": "How to apply for a patent"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/basics/patent-process-overview",
+      "language": "en",
+      "updatedAt": "2026-04-22",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_apply",
+      "title": {"ja": "米国特許出願案内", "en": "Applying for patents"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/basics/apply",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "mpep",
+      "title": {"ja": "特許審査便覧（MPEP）", "en": "Manual of Patent Examining Procedure (MPEP)"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/web/offices/pac/mpep/index.html",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "wipo_pct_guide",
+      "title": {"ja": "PCT出願人の手引―米国国内段階", "en": "PCT Applicant's Guide — United States national phase"},
+      "publisher": "WIPO",
+      "url": "https://pctlegal.wipo.int/eGuide/view-doc.xhtml?doc-code=US&doc-lang=en",
+      "language": "en",
+      "updatedAt": "2026-08-20",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "wipo_members",
+      "title": {"ja": "WIPO Lex―米国条約情報", "en": "WIPO Lex — United States treaty information"},
+      "publisher": "WIPO",
+      "url": "https://www.wipo.int/wipolex/en/members/profile/US",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "ptab_trials",
+      "title": {"ja": "PTAB AIAトライアル", "en": "PTAB trials"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/ptab/trials",
+      "language": "en",
+      "updatedAt": "2026-07-01",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "ptab_appeals",
+      "title": {"ja": "PTAB審判", "en": "PTAB appeals"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/ptab/appeals",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_trackone",
+      "title": {"ja": "Track One優先審査", "en": "Track One prioritized examination"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/initiatives/usptos-prioritized-patent-examination-program",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_pph",
+      "title": {"ja": "Patent Prosecution Highway", "en": "Patent Prosecution Highway"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/basics/international-protection/patent-prosecution-highway-pph-fast-track",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_pendency",
+      "title": {"ja": "Patent Pendency Data", "en": "Patent Pendency Data"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/dashboard/patents/pendency.html",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_fees",
+      "title": {"ja": "USPTO料金表", "en": "USPTO fee schedule"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_maintenance",
+      "title": {"ja": "特許維持料金", "en": "Maintenance fees"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/maintain/maintenance-fees",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_pta",
+      "title": {"ja": "Patent Term Adjustment", "en": "Patent Term Adjustment"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/laws/patent-term-adjustment",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_pte",
+      "title": {"ja": "Patent Term Extension", "en": "Patent Term Extension"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/laws/patent-term-extension",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_ai",
+      "title": {"ja": "人工知能に関するUSPTO情報", "en": "USPTO artificial intelligence resources"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/initiatives/artificial-intelligence",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_st26",
+      "title": {"ja": "ST.26配列表", "en": "Sequence listings under WIPO ST.26"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/docx/sequence-listings",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "uspto_das",
+      "title": {"ja": "USPTOとWIPO DAS", "en": "USPTO and WIPO DAS"},
+      "publisher": "USPTO",
+      "url": "https://www.uspto.gov/patents/basics/international-protection/electronic-priority-document-exchange-pdx",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "wipo_das",
+      "title": {"ja": "WIPOデジタルアクセスサービス", "en": "WIPO Digital Access Service"},
+      "publisher": "WIPO",
+      "url": "https://www.wipo.int/web/das",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "wipo_judicial",
+      "title": {"ja": "WIPO特許司法ガイド―米国", "en": "WIPO Patent Judicial Guide — United States"},
+      "publisher": "WIPO",
+      "url": "https://www.wipo.int/patent-judicial-guide/en/full-guide/united-states",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "federal_rules",
+      "title": {"ja": "連邦民事訴訟規則", "en": "Federal Rules of Civil Procedure"},
+      "publisher": {"ja": "米国裁判所", "en": "United States Courts"},
+      "url": "https://www.uscourts.gov/forms-rules/current-rules-practice-procedure/federal-rules-civil-procedure",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "usitc_337",
+      "title": {"ja": "Section 337調査", "en": "Section 337 investigations"},
+      "publisher": "U.S. International Trade Commission",
+      "url": "https://www.usitc.gov/intellectual_property/section_337_investigations.htm",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    }
+  ]
+}
