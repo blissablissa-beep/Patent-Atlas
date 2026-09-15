@@ -1,0 +1,583 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./schema.json",
+  "title": "Patent Atlas jurisdiction record",
+  "description": "Schema for a national or regional patent-system record used by Patent Atlas.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "flag",
+    "region",
+    "names",
+    "office",
+    "availableLanguages",
+    "createdAt",
+    "updatedAt",
+    "status",
+    "quickView",
+    "sections",
+    "sources"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_-]{1,15}$",
+      "description": "Stable jurisdiction identifier, such as JP, US, EPO or ARIPO."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "country",
+        "regional"
+      ]
+    },
+    "flag": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 12,
+      "description": "Flag emoji or a short symbol for a regional system."
+    },
+    "region": {
+      "type": "string",
+      "enum": [
+        "regional",
+        "asia",
+        "europe",
+        "north-america",
+        "latin-america",
+        "middle-east",
+        "africa",
+        "oceania"
+      ]
+    },
+    "names": {
+      "$ref": "#/$defs/localizedText"
+    },
+    "office": {
+      "$ref": "#/$defs/localizedText"
+    },
+    "aliases": {
+      "$ref": "#/$defs/localizedStringArray"
+    },
+    "availableLanguages": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/languageCode"
+      },
+      "allOf": [
+        {
+          "contains": {
+            "const": "ja"
+          }
+        },
+        {
+          "contains": {
+            "const": "en"
+          }
+        }
+      ],
+      "description": "Japanese and English are mandatory. Additional local languages may be added later."
+    },
+    "optionLanguage": {
+      "description": "Legacy-compatible optional local-language code. availableLanguages is authoritative.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/languageCode"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "lastVerifiedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "reviewed"
+      ]
+    },
+    "summary": {
+      "$ref": "#/$defs/localizedContent"
+    },
+    "searchTerms": {
+      "$ref": "#/$defs/localizedStringArray"
+    },
+    "quickView": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "items": {
+        "$ref": "#/$defs/fact"
+      }
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/section"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    }
+  },
+  "$defs": {
+    "languageCode": {
+      "type": "string",
+      "pattern": "^[a-z]{2}(?:-[A-Z]{2})?$",
+      "examples": [
+        "ja",
+        "en",
+        "de",
+        "zh-CN"
+      ]
+    },
+    "localizedText": {
+      "type": "object",
+      "required": [
+        "ja",
+        "en"
+      ],
+      "properties": {
+        "ja": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "patternProperties": {
+        "^[a-z]{2}(?:-[A-Z]{2})?$": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "localizedStringArray": {
+      "type": "object",
+      "required": [
+        "ja",
+        "en"
+      ],
+      "properties": {
+        "ja": {
+          "$ref": "#/$defs/nonEmptyStringArray"
+        },
+        "en": {
+          "$ref": "#/$defs/nonEmptyStringArray"
+        }
+      },
+      "patternProperties": {
+        "^[a-z]{2}(?:-[A-Z]{2})?$": {
+          "$ref": "#/$defs/nonEmptyStringArray"
+        }
+      },
+      "additionalProperties": false
+    },
+    "nonEmptyStringArray": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "contentBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "paragraphs": {
+          "$ref": "#/$defs/nonEmptyStringArray"
+        },
+        "bullets": {
+          "$ref": "#/$defs/nonEmptyStringArray"
+        },
+        "numbered": {
+          "$ref": "#/$defs/nonEmptyStringArray"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "caution": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "contentValue": {
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "$ref": "#/$defs/nonEmptyStringArray"
+        },
+        {
+          "$ref": "#/$defs/contentBlock"
+        }
+      ]
+    },
+    "localizedContent": {
+      "type": "object",
+      "required": [
+        "ja",
+        "en"
+      ],
+      "properties": {
+        "ja": {
+          "$ref": "#/$defs/contentValue"
+        },
+        "en": {
+          "$ref": "#/$defs/contentValue"
+        }
+      },
+      "patternProperties": {
+        "^[a-z]{2}(?:-[A-Z]{2})?$": {
+          "$ref": "#/$defs/contentValue"
+        }
+      },
+      "additionalProperties": false
+    },
+    "factKey": {
+      "description": "Use a standard key whenever possible. New nonstandard keys must start with custom_.",
+      "anyOf": [
+        {
+          "enum": [
+            "authority",
+            "governing_law",
+            "protected_rights",
+            "utility_model",
+            "paris_convention",
+            "pct_membership",
+            "regional_systems",
+            "filing_language",
+            "local_agent",
+            "patent_term",
+            "publication_timing",
+            "average_grant_time",
+            "first_to_file",
+            "inventor_applicant_eligibility",
+            "employee_inventions",
+            "assignment",
+            "foreign_filing_license",
+            "security_review",
+            "grace_period",
+            "grace_eligible_disclosure",
+            "grace_formalities",
+            "invention_definition",
+            "patent_eligible_subject_matter",
+            "excluded_subject_matter",
+            "software_ai",
+            "medical_methods",
+            "biotechnology",
+            "novelty",
+            "prior_filed_applications",
+            "inventive_step",
+            "industrial_applicability",
+            "enablement",
+            "support_requirement",
+            "clarity",
+            "best_mode",
+            "unity",
+            "direct_filing",
+            "paris_filing",
+            "pct_national_phase",
+            "national_phase_deadline",
+            "late_national_phase",
+            "regional_filing",
+            "translation_deadline",
+            "priority_documents",
+            "das",
+            "application_form",
+            "description",
+            "claims",
+            "abstract",
+            "drawings",
+            "inventor_declaration",
+            "assignment_document",
+            "power_of_attorney",
+            "priority_translation",
+            "notarization_legalization",
+            "sequence_listing",
+            "microorganism_deposit",
+            "prior_art_disclosure",
+            "applicant_inventor_address",
+            "multiple_claims",
+            "multiple_dependent_claims",
+            "omnibus_claims",
+            "excess_claim_fees",
+            "use_claims",
+            "medical_use_claims",
+            "product_by_process",
+            "means_plus_function",
+            "special_claim_format",
+            "reference_signs",
+            "two_part_form",
+            "amendment_standard",
+            "added_matter",
+            "substantive_examination",
+            "examination_request",
+            "examination_request_deadline",
+            "search_report",
+            "first_office_action",
+            "accelerated_examination",
+            "pph",
+            "third_party_observations",
+            "examiner_interview",
+            "response_deadline",
+            "extensions",
+            "response_methods",
+            "final_non_final",
+            "continued_examination",
+            "divisional_applications",
+            "divisional_deadline",
+            "voluntary_mandatory_division",
+            "continuation",
+            "continuation_in_part",
+            "domestic_priority",
+            "provisional_application",
+            "conversion",
+            "double_patenting",
+            "terminal_disclaimer",
+            "reconsideration",
+            "appeal",
+            "appeal_deadline",
+            "appeal_duration",
+            "amendment_on_appeal",
+            "judicial_review",
+            "allowance_formalities",
+            "grant_fee_deadline",
+            "grant_fee_extension",
+            "restoration",
+            "restoration_standard",
+            "term_calculation",
+            "annuities",
+            "annuity_schedule",
+            "fee_grace_period",
+            "term_adjustment",
+            "term_extension",
+            "spc",
+            "correction",
+            "reissue_reexamination",
+            "ownership_changes",
+            "license_recordal",
+            "working_requirement",
+            "compulsory_license",
+            "patent_marking",
+            "pre_grant_opposition",
+            "post_grant_opposition",
+            "opposition_deadline",
+            "invalidation",
+            "invalidity_action",
+            "cancellation",
+            "reexamination_review",
+            "standing",
+            "invalidity_grounds",
+            "evidence_discovery",
+            "average_duration",
+            "cost_level",
+            "courts",
+            "specialist_court",
+            "claim_construction",
+            "doctrine_of_equivalents",
+            "prosecution_history_estoppel",
+            "indirect_infringement",
+            "joint_infringement",
+            "cross_border_infringement",
+            "evidence_collection",
+            "discovery",
+            "inspection_preservation",
+            "preliminary_injunction",
+            "permanent_injunction",
+            "damages",
+            "enhanced_damages",
+            "willful_infringement",
+            "attorney_fees",
+            "limitation_period",
+            "customs",
+            "warning_letters",
+            "declaratory_judgment",
+            "practical_highlights",
+            "recent_developments",
+            "local_practice",
+            "local_counsel_question"
+          ]
+        },
+        {
+          "type": "string",
+          "pattern": "^custom_[a-z0-9_]+$"
+        }
+      ]
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "label",
+        "value"
+      ],
+      "properties": {
+        "key": {
+          "$ref": "#/$defs/factKey"
+        },
+        "label": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "value": {
+          "$ref": "#/$defs/localizedContent"
+        },
+        "note": {
+          "$ref": "#/$defs/localizedContent"
+        },
+        "practicalNote": {
+          "$ref": "#/$defs/localizedContent"
+        },
+        "caution": {
+          "$ref": "#/$defs/localizedContent"
+        },
+        "tags": {
+          "$ref": "#/$defs/localizedStringArray"
+        },
+        "sourceRefs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]*$"
+          }
+        }
+      }
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "facts"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "enum": [
+            "system_overview",
+            "pre_filing",
+            "patentability",
+            "filing_routes",
+            "filing_requirements",
+            "claims_format",
+            "examination",
+            "division_continuation",
+            "refusal_appeal",
+            "post_grant",
+            "opposition_invalidity",
+            "enforcement",
+            "practical_notes",
+            "local_counsel_faq"
+          ]
+        },
+        "title": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "facts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/fact"
+          }
+        }
+      }
+    },
+    "textOrLocalizedText": {
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "$ref": "#/$defs/localizedText"
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "url",
+        "language",
+        "accessedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]*$"
+        },
+        "title": {
+          "$ref": "#/$defs/textOrLocalizedText"
+        },
+        "publisher": {
+          "$ref": "#/$defs/textOrLocalizedText"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "language": {
+          "$ref": "#/$defs/languageCode"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "accessedAt": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  }
+}
