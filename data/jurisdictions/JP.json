@@ -1,0 +1,829 @@
+{
+  "$schema": "../schema.json",
+  "id": "JP",
+  "type": "country",
+  "flag": "🇯🇵",
+  "region": "asia",
+  "names": {
+    "ja": "日本",
+    "en": "Japan"
+  },
+  "office": {
+    "ja": "特許庁（JPO）",
+    "en": "Japan Patent Office (JPO)"
+  },
+  "aliases": {
+    "ja": ["日本国", "JPO"],
+    "en": ["Japan", "JPO"]
+  },
+  "availableLanguages": ["ja", "en"],
+  "optionLanguage": null,
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15",
+  "lastVerifiedAt": "2026-09-15",
+  "status": "review",
+  "summary": {
+    "ja": "日本では、特許庁への出願後、出願日から3年以内に審査請求を行うことで実体審査が開始される。PCT国内移行期限は原則として優先日から30か月であり、特許権の存続期間は原則として出願日から20年である。",
+    "en": "In Japan, substantive examination begins after a request for examination is filed within three years from the filing date. The PCT national-phase deadline is generally 30 months from the priority date, and the ordinary patent term is 20 years from the filing date."
+  },
+  "searchTerms": {
+    "ja": ["審査請求", "PCT国内移行", "分割出願", "新規性喪失の例外", "特許異議申立て", "無効審判", "非公開制度"],
+    "en": ["request for examination", "PCT national phase", "divisional application", "grace period", "patent opposition", "invalidation trial", "non-disclosure system"]
+  },
+  "quickView": [
+    {
+      "key": "national_phase_deadline",
+      "label": {"ja": "PCT国内移行", "en": "PCT national phase"},
+      "value": {"ja": "優先日から原則30か月", "en": "Generally 30 months from the priority date"},
+      "sourceRefs": ["jpo_pct", "wipo_pct_guide"]
+    },
+    {
+      "key": "examination_request_deadline",
+      "label": {"ja": "審査請求期限", "en": "Examination request"},
+      "value": {"ja": "出願日から3年以内", "en": "Within three years from the filing date"},
+      "sourceRefs": ["jpo_process", "patent_act"]
+    },
+    {
+      "key": "grace_period",
+      "label": {"ja": "新規性喪失の例外", "en": "Novelty grace period"},
+      "value": {"ja": "原則1年・所定の申出と証明が必要", "en": "Generally one year; prescribed statements and evidence are required"},
+      "sourceRefs": ["jpo_grace", "patent_act"]
+    },
+    {
+      "key": "filing_language",
+      "label": {"ja": "出願言語", "en": "Filing language"},
+      "value": {"ja": "日本語。外国語書面出願も可能だが期限内の日本語翻訳が必要", "en": "Japanese; foreign-language filing is available subject to timely Japanese translation"},
+      "sourceRefs": ["patent_act", "jpo_pct"]
+    },
+    {
+      "key": "foreign_filing_license",
+      "label": {"ja": "外国出願制限", "en": "Foreign-filing restriction"},
+      "value": {"ja": "一般的な許可制ではないが、日本国内でなされた一定の機微技術の発明には第一国出願義務等が生じ得る", "en": "No general licensing system, but inventions made in Japan in designated sensitive fields may be subject to a domestic first-filing obligation"},
+      "sourceRefs": ["jpo_nondisclosure"]
+    },
+    {
+      "key": "divisional_deadline",
+      "label": {"ja": "分割出願", "en": "Divisional filing"},
+      "value": {"ja": "係属中の所定期間および特許査定・拒絶査定後の法定期間に可能", "en": "Available during prescribed periods while pending and during statutory periods following allowance or refusal"},
+      "sourceRefs": ["patent_act", "jpo_guidelines"]
+    },
+    {
+      "key": "patent_term",
+      "label": {"ja": "存続期間", "en": "Patent term"},
+      "value": {"ja": "原則として出願日から20年", "en": "Generally 20 years from the filing date"},
+      "sourceRefs": ["patent_act"]
+    },
+    {
+      "key": "opposition_deadline",
+      "label": {"ja": "特許異議申立て", "en": "Post-grant opposition"},
+      "value": {"ja": "特許掲載公報発行日から6か月以内", "en": "Within six months from publication of the patent gazette"},
+      "sourceRefs": ["patent_act", "jpo_trials"]
+    }
+  ],
+  "sections": [
+    {
+      "id": "system_overview",
+      "title": {"ja": "制度の基本情報", "en": "System overview"},
+      "facts": [
+        {
+          "key": "authority",
+          "label": {"ja": "所管官庁", "en": "Authority"},
+          "value": {"ja": "経済産業省の外局である特許庁（JPO）。", "en": "The Japan Patent Office (JPO), an agency of the Ministry of Economy, Trade and Industry."},
+          "sourceRefs": ["jpo_process"]
+        },
+        {
+          "key": "governing_law",
+          "label": {"ja": "主な根拠法", "en": "Principal legislation"},
+          "value": {"ja": ["特許法（昭和34年法律第121号）", "実用新案法（実用新案について）"], "en": ["Patent Act (Act No. 121 of 1959)", "Utility Model Act (for utility models)"]},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "protected_rights",
+          "label": {"ja": "保護される権利", "en": "Rights available"},
+          "value": {"ja": "発明は特許、物品の形状・構造・組合せに係る考案は実用新案として保護され得る。", "en": "Inventions may be protected by patents, while devices relating to the shape, structure or combination of articles may qualify for utility-model protection."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "utility_model",
+          "label": {"ja": "実用新案", "en": "Utility models"},
+          "value": {"ja": "無審査登録制で、存続期間は出願日から10年。権利行使前には原則として実用新案技術評価書を提示して警告する必要がある。", "en": "Utility models are registered without substantive examination and last 10 years from filing. As a rule, enforcement requires a warning accompanied by a utility-model technical opinion report."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "paris_convention",
+          "label": {"ja": "パリ条約", "en": "Paris Convention"},
+          "value": {"ja": "加盟。通常の特許優先期間は12か月。", "en": "Contracting party. The ordinary patent priority period is 12 months."},
+          "sourceRefs": ["wipo_lex"]
+        },
+        {
+          "key": "pct_membership",
+          "label": {"ja": "PCT", "en": "PCT"},
+          "value": {"ja": "加盟。JPOは受理官庁、指定官庁・選択官庁等として機能する。", "en": "Contracting state. The JPO acts in relevant PCT capacities, including as a receiving and designated/elected Office."},
+          "sourceRefs": ["wipo_pct_guide"]
+        },
+        {
+          "key": "local_agent",
+          "label": {"ja": "現地代理人", "en": "Local representation"},
+          "value": {"ja": "日本国内に住所・居所を有しない者は、原則として日本国内の特許管理人を通じて手続を行う。", "en": "A person without an address or residence in Japan generally acts before the JPO through a patent administrator domiciled or resident in Japan."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "publication_timing",
+          "label": {"ja": "出願公開", "en": "Publication"},
+          "value": {"ja": "原則として出願日（優先権主張時は基準日）から1年6か月後に公開される。早期公開の請求も可能。", "en": "Applications are generally published 18 months after the relevant filing/priority date. Early publication may be requested."},
+          "sourceRefs": ["patent_act", "jpo_process"]
+        }
+      ]
+    },
+    {
+      "id": "pre_filing",
+      "title": {"ja": "出願前の重要事項", "en": "Pre-filing considerations"},
+      "facts": [
+        {
+          "key": "first_to_file",
+          "label": {"ja": "先願主義", "en": "First-to-file principle"},
+          "value": {"ja": "同一発明について複数の出願がある場合、原則として最先の出願人のみが特許を受け得る。", "en": "Where multiple applications claim the same invention, only the earliest applicant may generally obtain a patent."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "inventor_applicant_eligibility",
+          "label": {"ja": "発明者・出願人", "en": "Inventor and applicant"},
+          "value": {"ja": "発明者は自然人であり、発明者または特許を受ける権利の承継人が出願人となる。冒認出願は拒絶・無効理由となり得る。", "en": "The inventor is a natural person. The inventor or a successor to the right to obtain a patent may apply; misappropriated applications may be refused or invalidated."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "employee_inventions",
+          "label": {"ja": "職務発明", "en": "Employee inventions"},
+          "value": {"ja": "契約・勤務規則等により、職務発明について特許を受ける権利を使用者に原始帰属させることができる。従業者には相当の金銭その他の経済上の利益を受ける権利が認められる。", "en": "An employer may obtain the right to an employee invention ab initio under an agreement or employment rules. The employee is entitled to reasonable monetary or other economic benefits."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "foreign_filing_license",
+          "label": {"ja": "第一国出願義務・外国出願", "en": "Domestic first filing and foreign filing"},
+          "value": {"ja": "一般的な外国出願許可制度はない。ただし、日本国内でなされた発明が経済安全保障推進法上の特定技術分野に属する場合、まず日本へ出願し、所定期間は外国出願を控える義務が生じ得る。", "en": "Japan has no general foreign-filing licence. However, an invention made in Japan that falls within designated sensitive technology fields may have to be filed first in Japan, with foreign filing restricted for a prescribed period."},
+          "caution": {"ja": "該当技術、発明地、共同研究者・外国出願予定を早期に確認する。制度は2024年5月1日施行。", "en": "Check the technology, place of invention, collaborators and planned foreign filings early. The system took effect on 1 May 2024."},
+          "sourceRefs": ["jpo_nondisclosure"]
+        },
+        {
+          "key": "grace_period",
+          "label": {"ja": "新規性喪失の例外", "en": "Exception to lack of novelty"},
+          "value": {"ja": "権利者の行為に起因する公表等から1年以内の出願について、所定要件を満たせば当該公表を新規性・進歩性判断の先行技術から除外できる。意思に反する公表にも別の規定がある。", "en": "For an application filed within one year after qualifying disclosure resulting from the right holder's act, the disclosure may be disregarded for novelty and inventive-step purposes if statutory requirements are met. Separate treatment applies to disclosure against the right holder's will."},
+          "caution": {"ja": "優先権の代替ではなく、第三者の独立した出願・公表を排除する制度でもない。", "en": "This is not a substitute for priority and does not neutralize independent third-party filings or disclosures."},
+          "sourceRefs": ["jpo_grace", "patent_act"]
+        },
+        {
+          "key": "grace_formalities",
+          "label": {"ja": "例外適用の手続", "en": "Grace-period formalities"},
+          "value": {"ja": "原則として出願時に例外適用を受ける旨を申し出て、出願日から30日以内に公表事実を証明する書面を提出する。PCT国内移行には特則がある。", "en": "As a rule, the applicant states the intention to rely on the exception at filing and submits evidence of the disclosure within 30 days from filing. Special rules apply to PCT national-phase cases."},
+          "sourceRefs": ["jpo_grace", "patent_act"]
+        }
+      ]
+    },
+    {
+      "id": "patentability",
+      "title": {"ja": "特許対象・特許要件", "en": "Patentability"},
+      "facts": [
+        {
+          "key": "invention_definition",
+          "label": {"ja": "発明の定義", "en": "Definition of invention"},
+          "value": {"ja": "自然法則を利用した技術的思想の創作のうち高度のもの。", "en": "A highly advanced creation of technical ideas utilizing the laws of nature."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "novelty",
+          "label": {"ja": "新規性", "en": "Novelty"},
+          "value": {"ja": "出願前に日本国内または外国で公然知られ、実施され、または刊行物・電気通信回線を通じて公衆利用可能となった発明は原則として特許を受けられない。", "en": "An invention generally lacks novelty if, before filing, it was publicly known or worked in Japan or abroad, or made publicly available through a publication or telecommunications network."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "inventive_step",
+          "label": {"ja": "進歩性", "en": "Inventive step"},
+          "value": {"ja": "出願前の技術に基づいて当業者が容易に発明できたものは特許を受けられない。", "en": "A patent is unavailable where a person skilled in the art could easily have made the invention based on pre-filing prior art."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "industrial_applicability",
+          "label": {"ja": "産業上の利用可能性", "en": "Industrial applicability"},
+          "value": {"ja": "産業上利用できる発明であることが必要。人間を手術・治療・診断する方法は、原則としてこの要件を満たさないものとして扱われる。", "en": "The invention must be industrially applicable. Methods of surgery, therapy or diagnosis practised on humans are generally treated as lacking industrial applicability."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "software_ai",
+          "label": {"ja": "ソフトウェア・AI", "en": "Software and AI"},
+          "value": {"ja": "情報処理がハードウェア資源を用いて具体的に実現され、自然法則を利用した技術的思想として評価できる場合には特許対象となり得る。AIの利用だけで特許性が認められるわけではない。", "en": "Software- and AI-related inventions may be patentable where information processing is concretely realised using hardware resources and constitutes a technical idea utilizing natural laws. Merely using AI does not establish patentability."},
+          "sourceRefs": ["jpo_guidelines"]
+        },
+        {
+          "key": "excluded_subject_matter",
+          "label": {"ja": "主な除外・制限", "en": "Principal exclusions and limitations"},
+          "value": {"ja": ["自然法則そのもの、単なる発見、純粋な人為的取決め等は発明に該当しない", "人間を手術・治療・診断する方法は原則として産業上利用できない", "公の秩序、善良の風俗または公衆衛生を害するおそれのある発明は特許されない"], "en": ["Natural laws as such, mere discoveries and purely artificial arrangements are not inventions", "Methods of surgery, therapy and diagnosis on humans are generally not industrially applicable", "Inventions liable to contravene public order, morality or public health are not patentable"]},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "enablement",
+          "label": {"ja": "実施可能要件", "en": "Enablement"},
+          "value": {"ja": "発明の詳細な説明は、当業者が実施できる程度に明確かつ十分に記載する必要がある。", "en": "The detailed description must disclose the invention clearly and sufficiently for a person skilled in the art to carry it out."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "support_requirement",
+          "label": {"ja": "サポート・明確性", "en": "Support and clarity"},
+          "value": {"ja": "請求項は詳細な説明に記載した発明であり、明確かつ簡潔で、発明を特定するために必要な事項を記載しなければならない。", "en": "Claims must be supported by the detailed description, clear and concise, and recite the matters necessary to specify the invention."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "unity",
+          "label": {"ja": "発明の単一性", "en": "Unity of invention"},
+          "value": {"ja": "一出願に含められる発明は、技術的関係について所定の単一性要件を満たす必要がある。単一性違反は通常、補正または分割で対応する。", "en": "Inventions in one application must satisfy the prescribed technical relationship for unity. Lack of unity is ordinarily addressed by amendment or division."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        }
+      ]
+    },
+    {
+      "id": "filing_routes",
+      "title": {"ja": "出願ルート", "en": "Filing routes"},
+      "facts": [
+        {
+          "key": "direct_filing",
+          "label": {"ja": "国内直接出願", "en": "Direct national filing"},
+          "value": {"ja": "JPOへ直接出願できる。パリ条約優先権を主張する場合、通常は最先の基礎出願から12か月以内に出願する。", "en": "An application may be filed directly with the JPO. A Paris Convention priority application is ordinarily filed within 12 months from the earliest basic application."},
+          "sourceRefs": ["patent_act", "wipo_lex"]
+        },
+        {
+          "key": "pct_national_phase",
+          "label": {"ja": "PCT国内移行", "en": "PCT national phase"},
+          "value": {"ja": "国際出願から日本国内段階へ移行できる。国内書面の提出、国内手数料の納付および必要な日本語翻訳の提出が中心となる。", "en": "A PCT application may enter the Japanese national phase. Principal requirements include national documents, the national fee and, where required, a Japanese translation."},
+          "sourceRefs": ["jpo_pct", "wipo_pct_guide"]
+        },
+        {
+          "key": "national_phase_deadline",
+          "label": {"ja": "国内移行期限", "en": "National-phase deadline"},
+          "value": {"ja": "原則として優先日から30か月。外国語PCT出願の翻訳期限には、国内書面を30か月期限前2か月以内に提出した場合の特則がある。", "en": "Generally 30 months from the priority date. A special translation period may apply where national documents for a foreign-language PCT application are submitted within the final two months of that period."},
+          "sourceRefs": ["jpo_pct", "wipo_pct_guide"]
+        },
+        {
+          "key": "late_national_phase",
+          "label": {"ja": "期限徒過の救済", "en": "Late-entry relief"},
+          "value": {"ja": "国内移行・翻訳等の一部期限には、故意でない遅延等を要件とする回復制度があり得る。対象手続、申立期間、追加手数料を個別に確認する。", "en": "Restoration may be available for certain missed national-phase or translation periods, including where delay was unintentional. Confirm the eligible procedure, remedial period and surcharge in each case."},
+          "caution": {"ja": "救済を前提にせず30か月期限を管理する。", "en": "Do not rely on restoration; docket the 30-month deadline."},
+          "sourceRefs": ["patent_act", "wipo_pct_guide"]
+        },
+        {
+          "key": "das",
+          "label": {"ja": "優先権書類・DAS", "en": "Priority documents and DAS"},
+          "value": {"ja": "JPOはWIPO Digital Access Service（DAS）を利用した優先権書類の交換に対応する。適用庁・アクセスコード・期限を確認する。", "en": "The JPO participates in WIPO's Digital Access Service (DAS) for priority documents. Confirm participating Offices, access codes and applicable deadlines."},
+          "sourceRefs": ["jpo_priority"]
+        }
+      ]
+    },
+    {
+      "id": "filing_requirements",
+      "title": {"ja": "出願時の必要事項", "en": "Filing requirements"},
+      "facts": [
+        {
+          "key": "application_form",
+          "label": {"ja": "基本書類", "en": "Core documents"},
+          "value": {"ja": ["願書", "明細書", "特許請求の範囲", "必要な図面", "要約書"], "en": ["Request/application form", "Description", "Claims", "Drawings where necessary", "Abstract"]},
+          "sourceRefs": ["patent_act", "jpo_process"]
+        },
+        {
+          "key": "filing_language",
+          "label": {"ja": "言語・翻訳", "en": "Language and translation"},
+          "value": {"ja": "通常出願は日本語。外国語書面出願制度を利用する場合は、原則として優先日等から1年4か月以内に日本語翻訳文を提出する。PCT国内移行には別期限が適用される。", "en": "Ordinary applications are filed in Japanese. Under the foreign-language filing system, a Japanese translation is generally due within 16 months from the relevant filing/priority date. Separate deadlines apply to PCT national-phase entry."},
+          "sourceRefs": ["patent_act", "jpo_pct"]
+        },
+        {
+          "key": "power_of_attorney",
+          "label": {"ja": "委任状", "en": "Power of attorney"},
+          "value": {"ja": "通常の出願手続では包括的に提出を求められないことが多いが、出願放棄、取下げ、審判請求等の特別授権事項では必要となる。", "en": "A power of attorney is often not required for ordinary filing acts, but special authorisation is required for specified acts such as abandonment, withdrawal or certain appeal proceedings."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "notarization_legalization",
+          "label": {"ja": "公証・認証", "en": "Notarisation and legalisation"},
+          "value": {"ja": "通常の特許出願書類について公証・領事認証は原則不要。権利移転や証拠関係では個別確認する。", "en": "Notarisation or consular legalisation is generally unnecessary for ordinary patent-filing documents. Confirm separately for title transfers and evidentiary documents."},
+          "sourceRefs": ["jpo_process"]
+        },
+        {
+          "key": "sequence_listing",
+          "label": {"ja": "配列表", "en": "Sequence listings"},
+          "value": {"ja": "ヌクレオチド・アミノ酸配列を含む出願では、適用されるWIPO ST.26形式等に従う。", "en": "Applications containing nucleotide or amino-acid sequences must comply with the applicable format, including WIPO Standard ST.26."},
+          "sourceRefs": ["jpo_guidelines"]
+        },
+        {
+          "key": "prior_art_disclosure",
+          "label": {"ja": "先行技術情報", "en": "Prior-art disclosure"},
+          "value": {"ja": "米国IDSに相当する継続的・包括的な開示義務はないが、出願時に発明者が知る先行技術文献情報を明細書に記載する制度がある。", "en": "Japan has no continuing, comprehensive IDS duty equivalent to that of the United States, but the description must disclose information on prior-art documents known to the inventor at filing."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        }
+      ]
+    },
+    {
+      "id": "claims_format",
+      "title": {"ja": "クレーム・補正実務", "en": "Claims and amendments"},
+      "facts": [
+        {
+          "key": "multiple_dependent_claims",
+          "label": {"ja": "多項従属クレーム", "en": "Multiple dependent claims"},
+          "value": {"ja": "多項従属クレームは認められるが、複数のクレームを択一的に引用する多項従属クレームをさらに引用する、いわゆるマルチマルチクレームは禁止される。", "en": "Multiple dependent claims are permitted, but a multiple dependent claim may not depend on another multiple dependent claim (a multiple-multiple dependent claim)."},
+          "sourceRefs": ["jpo_guidelines"]
+        },
+        {
+          "key": "medical_use_claims",
+          "label": {"ja": "医薬用途発明", "en": "Medical-use inventions"},
+          "value": {"ja": "医薬組成物、用途限定された物の発明等として保護され得る。人間を治療する方法そのもののクレームは原則として認められない。", "en": "Protection may be available through pharmaceutical-composition or purpose-limited product claims. Claims directed to methods of treating humans as such are generally unavailable."},
+          "sourceRefs": ["jpo_guidelines"]
+        },
+        {
+          "key": "reference_signs",
+          "label": {"ja": "参照符号・二部形式", "en": "Reference signs and two-part form"},
+          "value": {"ja": "図面の参照符号を請求項に付すことは可能だが、欧州型の二部形式は一般的な必須要件ではない。", "en": "Drawing reference signs may be used in claims, but a European-style two-part claim format is not generally mandatory."},
+          "sourceRefs": ["jpo_guidelines"]
+        },
+        {
+          "key": "added_matter",
+          "label": {"ja": "新規事項", "en": "Added matter"},
+          "value": {"ja": "補正は当初明細書、特許請求の範囲または図面に記載した事項の範囲内でなければならない。", "en": "An amendment must remain within the matters disclosed in the description, claims or drawings as originally filed."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "amendment_standard",
+          "label": {"ja": "拒絶理由通知後の補正", "en": "Amendment after an office action"},
+          "value": {"ja": "最初の拒絶理由通知後も補正可能だが、最後の拒絶理由通知後や拒絶査定不服審判請求時の補正には、限定的減縮、誤記訂正、明瞭でない記載の釈明等の目的制限が加わる。", "en": "Amendment remains possible after an initial office action, but amendments after a final notice or with an appeal against refusal are restricted to purposes such as limited narrowing, correction of errors or clarification."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "excess_claim_fees",
+          "label": {"ja": "請求項数と手数料", "en": "Claim-dependent fees"},
+          "value": {"ja": "審査請求料、特許料、審判関係手数料等には請求項数に応じた加算がある。", "en": "The examination-request fee, patent annuities and certain appeal/trial fees include claim-dependent components."},
+          "sourceRefs": ["jpo_fees"]
+        }
+      ]
+    },
+    {
+      "id": "examination",
+      "title": {"ja": "審査制度", "en": "Examination"},
+      "facts": [
+        {
+          "key": "substantive_examination",
+          "label": {"ja": "実体審査", "en": "Substantive examination"},
+          "value": {"ja": "方式審査とは別に、新規性、進歩性、記載要件等の実体審査が行われる。", "en": "In addition to formality review, the JPO examines novelty, inventive step, disclosure requirements and other substantive matters."},
+          "sourceRefs": ["jpo_process", "jpo_guidelines"]
+        },
+        {
+          "key": "examination_request",
+          "label": {"ja": "審査請求", "en": "Request for examination"},
+          "value": {"ja": "出願人に限らず何人も請求できる。期限内に請求がなければ出願は取り下げたものとみなされる。", "en": "Any person, not only the applicant, may request examination. If no timely request is filed, the application is deemed withdrawn."},
+          "sourceRefs": ["patent_act", "jpo_process"]
+        },
+        {
+          "key": "examination_request_deadline",
+          "label": {"ja": "審査請求期限", "en": "Examination-request deadline"},
+          "value": {"ja": "原則として出願日から3年以内。PCT国内移行案件では国際出願日を基準とする。", "en": "Generally within three years from the filing date. For a PCT national-phase case, the international filing date is the relevant filing date."},
+          "sourceRefs": ["patent_act", "jpo_process"]
+        },
+        {
+          "key": "accelerated_examination",
+          "label": {"ja": "早期・スーパー早期審査", "en": "Accelerated and super-accelerated examination"},
+          "value": {"ja": "外国関連出願、実施関連出願、中小企業・個人等の一定案件には早期審査が利用可能。より厳格な要件を満たす電子手続案件にはスーパー早期審査もある。", "en": "Accelerated examination is available for qualifying foreign-related, worked or SME/individual applications. Super-accelerated examination is available for electronically processed cases satisfying stricter criteria."},
+          "sourceRefs": ["jpo_accelerated"]
+        },
+        {
+          "key": "pph",
+          "label": {"ja": "PPH", "en": "Patent Prosecution Highway"},
+          "value": {"ja": "JPOと提携庁の審査結果等を利用する各種PPHが利用可能。請求項対応関係その他の要件を満たす必要がある。", "en": "Various PPH programmes permit reliance on work products from partner Offices, subject to claim-correspondence and other requirements."},
+          "sourceRefs": ["jpo_accelerated"]
+        },
+        {
+          "key": "third_party_observations",
+          "label": {"ja": "情報提供", "en": "Third-party observations"},
+          "value": {"ja": "第三者は、係属中の特許出願について刊行物等の情報をJPOへ提出できる。匿名提出も可能な運用がある。", "en": "A third party may submit publications and other relevant information concerning a pending patent application. Anonymous submission is available in practice."},
+          "sourceRefs": ["jpo_guidelines"]
+        },
+        {
+          "key": "examiner_interview",
+          "label": {"ja": "審査官面接", "en": "Examiner interviews"},
+          "value": {"ja": "面接・電話等による審査官との意思疎通が可能。争点や補正案の確認に利用されるが、正式な応答書類の代替ではない。", "en": "Interviews and other communications with the examiner are available to clarify issues and proposed amendments, but do not replace a formal written response."},
+          "sourceRefs": ["jpo_process"]
+        },
+        {
+          "key": "response_deadline",
+          "label": {"ja": "拒絶理由通知への応答", "en": "Office-action response"},
+          "value": {"ja": "通知に指定された期間内に意見書・補正書等を提出する。期間は居住地や手続段階により異なり、所定の延長制度があるため通知ごとに確認する。", "en": "Arguments and amendments must be filed within the period designated in the notice. The period varies by residence and procedural stage, and prescribed extensions may be available; check each notice."},
+          "sourceRefs": ["patent_act", "jpo_process"]
+        },
+        {
+          "key": "average_grant_time",
+          "label": {"ja": "平均審査期間", "en": "Average pendency"},
+          "value": {"ja": "JPOが年度ごとにFA期間および権利化までの期間を公表している。案件分野・早期審査の有無で大きく変わるため、最新のJPO Status Reportを確認する。", "en": "The JPO publishes annual first-action and total pendency statistics. Timing varies materially by technology and expedited status, so consult the latest JPO Status Report."},
+          "sourceRefs": ["jpo_process"]
+        }
+      ]
+    },
+    {
+      "id": "division_continuation",
+      "title": {"ja": "分割・優先権・出願変更", "en": "Division, priority and conversion"},
+      "facts": [
+        {
+          "key": "divisional_applications",
+          "label": {"ja": "分割出願", "en": "Divisional applications"},
+          "value": {"ja": "二以上の発明を含む出願の一部を新たな出願とすることができ、適法な分割は原出願時にされたものとみなされる。", "en": "Part of an application containing two or more inventions may be filed as a new application; a valid divisional is deemed filed on the original filing date."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "divisional_deadline",
+          "label": {"ja": "分割可能時期", "en": "Timing for division"},
+          "value": {"ja": ["明細書等を補正できる期間", "特許査定謄本送達後の所定期間", "最初の拒絶査定謄本送達後の所定期間"], "en": ["A period in which the description or claims may be amended", "A prescribed period after service of a decision to grant", "A prescribed period after service of the first decision of refusal"]},
+          "caution": {"ja": "具体的な期限と例外は査定日、審判段階、原出願の経過により確認する。", "en": "Confirm the exact deadline and exceptions based on the decision date, appeal stage and prosecution history."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "continuation",
+          "label": {"ja": "継続出願・CIP", "en": "Continuation and CIP"},
+          "value": {"ja": "米国型の継続出願・一部継続出願制度はない。係属維持やクレーム変更には主として分割出願を用いるが、新規事項は追加できない。", "en": "Japan has no US-style continuation or continuation-in-part system. Division is principally used to maintain pendency or pursue different claims, but new matter may not be added."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        },
+        {
+          "key": "domestic_priority",
+          "label": {"ja": "国内優先権", "en": "Domestic priority"},
+          "value": {"ja": "先の日本出願から原則1年以内に、当該出願を基礎として国内優先権を主張する後願を提出できる。基礎出願は原則として所定時期にみなし取下げとなる。", "en": "A later Japanese application may generally claim domestic priority from an earlier Japanese application within one year. The basic application is ordinarily deemed withdrawn at the prescribed time."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "conversion",
+          "label": {"ja": "出願変更", "en": "Conversion"},
+          "value": {"ja": "所定の期間・要件の下で、特許出願と実用新案登録出願等の間の出願変更が可能。", "en": "Conversion between a patent application and a utility-model application or other eligible application is available within prescribed periods and conditions."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "double_patenting",
+          "label": {"ja": "同一発明・ダブルパテント", "en": "Same invention and double patenting"},
+          "value": {"ja": "同一発明については先願のみが特許を受け得る。同日出願では協議が成立しなければいずれも特許を受けられない。米国型Terminal Disclaimerはない。", "en": "Only the first application may be patented for the same invention. For same-day applications, neither is patentable if the applicants fail to agree. Japan has no US-style terminal disclaimer."},
+          "sourceRefs": ["patent_act", "jpo_guidelines"]
+        }
+      ]
+    },
+    {
+      "id": "refusal_appeal",
+      "title": {"ja": "拒絶後・査定後の手続", "en": "Refusal, appeal and allowance"},
+      "facts": [
+        {
+          "key": "appeal",
+          "label": {"ja": "拒絶査定不服審判", "en": "Appeal against refusal"},
+          "value": {"ja": "拒絶査定に不服がある出願人は、特許庁の審判部へ拒絶査定不服審判を請求できる。通常は3名または5名の審判官の合議体が審理する。", "en": "An applicant dissatisfied with a decision of refusal may appeal to the JPO Trial and Appeal Department. A panel of three or five administrative patent judges ordinarily hears the case."},
+          "sourceRefs": ["patent_act", "jpo_trials", "wipo_judicial"]
+        },
+        {
+          "key": "appeal_deadline",
+          "label": {"ja": "審判請求期限", "en": "Appeal deadline"},
+          "value": {"ja": "原則として拒絶査定謄本送達日から3か月以内。附加期間等の適用は当事者の所在地と通知内容を確認する。", "en": "Generally within three months from service of the decision of refusal. Check any additional period based on the party's location and the notice."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "reconsideration",
+          "label": {"ja": "前置審査", "en": "Pre-appeal re-examination"},
+          "value": {"ja": "拒絶査定不服審判の請求と同時に明細書等を補正した場合、原則として審査官による前置審査に付される。", "en": "Where the applicant amends the specification or claims when filing an appeal against refusal, the case is generally subjected to pre-appeal re-examination by an examiner."},
+          "sourceRefs": ["patent_act", "jpo_trials"]
+        },
+        {
+          "key": "judicial_review",
+          "label": {"ja": "審決取消訴訟", "en": "Judicial review"},
+          "value": {"ja": "審決等の取消しを求める訴えは、原則として知的財産高等裁判所の専属管轄となる。", "en": "An action seeking cancellation of a JPO trial or appeal decision generally falls within the exclusive jurisdiction of the Intellectual Property High Court."},
+          "sourceRefs": ["patent_act", "wipo_judicial"]
+        },
+        {
+          "key": "grant_fee_deadline",
+          "label": {"ja": "設定登録料", "en": "Grant and registration fee"},
+          "value": {"ja": "特許査定謄本送達日から30日以内に第1年から第3年までの特許料を一括納付する。納付後に設定登録され、特許権が発生する。", "en": "The patent fees for years 1 to 3 must be paid together within 30 days from service of the decision to grant. Registration following payment creates the patent right."},
+          "sourceRefs": ["patent_act", "jpo_fees"]
+        },
+        {
+          "key": "restoration",
+          "label": {"ja": "権利回復", "en": "Restoration of rights"},
+          "value": {"ja": "審査請求、優先権、翻訳文、年金等の一部期限には回復制度があるが、対象手続ごとに要件・回復期間・追加手数料が異なる。", "en": "Restoration is available for certain missed periods involving examination requests, priority, translations or annuities, but eligibility, remedial periods and surcharges differ by procedure."},
+          "sourceRefs": ["patent_act", "jpo_fees"]
+        }
+      ]
+    },
+    {
+      "id": "post_grant",
+      "title": {"ja": "登録後の維持", "en": "Post-grant maintenance"},
+      "facts": [
+        {
+          "key": "term_calculation",
+          "label": {"ja": "存続期間の起算", "en": "Term calculation"},
+          "value": {"ja": "原則として出願日から20年。PCT国内移行では国際出願日を基準とする。", "en": "Generally 20 years from the filing date. For a PCT national-phase patent, the international filing date is used."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "annuities",
+          "label": {"ja": "特許料・年金", "en": "Annuities"},
+          "value": {"ja": "第1年から第3年分は設定登録時に一括納付し、第4年以降は各年分を前年以前に納付する。料金は年次および請求項数に応じて増加する。", "en": "Fees for years 1 to 3 are paid together at registration. From year 4 onward, each annual fee is paid in advance. Amounts increase by year and number of claims."},
+          "sourceRefs": ["patent_act", "jpo_fees"]
+        },
+        {
+          "key": "fee_grace_period",
+          "label": {"ja": "追納期間", "en": "Late annuity grace period"},
+          "value": {"ja": "通常の納付期限経過後も原則6か月以内は割増特許料とともに追納できる。さらに一定の場合には回復制度がある。", "en": "After the ordinary due date, payment may generally be made within six months with a surcharge. Further restoration may be available in qualifying circumstances."},
+          "sourceRefs": ["patent_act", "jpo_fees"]
+        },
+        {
+          "key": "term_adjustment",
+          "label": {"ja": "審査遅延による期間延長", "en": "Term adjustment for examination delay"},
+          "value": {"ja": "所定の基準を超えるJPOの審査遅延について、出願人側の遅延を控除して存続期間延長を求められる制度がある。", "en": "A patent-term extension may be requested for JPO examination delay exceeding statutory benchmarks, after deducting applicant-caused delay."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "term_extension",
+          "label": {"ja": "規制承認による期間延長", "en": "Regulatory-delay extension"},
+          "value": {"ja": "医薬品・農薬等で安全性審査等のため特許発明を実施できなかった期間について、最長5年の延長登録を求められる。", "en": "For pharmaceuticals, agricultural chemicals and other eligible products, an extension of up to five years may be registered for a period in which the invention could not be worked because of regulatory review."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "correction",
+          "label": {"ja": "訂正", "en": "Correction"},
+          "value": {"ja": "請求項の減縮、誤記・誤訳の訂正、明瞭でない記載の釈明等を目的として訂正審判または異議・無効手続中の訂正請求を行える。実質的な拡張・変更は許されない。", "en": "Correction may be sought by a correction trial or during opposition/invalidation proceedings for purposes such as narrowing claims, correcting errors or clarifying ambiguity. Substantial enlargement or alteration is prohibited."},
+          "sourceRefs": ["patent_act", "jpo_trials"]
+        },
+        {
+          "key": "working_requirement",
+          "label": {"ja": "不実施・裁定実施権", "en": "Non-working and compulsory licence"},
+          "value": {"ja": "日本国内で継続して3年以上適当に実施されていない場合、一定条件下で通常実施権許諾の協議を求め、協議不成立時に裁定を請求できる。ただし出願日から4年未満の場合等は制限される。", "en": "If an invention has not been adequately worked in Japan for at least three consecutive years, a party may under prescribed conditions seek negotiations and then an award of a non-exclusive licence. Restrictions apply, including where four years have not elapsed from filing."},
+          "sourceRefs": ["patent_act"]
+        },
+        {
+          "key": "patent_marking",
+          "label": {"ja": "特許表示", "en": "Patent marking"},
+          "value": {"ja": "特許品等への特許表示は努力義務。虚偽表示は禁止される。表示は損害賠償の一律の前提条件ではない。", "en": "Patent marking is a statutory endeavour obligation, and false marking is prohibited. Marking is not a universal prerequisite to damages."},
+          "sourceRefs": ["patent_act"]
+        }
+      ]
+    },
+    {
+      "id": "opposition_invalidity",
+      "title": {"ja": "異議・無効・第三者手続", "en": "Opposition and invalidity"},
+      "facts": [
+        {
+          "key": "post_grant_opposition",
+          "label": {"ja": "特許異議申立て", "en": "Patent opposition"},
+          "value": {"ja": "何人も特許掲載公報発行日から6か月以内に、各請求項について所定の取消理由に基づき異議を申し立てられる。原則として書面審理。", "en": "Any person may oppose one or more claims on prescribed grounds within six months from publication of the patent gazette. Proceedings are generally conducted in writing."},
+          "sourceRefs": ["patent_act", "jpo_trials", "wipo_judicial"]
+        },
+        {
+          "key": "invalidation",
+          "label": {"ja": "特許無効審判", "en": "Invalidation trial"},
+          "value": {"ja": "原則として利害関係人が、所定の無効理由に基づいて請求項ごとに請求する当事者系手続。特許権消滅後も請求できる場合がある。", "en": "An interested party may generally institute inter partes invalidation proceedings against individual claims on statutory grounds. A trial may in some circumstances be requested after the patent has expired."},
+          "sourceRefs": ["patent_act", "jpo_trials", "wipo_judicial"]
+        },
+        {
+          "key": "invalidity_grounds",
+          "label": {"ja": "主な無効理由", "en": "Principal invalidity grounds"},
+          "value": {"ja": ["新規性・進歩性等の特許要件違反", "記載要件違反", "新規事項を含む補正", "先願・共同出願要件違反", "冒認その他の権利帰属上の瑕疵"], "en": ["Lack of novelty, inventive step or other patentability requirements", "Insufficient disclosure, lack of support or other description/claim defects", "Added matter", "First-to-file or joint-filing defects", "Misappropriation or other entitlement defects"]},
+          "sourceRefs": ["patent_act", "jpo_trials"]
+        },
+        {
+          "key": "reexamination_review",
+          "label": {"ja": "侵害訴訟との関係", "en": "Relationship with infringement litigation"},
+          "value": {"ja": "侵害訴訟の裁判所は、特許が無効審判により無効とされるべきものと認めるとき、当該特許権の行使を制限できる。無効審判と訴訟が並行することがある。", "en": "An infringement court may bar enforcement where it finds that the patent should be invalidated in a JPO invalidation trial. Litigation and JPO invalidation proceedings may run in parallel."},
+          "sourceRefs": ["patent_act", "wipo_judicial"]
+        },
+        {
+          "key": "average_duration",
+          "label": {"ja": "審理期間", "en": "Duration"},
+          "value": {"ja": "異議・無効審判の期間は争点、訂正、証拠および口頭審理の有無で変動する。最新のJPO統計を確認する。", "en": "The duration of opposition and invalidation proceedings varies with the issues, corrections, evidence and any oral hearing. Consult current JPO statistics."},
+          "sourceRefs": ["jpo_trials"]
+        }
+      ]
+    },
+    {
+      "id": "enforcement",
+      "title": {"ja": "権利行使", "en": "Enforcement"},
+      "facts": [
+        {
+          "key": "courts",
+          "label": {"ja": "管轄裁判所", "en": "Courts"},
+          "value": {"ja": "特許権等に関する第一審は、地域に応じ東京地方裁判所または大阪地方裁判所が専属管轄を有する。控訴は知的財産高等裁判所が扱う。", "en": "At first instance, patent actions fall within the exclusive jurisdiction of the Tokyo or Osaka District Court according to territorial rules. Appeals are heard by the Intellectual Property High Court."},
+          "sourceRefs": ["wipo_judicial"]
+        },
+        {
+          "key": "claim_construction",
+          "label": {"ja": "クレーム解釈", "en": "Claim construction"},
+          "value": {"ja": "特許発明の技術的範囲は請求項の記載に基づいて定め、用語の意義は明細書および図面を考慮して解釈する。", "en": "The technical scope of a patented invention is determined from the claims, with the description and drawings considered when interpreting claim terminology."},
+          "sourceRefs": ["patent_act", "wipo_judicial"]
+        },
+        {
+          "key": "doctrine_of_equivalents",
+          "label": {"ja": "均等論", "en": "Doctrine of equivalents"},
+          "value": {"ja": "最高裁判例が示した5要件の下で、文言上の範囲外でも均等侵害が成立し得る。", "en": "Infringement under the doctrine of equivalents may be found outside the literal claim scope under the five requirements established by the Supreme Court."},
+          "sourceRefs": ["wipo_judicial"]
+        },
+        {
+          "key": "indirect_infringement",
+          "label": {"ja": "間接侵害", "en": "Indirect infringement"},
+          "value": {"ja": "特許法101条は、専用品の生産・譲渡等や、主観的要件を伴う不可欠品の供給等を侵害とみなす。物の発明と方法の発明で類型が分かれる。", "en": "Article 101 deems specified acts indirect infringement, including dealings in exclusive-use products and, subject to knowledge requirements, indispensable products. The categories differ for product and process inventions."},
+          "sourceRefs": ["patent_act", "wipo_judicial"]
+        },
+        {
+          "key": "evidence_collection",
+          "label": {"ja": "証拠収集", "en": "Evidence collection"},
+          "value": {"ja": "米国型の広範なディスカバリーはない。文書提出命令、証拠保全、査証制度、計算鑑定人等の制度を事案に応じて利用する。", "en": "Japan has no broad US-style discovery. Depending on the case, parties may use document-production orders, preservation of evidence, inspection by a court-appointed expert and accounting experts."},
+          "sourceRefs": ["patent_act", "wipo_judicial"]
+        },
+        {
+          "key": "preliminary_injunction",
+          "label": {"ja": "仮処分・差止め", "en": "Preliminary and permanent injunctions"},
+          "value": {"ja": "侵害停止・予防の差止請求が可能。緊急性等を満たす場合は仮処分も利用できるが、技術的争点を含むため慎重に審理される。", "en": "A patentee may seek cessation or prevention of infringement. Preliminary injunctions are available where urgency and other requirements are met, although technically complex cases receive careful scrutiny."},
+          "sourceRefs": ["patent_act", "wipo_judicial"]
+        },
+        {
+          "key": "damages",
+          "label": {"ja": "損害賠償", "en": "Damages"},
+          "value": {"ja": "民法上の不法行為責任を基礎とし、特許法102条が譲渡数量、侵害者利益、合理的実施料等による損害額推定を定める。侵害行為について過失推定がある。", "en": "Damages are based on tort liability, with Article 102 providing presumptions based on transferred quantity, infringer's profits and reasonable royalty measures. Negligence is presumed for patent infringement."},
+          "sourceRefs": ["patent_act", "wipo_judicial"]
+        },
+        {
+          "key": "enhanced_damages",
+          "label": {"ja": "懲罰的・増額賠償", "en": "Punitive or enhanced damages"},
+          "value": {"ja": "米国型の懲罰的損害賠償・故意侵害による三倍賠償制度はない。", "en": "Japan has no US-style punitive damages or treble-damages regime for wilful patent infringement."},
+          "sourceRefs": ["wipo_judicial"]
+        },
+        {
+          "key": "customs",
+          "label": {"ja": "税関差止め", "en": "Customs enforcement"},
+          "value": {"ja": "特許権侵害物品について税関への輸入差止申立て等が利用可能。ただし技術判断を伴うため商標・意匠に比べ手続負担が大きくなり得る。", "en": "Customs suspension procedures are available for goods infringing patents, although the technical assessment may make the process more demanding than for trademarks or designs."},
+          "sourceRefs": ["wipo_judicial"]
+        }
+      ]
+    },
+    {
+      "id": "practical_notes",
+      "title": {"ja": "実務上の特記事項", "en": "Practical highlights"},
+      "facts": [
+        {
+          "key": "practical_highlights",
+          "label": {"ja": "重要ポイント", "en": "Key points"},
+          "value": {"ja": ["審査請求は出願日から3年以内であり、自動的には審査されない", "外国語明細書からの日本語翻訳では、誤訳訂正書を含む補正可能性を早期に検討する", "最後の拒絶理由通知後は補正目的が制限される", "権利化後も異議、無効審判および侵害訴訟での無効の抗弁を考慮する"], "en": ["Examination is not automatic; request it within three years from filing", "For Japanese translations of foreign-language specifications, assess correction options, including correction of mistranslation, early", "Amendment purposes are restricted after a final notice of reasons for refusal", "After grant, account for opposition, JPO invalidation and an invalidity defence in infringement litigation"]},
+          "sourceRefs": ["patent_act", "jpo_guidelines", "jpo_trials"]
+        },
+        {
+          "key": "recent_developments",
+          "label": {"ja": "非公開制度", "en": "Patent non-disclosure system"},
+          "value": {"ja": "2024年5月1日以後の出願には経済安全保障上の特許出願非公開制度が適用され得る。指定された保全対象発明では、出願公開・査定等が留保され、情報管理・外国出願に制約が生じる。", "en": "Patent applications filed on or after 1 May 2024 may be subject to the economic-security non-disclosure system. For a designated security-sensitive invention, publication and grant/refusal procedures are withheld and information handling and foreign filing are restricted."},
+          "sourceRefs": ["jpo_nondisclosure"]
+        },
+        {
+          "key": "local_practice",
+          "label": {"ja": "翻訳とクレーム設計", "en": "Translation and claim drafting"},
+          "value": {"ja": "日本語翻訳はサポート要件、新規事項および権利範囲へ直結する。国内移行時の直訳だけでなく、日本の記載要件と補正制限を踏まえた用語統一が重要。", "en": "Japanese translation directly affects support, added matter and claim scope. Terminology should be harmonised with Japanese disclosure and amendment practice rather than treated as a purely literal national-phase translation."},
+          "sourceRefs": ["jpo_guidelines"]
+        }
+      ]
+    },
+    {
+      "id": "local_counsel_faq",
+      "title": {"ja": "現地代理人へのFAQ", "en": "Questions for local counsel"},
+      "facts": [
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "審査期間", "en": "Pendency"},
+          "value": {"ja": "現在、この技術分野の通常審査・早期審査では、審査請求から最初の通知までどの程度か。", "en": "What is the current time from examination request to first action in this technology, under ordinary and accelerated examination?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "補正方針", "en": "Amendment strategy"},
+          "value": {"ja": "この拒絶理由に対して、意見書のみで争うか、補正または分割を併用するのが日本実務上適切か。", "en": "For this rejection, is it preferable in Japanese practice to argue without amendment, amend, or combine the response with a divisional filing?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "面接審査", "en": "Examiner interview"},
+          "value": {"ja": "本件では審査官面接が有効か。面接前にどの程度具体的な補正案を提示すべきか。", "en": "Would an examiner interview be useful in this case, and how specific should the proposed amendments be beforehand?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "分割出願", "en": "Division"},
+          "value": {"ja": "現在の手続段階で分割可能な最終日はいつか。原出願との重複・サポート上のリスクは何か。", "en": "What is the final date for filing a divisional at the present stage, and what overlap or support risks arise relative to the parent?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "非公開制度", "en": "Non-disclosure screening"},
+          "value": {"ja": "本件技術と発明地を踏まえ、第一国出願義務または非公開審査の対象となる可能性があるか。", "en": "Given the technology and place of invention, could the domestic first-filing obligation or non-disclosure review apply?"}
+        },
+        {
+          "key": "local_counsel_question",
+          "label": {"ja": "権利行使", "en": "Enforcement"},
+          "value": {"ja": "侵害立証に必要な証拠は現時点で十分か。査証、証拠保全、税関手続のどれが現実的か。", "en": "Is the current evidence sufficient to prove infringement, and would inspection, preservation of evidence or customs action be practical?"}
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "patent_act",
+      "title": {"ja": "特許法（英訳）", "en": "Patent Act of Japan"},
+      "publisher": {"ja": "日本法令外国語訳データベースシステム", "en": "Japanese Law Translation Database System"},
+      "url": "https://www.japaneselawtranslation.go.jp/en/laws/view/3118/en",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "wipo_lex",
+      "title": {"ja": "日本・特許法（WIPO Lex）", "en": "Patent Act, Japan (WIPO Lex)"},
+      "publisher": "WIPO",
+      "url": "https://www.wipo.int/wipolex/en/legislation/details/24008",
+      "language": "en",
+      "updatedAt": "2026-05-21",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "jpo_process",
+      "title": {"ja": "特許権を取得するための手続", "en": "Procedures for Obtaining a Patent Right"},
+      "publisher": {"ja": "特許庁", "en": "Japan Patent Office"},
+      "url": "https://www.jpo.go.jp/e/system/patent/gaiyo/patent.html",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "jpo_guidelines",
+      "title": {"ja": "特許・実用新案審査基準", "en": "Examination Guidelines for Patent and Utility Model in Japan"},
+      "publisher": {"ja": "特許庁", "en": "Japan Patent Office"},
+      "url": "https://www.jpo.go.jp/e/system/laws/rule/guideline/patent/tukujitu_kijun/index.html",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "jpo_pct",
+      "title": {"ja": "PCT国際出願の日本国内移行手続", "en": "How to advance PCT international applications into the national phase in Japan"},
+      "publisher": {"ja": "特許庁", "en": "Japan Patent Office"},
+      "url": "https://www.jpo.go.jp/e/system/patent/pct/designated/pct_applications.html",
+      "language": "en",
+      "updatedAt": "2026-03-25",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "wipo_pct_guide",
+      "title": {"ja": "PCT出願人の手引―日本", "en": "PCT Applicant's Guide — Japan"},
+      "publisher": "WIPO",
+      "url": "https://pctlegal.wipo.int/eGuide/view-doc.xhtml?doc-code=JP&doc-lang=en",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "jpo_grace",
+      "title": {"ja": "発明の新規性喪失の例外規定の適用を受けるための手続", "en": "Procedures for Seeking the Application of Exceptions to Lack of Novelty of Invention"},
+      "publisher": {"ja": "特許庁", "en": "Japan Patent Office"},
+      "url": "https://www.jpo.go.jp/e/system/laws/rule/other/patent/hatumei_reigai.html",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "jpo_accelerated",
+      "title": {"ja": "特許出願の早期審査・早期審理", "en": "Outline of Accelerated Examination and Accelerated Appeal Examination"},
+      "publisher": {"ja": "特許庁", "en": "Japan Patent Office"},
+      "url": "https://www.jpo.go.jp/e/system/patent/shinsa/jp-soki/",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "jpo_trials",
+      "title": {"ja": "審判便覧", "en": "Manual for Trial and Appeal Proceedings"},
+      "publisher": {"ja": "特許庁", "en": "Japan Patent Office"},
+      "url": "https://www.jpo.go.jp/e/system/trial_appeal/sinpan-binran.html",
+      "language": "en",
+      "updatedAt": "2026-08-18",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "jpo_fees",
+      "title": {"ja": "手続料金計算表", "en": "Schedule of fees"},
+      "publisher": {"ja": "特許庁", "en": "Japan Patent Office"},
+      "url": "https://www.jpo.go.jp/e/system/process/tesuryo/hyou.html",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "jpo_nondisclosure",
+      "title": {"ja": "特許出願非公開制度", "en": "System for Non-Disclosure of Patent Applications"},
+      "publisher": {"ja": "特許庁", "en": "Japan Patent Office"},
+      "url": "https://www.jpo.go.jp/e/system/patent/shutugan/patent_applications.html",
+      "language": "en",
+      "updatedAt": "2024-03-11",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "jpo_priority",
+      "title": {"ja": "優先権書類の提出省略", "en": "Exemption from Submission of Priority Documents"},
+      "publisher": {"ja": "特許庁", "en": "Japan Patent Office"},
+      "url": "https://www.jpo.go.jp/e/system/process/shutugan/yusen/das/index.html",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    },
+    {
+      "id": "wipo_judicial",
+      "title": {"ja": "日本の特許制度―裁判官向け国際ガイド", "en": "Patent System of Japan — WIPO Patent Judicial Guide"},
+      "publisher": "WIPO",
+      "url": "https://www.wipo.int/patent-judicial-guide/en/full-guide/japan",
+      "language": "en",
+      "accessedAt": "2026-09-15"
+    }
+  ]
+}
