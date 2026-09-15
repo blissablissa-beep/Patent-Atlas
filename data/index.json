@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-09-15",
+  "defaultLanguage": "ja",
+  "jurisdictions": [
+    {
+      "id": "JP",
+      "type": "country",
+      "flag": "🇯🇵",
+      "region": "asia",
+      "order": 10,
+      "file": "jurisdictions/JP.json",
+      "names": {
+        "ja": "日本",
+        "en": "Japan"
+      },
+      "office": {
+        "ja": "特許庁（JPO）",
+        "en": "Japan Patent Office (JPO)"
+      },
+      "availableLanguages": [
+        "ja",
+        "en"
+      ],
+      "searchTerms": {
+        "ja": [
+          "日本特許",
+          "特許法",
+          "実用新案",
+          "PCT国内移行",
+          "審査請求",
+          "早期審査",
+          "分割出願",
+          "拒絶査定不服審判",
+          "特許異議申立て",
+          "無効審判",
+          "特許権侵害"
+        ],
+        "en": [
+          "Japanese patent law",
+          "utility model",
+          "PCT national phase",
+          "request for examination",
+          "accelerated examination",
+          "divisional application",
+          "appeal against rejection",
+          "patent opposition",
+          "invalidation trial",
+          "patent infringement"
+        ]
+      }
+    }
+  ]
+}
