@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "updatedAt": "2026-09-15",
+  "version": "1.2.0",
+  "updatedAt": "2026-09-17",
   "defaultLanguage": "ja",
   "jurisdictions": [
     {
@@ -110,6 +110,71 @@
           "PTAB",
           "inter partes review",
           "post-grant review",
+          "patent infringement"
+        ]
+      }
+    },
+    {
+      "id": "CN",
+      "type": "country",
+      "flag": "🇨🇳",
+      "region": "asia",
+      "order": 30,
+      "file": "jurisdictions/CN.json",
+      "names": {
+        "ja": "中国",
+        "en": "China"
+      },
+      "office": {
+        "ja": "中国国家知識産権局（CNIPA）",
+        "en": "China National Intellectual Property Administration (CNIPA)"
+      },
+      "availableLanguages": [
+        "ja",
+        "en"
+      ],
+      "searchTerms": {
+        "ja": [
+          "中国特許",
+          "中華人民共和国",
+          "CNIPA",
+          "国家知識産権局",
+          "専利法",
+          "発明特許",
+          "実用新案",
+          "意匠",
+          "PCT国内移行",
+          "秘密保持審査",
+          "外国出願",
+          "審査請求",
+          "同日二重出願",
+          "優先審査",
+          "PPH",
+          "分割出願",
+          "復審",
+          "無効宣告",
+          "特許権評価報告",
+          "特許侵害"
+        ],
+        "en": [
+          "Chinese patent law",
+          "China patent",
+          "PRC patent",
+          "CNIPA",
+          "invention patent",
+          "utility model",
+          "design patent",
+          "PCT national phase",
+          "confidentiality examination",
+          "foreign filing",
+          "request for examination",
+          "same-day dual filing",
+          "prioritized examination",
+          "PPH",
+          "divisional application",
+          "reexamination",
+          "invalidation",
+          "patent evaluation report",
           "patent infringement"
         ]
       }
