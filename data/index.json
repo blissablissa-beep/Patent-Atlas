@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "updatedAt": "2026-09-18",
   "defaultLanguage": "ja",
   "jurisdictions": [
@@ -214,6 +214,55 @@
           "utility patent",
           "complementary protection certificate",
           "DSEDT"
+        ]
+      }
+    },
+    {
+      "id": "TW",
+      "type": "country",
+      "flag": "🇹🇼",
+      "region": "asia",
+      "order": 60,
+      "file": "jurisdictions/TW.json",
+      "names": {
+        "ja": "台湾",
+        "en": "Taiwan"
+      },
+      "office": {
+        "ja": "経済部智慧財産局（TIPO）",
+        "en": "Taiwan Intellectual Property Office (TIPO), Ministry of Economic Affairs"
+      },
+      "availableLanguages": [
+        "ja",
+        "en"
+      ],
+      "searchTerms": {
+        "ja": [
+          "台湾特許",
+          "TIPO",
+          "発明専利",
+          "新型専利",
+          "実用新案",
+          "技術評価報告",
+          "実体審査請求",
+          "外国語出願",
+          "同日二重出願",
+          "AEP",
+          "PPH",
+          "無効審判"
+        ],
+        "en": [
+          "Taiwan patent",
+          "TIPO",
+          "invention patent",
+          "utility model",
+          "technical evaluation report",
+          "substantive examination",
+          "foreign-language filing",
+          "same-day dual filing",
+          "AEP",
+          "PPH",
+          "invalidation"
         ]
       }
     }
