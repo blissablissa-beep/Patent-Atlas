@@ -1,6 +1,6 @@
 {
   "version": "1.3.0",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "defaultLanguage": "ja",
   "jurisdictions": [
     {
@@ -179,76 +179,75 @@
         ]
       }
     },
-     ,
-{
-  "id": "HK",
-  "type": "country",
-  "flag": "🇭🇰",
-  "region": "asia",
-  "order": 40,
-  "file": "jurisdictions/HK.json",
-  "names": {
-    "ja": "香港",
-    "en": "Hong Kong"
-  },
-  "office": {
-    "ja": "香港知識産権署・特許登録処（IPD）",
-    "en": "Patents Registry, Intellectual Property Department (IPD)"
-  },
-  "availableLanguages": [
-    "ja",
-    "en"
-  ],
-  "searchTerms": {
-    "ja": [
-      "香港特許",
-      "香港特別行政区",
-      "香港知識産権署",
-      "特許登録処",
-      "IPD",
-      "HKIPD",
-      "標準特許",
-      "標準特許O",
-      "原授標準特許",
-      "Original Grant Patent",
-      "標準特許R",
-      "再登録標準特許",
-      "短期特許",
-      "指定特許庁",
-      "二段階登録",
-      "記録請求",
-      "登録付与請求",
-      "PCT香港",
-      "実体審査",
-      "短期特許実体審査",
-      "特許侵害"
-    ],
-    "en": [
-      "Hong Kong patent law",
-      "Hong Kong patent",
-      "Hong Kong SAR",
-      "HKSAR",
-      "Intellectual Property Department",
-      "Patents Registry",
-      "IPD",
-      "HKIPD",
-      "standard patent",
-      "standard patent O",
-      "original grant patent",
-      "OGP",
-      "standard patent R",
-      "re-registration patent",
-      "short-term patent",
-      "designated patent office",
-      "two-stage registration",
-      "request to record",
-      "request for registration and grant",
-      "PCT Hong Kong",
-      "substantive examination",
-      "short-term patent examination",
-      "patent infringement"
-    ]
-  }
-}
-]
+    {
+      "id": "HK",
+      "type": "country",
+      "flag": "🇭🇰",
+      "region": "asia",
+      "order": 40,
+      "file": "jurisdictions/HK.json",
+      "names": {
+        "ja": "香港",
+        "en": "Hong Kong"
+      },
+      "office": {
+        "ja": "香港知識産権署・特許登録処（IPD）",
+        "en": "Patents Registry, Intellectual Property Department (IPD)"
+      },
+      "availableLanguages": [
+        "ja",
+        "en"
+      ],
+      "searchTerms": {
+        "ja": [
+          "香港特許",
+          "香港特別行政区",
+          "香港知識産権署",
+          "特許登録処",
+          "IPD",
+          "HKIPD",
+          "標準特許",
+          "標準特許O",
+          "原授標準特許",
+          "Original Grant Patent",
+          "標準特許R",
+          "再登録標準特許",
+          "短期特許",
+          "指定特許庁",
+          "二段階登録",
+          "記録請求",
+          "登録付与請求",
+          "PCT香港",
+          "実体審査",
+          "短期特許実体審査",
+          "特許侵害"
+        ],
+        "en": [
+          "Hong Kong patent law",
+          "Hong Kong patent",
+          "Hong Kong SAR",
+          "HKSAR",
+          "Intellectual Property Department",
+          "Patents Registry",
+          "IPD",
+          "HKIPD",
+          "standard patent",
+          "standard patent O",
+          "original grant patent",
+          "OGP",
+          "standard patent R",
+          "re-registration patent",
+          "short-term patent",
+          "designated patent office",
+          "two-stage registration",
+          "request to record",
+          "request for registration and grant",
+          "PCT Hong Kong",
+          "substantive examination",
+          "short-term patent examination",
+          "patent infringement"
+        ]
+      }
+    }
+  ]
 }
