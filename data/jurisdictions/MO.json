@@ -1,0 +1,291 @@
+{
+  "$schema": "../schema.json",
+  "id": "MO",
+  "type": "country",
+  "flag": "🇲🇴",
+  "region": "asia",
+  "names": {"ja": "マカオ", "en": "Macao"},
+  "office": {"ja": "マカオ特別行政区政府経済及科技発展局（DSEDT）", "en": "Economic and Technological Development Bureau (DSEDT), Government of the Macao SAR"},
+  "aliases": {
+    "ja": ["マカオ特別行政区", "澳門", "マカオ", "DSEDT", "経済及科技発展局"],
+    "en": ["Macao Special Administrative Region", "Macao SAR", "Macau", "DSEDT", "Economic and Technological Development Bureau"]
+  },
+  "availableLanguages": ["ja", "en"],
+  "optionLanguage": null,
+  "createdAt": "2026-09-18",
+  "updatedAt": "2026-09-18",
+  "lastVerifiedAt": "2026-09-18",
+  "status": "review",
+  "summary": {
+    "ja": "マカオは中国本土・香港とは別個の特許制度を運用しており、中国本土の特許が自動的に効力を持つわけではない。主な保護手段は、DSEDTへの発明特許の直接出願、CNIPAに出願・付与された発明特許のマカオへの効力延長、および実用特許である。CNIPA付与後の効力延長には登録公告から3か月という延長不可の期限があり、直接出願では所定期間内の実体審査請求が必要となる。手続言語は中国語またはポルトガル語である。",
+    "en": "Macao operates a patent system separate from mainland China and Hong Kong, and a mainland Chinese patent has no automatic effect there. The principal routes are a direct invention-patent application before DSEDT, extension to Macao of a CNIPA invention-patent application and grant, and a utility patent. For the extension route, evidence of the CNIPA grant must be filed within a non-extendable three-month period from publication of grant. A direct application requires a timely request for substantive examination. Proceedings are conducted in Chinese or Portuguese."
+  },
+  "searchTerms": {
+    "ja": ["マカオ特許", "澳門特許", "発明特許", "中国特許効力延長", "CNIPA延長", "実用特許", "補充保護証明書", "DSEDT"],
+    "en": ["Macao patent", "Macau patent", "invention patent", "CNIPA patent extension", "utility patent", "complementary protection certificate", "DSEDT"]
+  },
+  "quickView": [
+    {
+      "key": "protected_rights",
+      "label": {"ja": "主要な保護ルート", "en": "Main protection routes"},
+      "value": {"ja": "発明特許の直接出願、CNIPA発明特許の効力延長、実用特許", "en": "Direct invention patent, extension of a CNIPA invention patent, and utility patent"},
+      "sourceRefs": ["macao_code", "dsedt_home", "gov_cnipa_extension"]
+    },
+    {
+      "key": "national_phase_deadline",
+      "label": {"ja": "PCT国内移行", "en": "PCT national phase"},
+      "value": {"ja": "マカオへの独立したPCT国内移行はない。通常は直接出願または中国国内段階を経たCNIPA出願の効力延長を検討", "en": "No separate PCT national phase in Macao; consider a direct filing or extension of a CNIPA application after Chinese national entry"},
+      "sourceRefs": ["wipo_macao_profile", "gov_cnipa_extension"]
+    },
+    {
+      "key": "custom_cnipa_grant_deadline",
+      "label": {"ja": "CNIPA付与後の延長期限", "en": "Post-grant CNIPA extension deadline"},
+      "value": {"ja": "CNIPAの特許登録公告日から3か月以内（延長不可）", "en": "Within three months from CNIPA's publication of grant; the period is not extendable"},
+      "sourceRefs": ["gov_cnipa_extension", "gov_cnipa_faq"]
+    },
+    {
+      "key": "examination_request_deadline",
+      "label": {"ja": "実体審査請求", "en": "Substantive examination request"},
+      "value": {"ja": "発明特許は出願日から7年以内、実用特許は出願日から4年以内が原則", "en": "Generally within seven years from filing for an invention patent and four years for a utility patent"},
+      "sourceRefs": ["macao_code", "dsedt_procedures"]
+    },
+    {
+      "key": "filing_language",
+      "label": {"ja": "手続言語", "en": "Filing language"},
+      "value": {"ja": "中国語またはポルトガル語", "en": "Chinese or Portuguese"},
+      "sourceRefs": ["gov_cnipa_extension", "dsedt_procedures"]
+    },
+    {
+      "key": "grace_period",
+      "label": {"ja": "新規性喪失の例外", "en": "Novelty exception"},
+      "value": {"ja": "明白な濫用または所定の公的・公認博覧会による開示について限定的に6か月", "en": "A limited six-month exception for evident abuse or display at a qualifying official or officially recognized exhibition"},
+      "sourceRefs": ["macao_code"]
+    },
+    {
+      "key": "patent_term",
+      "label": {"ja": "存続期間", "en": "Patent terms"},
+      "value": {"ja": "発明特許は出願日から20年、実用特許は出願日から10年（年金納付が必要）", "en": "Twenty years from filing for an invention patent and ten years for a utility patent, subject to annuities"},
+      "sourceRefs": ["macao_code", "dsedt_annuity"]
+    },
+    {
+      "key": "custom_separate_system",
+      "label": {"ja": "中国本土との関係", "en": "Relationship with mainland China"},
+      "value": {"ja": "中国本土の出願・特許は自動的にマカオへ及ばず、DSEDTで別途効力延長手続が必要", "en": "A mainland application or patent does not automatically extend to Macao; a separate DSEDT extension procedure is required"},
+      "sourceRefs": ["gov_cnipa_extension", "gov_cnipa_faq"]
+    }
+  ],
+  "sections": [
+    {
+      "id": "system_overview",
+      "title": {"ja": "制度の基本情報", "en": "System overview"},
+      "facts": [
+        {"key": "authority", "label": {"ja": "所管官庁", "en": "Authority"}, "value": {"ja": "マカオ特別行政区政府経済及科技発展局（DSEDT）の特許及著作権部門。", "en": "The patent and copyright function of the Economic and Technological Development Bureau (DSEDT), Government of the Macao SAR."}, "sourceRefs": ["dsedt_home", "gov_cnipa_extension"]},
+        {"key": "governing_law", "label": {"ja": "主な根拠法令", "en": "Principal legislation"}, "value": {"ja": "第97/99/M号法令により承認された工業所有権法典。関連する行政長官批示が様式・手数料を定める。", "en": "The Industrial Property Code approved by Decree-Law No. 97/99/M, supplemented by Chief Executive dispatches on forms and fees."}, "sourceRefs": ["macao_code", "dsedt_procedures"]},
+        {"key": "protected_rights", "label": {"ja": "特許の種類", "en": "Types of protection"}, "value": {"ja": ["発明特許：DSEDTへの直接出願", "CNIPA発明特許のマカオへの効力延長", "実用特許：技術的機能を有する物品の形状・構造等を対象"], "en": ["Invention patent filed directly with DSEDT", "Extension to Macao of a CNIPA invention-patent application and grant", "Utility patent for the shape, structure, or arrangement of an article having a technical function"]}, "sourceRefs": ["macao_code", "dsedt_home", "gov_cnipa_extension"]},
+        {"key": "utility_model", "label": {"ja": "実用特許", "en": "Utility patent"}, "value": {"ja": "マカオの実用特許は、物品の形状・構造・機構または配置に技術的機能を与える実用的な発明を対象とする。方法発明の代替制度ではない。", "en": "Macao's utility patent protects practical inventions that give an article a technical function through its shape, structure, mechanism, or arrangement. It is not a substitute route for process inventions."}, "sourceRefs": ["macao_code", "dsedt_home"]},
+        {"key": "pct_membership", "label": {"ja": "PCTとの関係", "en": "PCT relationship"}, "value": {"ja": "マカオは独立したPCT締約当事者または国内段階官庁ではなく、中国を指定したPCT出願が自動的にマカオへ移行する制度もない。", "en": "Macao is not a separate PCT contracting party or national-phase office, and designation of China does not by itself create a Macao national phase."}, "sourceRefs": ["wipo_macao_profile", "gov_cnipa_extension"]},
+        {"key": "regional_systems", "label": {"ja": "中国本土・香港との独立性", "en": "Separation from mainland China and Hong Kong"}, "value": {"ja": "マカオでの権利はマカオ域内でのみ効力を有する。中国本土・香港での保護には各法域で別個の権利化が必要。", "en": "A Macao right is territorial to Macao. Separate protection must be secured in mainland China and Hong Kong."}, "sourceRefs": ["macao_code", "gov_cnipa_extension"]},
+        {"key": "publication_timing", "label": {"ja": "出願公開", "en": "Publication"}, "value": {"ja": "発明特許出願は原則として出願日または優先日から18か月後に公報で公開される。実用特許にも公報公告手続がある。", "en": "An invention-patent application is generally published in the Official Gazette after 18 months from filing or priority. Utility-patent proceedings also include Gazette publication."}, "sourceRefs": ["macao_code"]},
+        {"key": "patent_term", "label": {"ja": "保護期間", "en": "Term"}, "value": {"ja": "発明特許は出願日から20年、実用特許は出願日から10年。年金の適時納付が条件となる。", "en": "An invention patent runs for 20 years from filing and a utility patent for 10 years from filing, subject to timely annuity payments."}, "sourceRefs": ["macao_code", "dsedt_annuity"]}
+      ]
+    },
+    {
+      "id": "pre_filing",
+      "title": {"ja": "出願前の重要事項", "en": "Pre-filing considerations"},
+      "facts": [
+        {"key": "first_to_file", "label": {"ja": "先願主義", "en": "First-to-file"}, "value": {"ja": "同一発明については、原則として最先の有効な出願日または優先日を有する者が権利化で優位となる。", "en": "For the same invention, the applicant with the earliest valid filing or priority date generally prevails."}, "sourceRefs": ["macao_code"]},
+        {"key": "inventor_applicant_eligibility", "label": {"ja": "出願人資格", "en": "Entitlement to apply"}, "value": {"ja": "発明者またはその承継人が出願できる。出願人が発明者でない場合は、権利取得の根拠を整備する。", "en": "The inventor or successor in title may apply. If the applicant is not the inventor, the basis of entitlement should be documented."}, "sourceRefs": ["macao_code"]},
+        {"key": "employee_inventions", "label": {"ja": "職務発明", "en": "Employee inventions"}, "value": {"ja": "雇用関係・委託関係で完成した発明の帰属と発明者の報酬は法典および契約の影響を受ける。開発開始前に契約を確認する。", "en": "Ownership and inventor remuneration for inventions made in employment or commissioned work are affected by the Code and contract. Agreements should be reviewed before development begins."}, "sourceRefs": ["macao_code"]},
+        {"key": "assignment", "label": {"ja": "譲渡・承継", "en": "Assignment and succession"}, "value": {"ja": "出願・特許は譲渡または承継の対象となる。第三者に対する効力と登録簿の正確性のためDSEDTへの記録を行う。", "en": "Applications and patents may be assigned or succeeded to. Record the change with DSEDT for effectiveness against third parties and an accurate register."}, "sourceRefs": ["macao_code", "gov_cnipa_faq"]},
+        {"key": "foreign_filing_license", "label": {"ja": "外国出願許可", "en": "Foreign filing license"}, "value": {"ja": "マカオ法上、マカオでなされた発明であることだけを理由とする一般的な外国出願許可制度は見当たらない。ただし中国本土でも発明が完成された場合はCNIPAの秘密保持審査を別途検討する。", "en": "Macao law does not appear to impose a general foreign-filing license solely because an invention was made in Macao. If the invention was also completed in mainland China, CNIPA confidentiality review should be considered separately."}, "sourceRefs": ["macao_code"]},
+        {"key": "grace_period", "label": {"ja": "限定的な6か月例外", "en": "Limited six-month exception"}, "value": {"ja": "出願人または前権利者に対する明白な濫用、または所定の公的・公認博覧会への展示による開示には、出願前6か月の限定的例外が認められ得る。", "en": "A limited six-month exception may apply to disclosure resulting from evident abuse in relation to the applicant or predecessor, or display at a qualifying official or officially recognized exhibition."}, "caution": {"ja": "一般的な自己開示を広く救済する制度ではない。公開・販売・学会発表より前に出願する。", "en": "This is not a broad safe harbor for ordinary self-disclosure. File before publication, sale, or conference presentation."}, "sourceRefs": ["macao_code"]},
+        {"key": "grace_formalities", "label": {"ja": "例外の立証", "en": "Proof for exception"}, "value": {"ja": "例外を主張する場合、開示の原因・日付・博覧会の資格等を示す証拠を早期に確保し、必要な宣言・証明を提出する。", "en": "When relying on an exception, preserve evidence of the cause and date of disclosure and the exhibition's qualifying status, and file any required declaration or certificate."}, "sourceRefs": ["macao_code"]}
+      ]
+    },
+    {
+      "id": "patentability",
+      "title": {"ja": "特許要件", "en": "Patentability"},
+      "facts": [
+        {"key": "invention_definition", "label": {"ja": "発明", "en": "Invention"}, "value": {"ja": "技術分野に属し、技術的課題に対する技術的解決を提供する発明であることが前提となる。", "en": "The subject matter should be an invention in a field of technology providing a technical solution to a technical problem."}, "sourceRefs": ["macao_code"]},
+        {"key": "novelty", "label": {"ja": "新規性", "en": "Novelty"}, "value": {"ja": "出願日・優先日前に世界のいずれかで公衆に利用可能となった技術に含まれないことが必要。", "en": "The invention must not form part of information made available to the public anywhere before the filing or priority date."}, "sourceRefs": ["macao_code"]},
+        {"key": "inventive_step", "label": {"ja": "進歩性", "en": "Inventive step"}, "value": {"ja": "当該技術分野の専門家にとって従来技術から明らかでないことが必要。実用特許には法典上の適用基準を個別確認する。", "en": "The invention must not be obvious to a person skilled in the art in view of the prior art. The statutory standard applicable to a utility patent should be checked separately."}, "sourceRefs": ["macao_code"]},
+        {"key": "industrial_applicability", "label": {"ja": "産業上の利用可能性", "en": "Industrial applicability"}, "value": {"ja": "農業を含む産業分野で製造または使用できることが必要。", "en": "The invention must be capable of being made or used in an industry, including agriculture."}, "sourceRefs": ["macao_code"]},
+        {"key": "excluded_subject_matter", "label": {"ja": "主な除外対象", "en": "Principal exclusions"}, "value": {"ja": ["発見、科学理論、数学的方法それ自体", "美的創作、精神的行為・ゲーム・事業活動の規則または方法それ自体", "情報の提示それ自体", "公序良俗に反する発明等"], "en": ["Discoveries, scientific theories, and mathematical methods as such", "Aesthetic creations and rules or methods for mental acts, games, or business as such", "Presentations of information as such", "Inventions contrary to public order or morality, among other exclusions"]}, "sourceRefs": ["macao_code"]},
+        {"key": "software_ai", "label": {"ja": "ソフトウェア・AI", "en": "Software and AI"}, "value": {"ja": "コンピュータプログラムそれ自体は除外され得るが、技術的課題を解決し技術的効果を生じるコンピュータ実装発明は、クレーム全体として特許要件を検討する。", "en": "A computer program as such may be excluded, but a computer-implemented invention solving a technical problem and producing a technical effect should be assessed as a whole for patentability."}, "sourceRefs": ["macao_code"]},
+        {"key": "medical_methods", "label": {"ja": "医療方法", "en": "Medical methods"}, "value": {"ja": "人体または動物体の外科・治療方法および診断方法は原則として特許対象から除外されるが、これらに使用する製品・物質・組成物は別途検討できる。", "en": "Methods of surgery, therapy, or diagnosis practiced on the human or animal body are generally excluded, while products, substances, and compositions used in such methods may be considered separately."}, "sourceRefs": ["macao_code"]},
+        {"key": "enablement", "label": {"ja": "十分な開示", "en": "Sufficiency"}, "value": {"ja": "当業者が発明を実施できる程度に、発明を明確かつ完全に開示する必要がある。", "en": "The application must disclose the invention clearly and completely enough for a skilled person to carry it out."}, "sourceRefs": ["macao_code"]},
+        {"key": "unity", "label": {"ja": "単一性", "en": "Unity"}, "value": {"ja": "一出願は一発明、または単一の一般的発明概念を形成するよう関連する一群の発明を対象とする。", "en": "An application must relate to one invention or a group of inventions linked to form a single general inventive concept."}, "sourceRefs": ["macao_code"]}
+      ]
+    },
+    {
+      "id": "filing_routes",
+      "title": {"ja": "出願ルートと期限", "en": "Filing routes and deadlines"},
+      "facts": [
+        {"key": "direct_filing", "label": {"ja": "発明特許の直接出願", "en": "Direct invention-patent filing"}, "value": {"ja": "DSEDTへ直接出願し、方式審査、公開、異議申立ての機会、請求による実体審査を経て付与を受ける。", "en": "File directly with DSEDT and proceed through formality review, publication, an opportunity for opposition, and requested substantive examination before grant."}, "sourceRefs": ["macao_code", "dsedt_procedures"]},
+        {"key": "paris_filing", "label": {"ja": "パリ優先権出願", "en": "Paris-priority filing"}, "value": {"ja": "外国の第一国出願から通常12か月以内にマカオへ出願し、要件を満たして優先権を主張する。", "en": "A Macao application may generally be filed within 12 months from the first foreign filing with a compliant priority claim."}, "sourceRefs": ["macao_code", "wipo_macao_profile"]},
+        {"key": "pct_national_phase", "label": {"ja": "PCT経由", "en": "PCT-based strategy"}, "value": {"ja": "マカオへの直接PCT国内移行はない。PCT中国国内段階から生じるCNIPA出願・特許を基礎にマカオへの効力延長を検討できるが、DSEDTの独自期限を管理する。", "en": "There is no direct PCT national phase in Macao. A CNIPA application and patent resulting from the Chinese national phase may support extension to Macao, subject to Macao-specific deadlines."}, "sourceRefs": ["gov_cnipa_extension", "gov_cnipa_faq", "wipo_macao_profile"]},
+        {"key": "national_phase_deadline", "label": {"ja": "マカオ固有の期限", "en": "Macao-specific timing"}, "value": {"ja": "一律の30か月期限ではない。CNIPA出願段階の効力延長手続に加え、CNIPA登録公告後3か月以内に登録簿謄本・特許公報等を提出する。", "en": "There is no single 30-month Macao deadline. After extending the CNIPA application, the applicant must submit the register extract and granted patent documents within three months after CNIPA's grant publication."}, "sourceRefs": ["gov_cnipa_extension", "gov_cnipa_faq"]},
+        {"key": "regional_filing", "label": {"ja": "CNIPA出願の効力延長", "en": "Extension of a CNIPA application"}, "value": {"ja": "CNIPAへ発明特許を出願した後、その公開書誌事項、クレーム、明細書および図面等を中国語またはポルトガル語でDSEDTへ提出してマカオへの効力延長を申請する。", "en": "After filing an invention-patent application at CNIPA, the applicant may request extension to Macao by filing the published bibliographic page, claims, description, drawings, and required materials in Chinese or Portuguese with DSEDT."}, "sourceRefs": ["gov_cnipa_extension"]},
+        {"key": "custom_cnipa_grant_extension", "label": {"ja": "CNIPA付与後の手続", "en": "Procedure after CNIPA grant"}, "value": {"ja": "CNIPAの登録公告日から3か月以内に、特許登録簿謄本と付与された特許文書を提出するか、DSEDTによる取得を承認する。期限は延長できない。", "en": "Within three months from CNIPA's publication of grant, submit the patent-register extract and granted specification or authorize DSEDT to retrieve them. The deadline is not extendable."}, "caution": {"ja": "CNIPAの登録日ではなく登録公告日を基準に、別個のマカオ期限として管理する。", "en": "Docket this as a separate Macao deadline measured from publication of grant, not merely the grant date shown elsewhere."}, "sourceRefs": ["gov_cnipa_extension", "gov_cnipa_faq"]},
+        {"key": "custom_utility_route", "label": {"ja": "実用特許出願", "en": "Utility-patent route"}, "value": {"ja": "DSEDTへ直接出願し、実用特許の対象適格性・方式要件を満たした上で、所定期間内に審査を請求する。", "en": "A utility-patent application is filed directly with DSEDT, must satisfy the utility-patent subject-matter and formality requirements, and requires examination within the prescribed period."}, "sourceRefs": ["macao_code", "dsedt_procedures"]}
+      ]
+    },
+    {
+      "id": "filing_requirements",
+      "title": {"ja": "出願書類・方式", "en": "Filing documents and formalities"},
+      "facts": [
+        {"key": "filing_language", "label": {"ja": "手続言語", "en": "Language"}, "value": {"ja": "出願・申請はマカオの公用語である中国語またはポルトガル語で行う。外国語文書には必要な認証済み翻訳を添付する。", "en": "Applications and requests are made in Chinese or Portuguese, the official languages of Macao. Foreign-language documents require an appropriate certified translation."}, "sourceRefs": ["gov_cnipa_extension", "gov_cnipa_faq", "dsedt_spc"]},
+        {"key": "local_agent", "label": {"ja": "非居住者の代理人", "en": "Agent for non-residents"}, "value": {"ja": "マカオ居住者でない個人またはマカオで設立されていない法人は、マカオ弁護士、マカオ居住者、またはマカオで設立された法人等、認められた代理人を選任する。", "en": "An individual not resident in Macao or a body corporate not established there must appoint an accepted agent, such as a Macao lawyer, Macao resident, or body corporate established in Macao."}, "sourceRefs": ["gov_cnipa_faq", "dsedt_spc"]},
+        {"key": "application_form", "label": {"ja": "願書・申請書", "en": "Request form"}, "value": {"ja": "権利種別に対応するDSEDT所定様式を用い、出願人・発明者、発明の名称、優先権、代理人等を記載する。", "en": "Use the DSEDT form prescribed for the relevant right and provide applicant, inventor, title, priority, agent, and other required particulars."}, "sourceRefs": ["dsedt_procedures"]},
+        {"key": "description", "label": {"ja": "明細書", "en": "Description"}, "value": {"ja": "発明を当業者が実施できる程度に明確かつ完全に記載し、技術分野、従来技術、課題、解決手段および実施形態を整える。", "en": "Describe the invention clearly and completely enough for a skilled person to carry it out, covering the technical field, background, problem, solution, and embodiments."}, "sourceRefs": ["macao_code"]},
+        {"key": "claims", "label": {"ja": "クレーム", "en": "Claims"}, "value": {"ja": "保護を求める事項を明確かつ簡潔に定義し、明細書によって十分に支持されるクレームを提出する。", "en": "File claims that clearly and concisely define the matter for which protection is sought and are adequately supported by the description."}, "sourceRefs": ["macao_code"]},
+        {"key": "abstract", "label": {"ja": "要約", "en": "Abstract"}, "value": {"ja": "技術情報としての要約を提出する。要約は保護範囲を定めるものではない。", "en": "File an abstract for technical information; it does not determine the scope of protection."}, "sourceRefs": ["macao_code"]},
+        {"key": "drawings", "label": {"ja": "図面", "en": "Drawings"}, "value": {"ja": "発明の理解に必要な図面を所定の形式で提出する。実用特許では物品の形状・構造を示す図面が特に重要。", "en": "Submit drawings necessary to understand the invention in the prescribed form. Drawings showing article shape and structure are particularly important for a utility patent."}, "sourceRefs": ["macao_code"]},
+        {"key": "priority_documents", "label": {"ja": "優先権書類", "en": "Priority documents"}, "value": {"ja": "優先権主張の基礎情報と証明書類を所定期間内に提出し、必要に応じ中国語またはポルトガル語訳を添付する。", "en": "File priority particulars and supporting documents within the prescribed period, with a Chinese or Portuguese translation where required."}, "sourceRefs": ["macao_code"]},
+        {"key": "power_of_attorney", "label": {"ja": "委任状", "en": "Power of attorney"}, "value": {"ja": "代理人を選任する場合は有効な委任状を提出する。手続により署名認証が必要となり、外国語の委任状には認証済み翻訳が必要となり得る。", "en": "Where an agent is appointed, file an effective power of attorney. Signature authentication may be required, and a foreign-language power must be accompanied by a certified translation where applicable."}, "sourceRefs": ["gov_cnipa_faq", "dsedt_spc"]},
+        {"key": "notarization_legalization", "label": {"ja": "認証・印紙", "en": "Authentication and stamp duty"}, "value": {"ja": "委任状等では署名認証を確認する。外国語文書の翻訳証明には印紙税が生じる場合がある。", "en": "Check signature-authentication requirements for powers and similar documents. A translation certificate for a foreign-language document may attract stamp duty."}, "sourceRefs": ["gov_cnipa_faq", "dsedt_spc"]},
+        {"key": "sequence_listing", "label": {"ja": "配列表", "en": "Sequence listing"}, "value": {"ja": "ヌクレオチド・アミノ酸配列を含む案件は、出願時点で適用されるWIPO標準に沿った配列表とDSEDTの受入形式を確認する。", "en": "For applications containing nucleotide or amino-acid sequences, confirm the WIPO standard and DSEDT filing format applicable at the filing date."}, "sourceRefs": ["wipo_st26", "macao_code"]}
+      ]
+    },
+    {
+      "id": "claims_format",
+      "title": {"ja": "クレーム形式・補正", "en": "Claim format and amendment"},
+      "facts": [
+        {"key": "multiple_claims", "label": {"ja": "複数クレーム", "en": "Multiple claims"}, "value": {"ja": "単一の一般的発明概念の範囲内で、独立クレームと従属クレームを組み合わせることができる。", "en": "Independent and dependent claims may be combined within a single general inventive concept."}, "sourceRefs": ["macao_code"]},
+        {"key": "two_part_form", "label": {"ja": "二部形式", "en": "Two-part form"}, "value": {"ja": "適切な場合、既知の構成と特徴部分を分ける二部形式を検討する。法典・審査実務に合うポルトガル／欧州型ドラフティングが有用。", "en": "Where appropriate, consider a two-part claim separating known features from the characterizing portion. Portuguese or European-style drafting aligned with local practice can be useful."}, "sourceRefs": ["macao_code"]},
+        {"key": "reference_signs", "label": {"ja": "参照符号", "en": "Reference signs"}, "value": {"ja": "図面の参照符号をクレームに用いる場合は通常括弧書きとし、符号だけで保護範囲を不当に限定しない。", "en": "If drawing reference signs are used in claims, they are ordinarily placed in parentheses and should not alone improperly limit claim scope."}, "sourceRefs": ["macao_code"]},
+        {"key": "medical_use_claims", "label": {"ja": "医薬用途", "en": "Medical-use claims"}, "value": {"ja": "治療・診断方法自体の除外を踏まえ、医薬品・物質・組成物として許容される形式を現地実務に合わせて選択する。", "en": "Given the exclusion of treatment and diagnostic methods as such, choose an accepted product, substance, or composition format consistent with local practice."}, "sourceRefs": ["macao_code"]},
+        {"key": "amendment_standard", "label": {"ja": "補正", "en": "Amendment"}, "value": {"ja": "補正は当初出願の開示範囲を超えて新規事項を追加してはならず、付与後は権利範囲の拡張が制限される。", "en": "An amendment may not add matter beyond the application as filed, and expansion of scope after grant is restricted."}, "sourceRefs": ["macao_code"]},
+        {"key": "added_matter", "label": {"ja": "追加事項", "en": "Added matter"}, "value": {"ja": "翻訳提出時も、当初開示から直接かつ明確に導けない事項を追加しない。原文と翻訳の対応表を保存する。", "en": "Translations must not introduce matter that is not directly and clearly derivable from the original disclosure. Preserve a concordance between source and translated texts."}, "sourceRefs": ["macao_code"]},
+        {"key": "custom_cnipa_claim_alignment", "label": {"ja": "CNIPA延長案件の整合", "en": "Alignment in CNIPA-extension cases"}, "value": {"ja": "効力延長の対象はCNIPA出願・特許に依存するため、出願人、発明の内容、付与クレームおよび変更履歴をCNIPA記録と一致させる。", "en": "Because the extended right depends on the CNIPA application and patent, keep applicant identity, invention content, granted claims, and change history aligned with the CNIPA record."}, "sourceRefs": ["gov_cnipa_extension", "gov_cnipa_faq"]}
+      ]
+    },
+    {
+      "id": "examination",
+      "title": {"ja": "審査", "en": "Examination"},
+      "facts": [
+        {"key": "substantive_examination", "label": {"ja": "ルート別の実体審査", "en": "Substantive examination by route"}, "value": {"ja": "直接出願の発明特許・実用特許は請求により実体審査を受ける。CNIPAで付与された発明特許の効力延長では、DSEDTは同じ実体審査を繰り返さない。", "en": "Direct invention and utility applications undergo substantive examination upon request. For extension of a CNIPA-granted invention patent, DSEDT does not repeat the same substantive examination."}, "sourceRefs": ["macao_code", "gov_cnipa_faq"]},
+        {"key": "examination_request_deadline", "label": {"ja": "審査請求期限", "en": "Examination-request deadlines"}, "value": {"ja": "発明特許は出願日から7年以内、実用特許は出願日から4年以内に審査請求を行うのが原則。請求料・必要書類も同時に管理する。", "en": "As a general rule, request examination within seven years from filing for an invention patent and four years for a utility patent, while also docketing the fee and supporting-document requirements."}, "sourceRefs": ["macao_code", "dsedt_procedures"]},
+        {"key": "search_report", "label": {"ja": "審査報告", "en": "Examination report"}, "value": {"ja": "DSEDTが指定する機関による調査・審査報告を基礎に審査が進む場合がある。報告の請求方法、費用、翻訳要件を出願ごとに確認する。", "en": "Examination may proceed on the basis of a search or examination report from an entity designated by DSEDT. Confirm the request method, cost, and translation requirements for each case."}, "sourceRefs": ["macao_code", "dsedt_procedures"]},
+        {"key": "third_party_observations", "label": {"ja": "第三者の異議・意見", "en": "Third-party opposition or observations"}, "value": {"ja": "出願公告後、第三者は法定期間内に異議を申し立て、特許性または権利帰属に関する理由と証拠を提出できる。", "en": "After publication, a third party may oppose within the statutory period and submit grounds and evidence concerning patentability or entitlement."}, "sourceRefs": ["macao_code"]},
+        {"key": "response_deadline", "label": {"ja": "通知への応答", "en": "Response to notices"}, "value": {"ja": "欠陥通知・審査意見で指定された期間内に補正または意見書を提出する。通知ごとに延長可否を確認する。", "en": "File amendments or observations within the period specified in a deficiency notice or examination opinion, checking extension availability for each notice."}, "sourceRefs": ["macao_code", "dsedt_procedures"]},
+        {"key": "accelerated_examination", "label": {"ja": "早期審査", "en": "Acceleration"}, "value": {"ja": "マカオ直接出願について一般的なPPHを当然に利用できるとは限らない。DSEDTの現行運用と指定審査機関の利用可能性を確認する。", "en": "A general PPH should not be assumed for a direct Macao filing. Check current DSEDT practice and availability of a designated examining entity."}, "sourceRefs": ["dsedt_home", "dsedt_procedures"]},
+        {"key": "custom_cnipa_no_reexamination", "label": {"ja": "CNIPA延長時の再審査なし", "en": "No repeat examination for CNIPA extension"}, "value": {"ja": "CNIPAが付与した発明特許のマカオ効力延長については、DSEDTが特許性の実体審査を再度行わない。", "en": "DSEDT does not repeat substantive patentability examination when extending a CNIPA-granted invention patent to Macao."}, "sourceRefs": ["gov_cnipa_faq", "dsedt_annuity"]}
+      ]
+    },
+    {
+      "id": "division_continuation",
+      "title": {"ja": "分割・継続・変更", "en": "Division, continuation, and conversion"},
+      "facts": [
+        {"key": "divisional_applications", "label": {"ja": "分割出願", "en": "Divisional applications"}, "value": {"ja": "単一性欠如への対応または自発的な権利化戦略として、親出願の開示範囲内で分割出願を検討できる。", "en": "A divisional may be considered to address lack of unity or as a voluntary filing strategy, provided it remains within the parent disclosure."}, "sourceRefs": ["macao_code"]},
+        {"key": "divisional_deadline", "label": {"ja": "分割時期", "en": "Timing of division"}, "value": {"ja": "分割可能な手続段階と期限は法典およびDSEDT通知に従う。親出願の最終処分前に現地代理人と確認する。", "en": "The procedural stage and deadline for division are governed by the Code and DSEDT notices. Confirm with local counsel before final disposition of the parent."}, "sourceRefs": ["macao_code"]},
+        {"key": "voluntary_mandatory_division", "label": {"ja": "自発・命令分割", "en": "Voluntary or required division"}, "value": {"ja": "出願人の申請による分割のほか、単一性を欠く場合にDSEDTが分割を求める可能性がある。", "en": "Division may be initiated by the applicant or required by DSEDT where the application lacks unity."}, "sourceRefs": ["macao_code"]},
+        {"key": "continuation", "label": {"ja": "継続出願", "en": "Continuation"}, "value": {"ja": "米国型の継続出願制度はない。追加の権利化には分割出願または別個の新規出願を用いる。", "en": "There is no U.S.-style continuation practice. Further protection is pursued through a divisional or a separate new application."}, "sourceRefs": ["macao_code"]},
+        {"key": "continuation_in_part", "label": {"ja": "一部継続出願", "en": "Continuation-in-part"}, "value": {"ja": "米国型の一部継続出願はない。新規事項は新規出願とし、旧出願の優先権が及ぶ範囲を個別に評価する。", "en": "There is no U.S.-style continuation-in-part. New matter requires a new filing, with priority assessed claim by claim."}, "sourceRefs": ["macao_code"]},
+        {"key": "conversion", "label": {"ja": "権利種別の変更", "en": "Conversion"}, "value": {"ja": "発明特許と実用特許の間で変更が可能な場面・期限があるか、出願の対象適格性と手続段階に応じて法典を確認する。", "en": "Check the Code for whether and when conversion between an invention patent and utility patent is available, taking account of eligible subject matter and procedural stage."}, "sourceRefs": ["macao_code"]},
+        {"key": "double_patenting", "label": {"ja": "重複保護", "en": "Double protection"}, "value": {"ja": "同一発明について直接出願、実用特許、CNIPA効力延長を併用する場合、重複権利・優先関係・権利期間を出願前に整理する。", "en": "If combining direct filing, utility-patent, and CNIPA-extension strategies for the same invention, address overlapping rights, priority, and term before filing."}, "sourceRefs": ["macao_code", "gov_cnipa_extension"]}
+      ]
+    },
+    {
+      "id": "refusal_appeal",
+      "title": {"ja": "拒絶・不服申立て", "en": "Refusal and appeal"},
+      "facts": [
+        {"key": "reconsideration", "label": {"ja": "拒絶前の応答", "en": "Response before refusal"}, "value": {"ja": "方式欠陥または実体的拒絶理由の通知に対し、指定期間内に意見書・補正・証拠を提出する。", "en": "Respond to a formality or substantive objection within the specified period with observations, amendments, and evidence as appropriate."}, "sourceRefs": ["macao_code", "dsedt_procedures"]},
+        {"key": "appeal", "label": {"ja": "司法上の不服申立て", "en": "Judicial appeal"}, "value": {"ja": "DSEDTによる工業所有権の付与・拒絶等の決定は、法定要件に従い第一審裁判所へ不服申立てできる。", "en": "A DSEDT decision granting or refusing an industrial-property right may be challenged before the Court of First Instance under the statutory requirements."}, "sourceRefs": ["macao_code", "macao_judiciary"]},
+        {"key": "appeal_deadline", "label": {"ja": "不服申立期間", "en": "Appeal period"}, "value": {"ja": "通常、決定の公報公告から1か月の期間が重要となる。決定種別・通知方法により起算点を現地代理人と確認する。", "en": "A one-month period from Gazette publication is generally critical. Confirm the trigger for the specific decision and mode of notice with local counsel."}, "sourceRefs": ["macao_code", "gov_cnipa_extension", "dsedt_spc"]},
+        {"key": "amendment_on_appeal", "label": {"ja": "不服申立て中の補正", "en": "Amendment on appeal"}, "value": {"ja": "不服申立てで補正できる範囲は、追加事項禁止、手続段階および争点の制約を受ける。", "en": "Amendment on appeal is constrained by the prohibition on added matter, the procedural stage, and the issues under review."}, "sourceRefs": ["macao_code"]},
+        {"key": "judicial_review", "label": {"ja": "裁判所による審理", "en": "Court review"}, "value": {"ja": "裁判所手続では行政記録、法令解釈、証拠および専門家意見が重要となる。ポルトガル語・中国語の訴訟文書を早期に準備する。", "en": "The administrative record, statutory interpretation, evidence, and expert opinion are important in court review. Prepare Chinese or Portuguese litigation materials early."}, "sourceRefs": ["macao_code", "macao_judiciary"]},
+        {"key": "restoration", "label": {"ja": "権利回復", "en": "Restoration"}, "value": {"ja": "期限徒過の救済は期限ごとに異なる。CNIPA付与後3か月の効力延長期限は公式FAQ上、延長不可である。", "en": "Relief after a missed deadline varies by deadline. The official FAQ states that the three-month post-CNIPA-grant extension deadline is not extendable."}, "caution": {"ja": "一般的な権利回復規定があっても、明示的に延長不可の期限へ適用できると仮定しない。", "en": "Do not assume that a general restoration mechanism applies to a period expressly identified as non-extendable."}, "sourceRefs": ["gov_cnipa_faq", "macao_code"]}
+      ]
+    },
+    {
+      "id": "post_grant",
+      "title": {"ja": "登録後の手続", "en": "Post-grant matters"},
+      "facts": [
+        {"key": "allowance_formalities", "label": {"ja": "付与・証明書", "en": "Grant and certificate"}, "value": {"ja": "付与決定はマカオ特別行政区公報に公告され、原則として1か月の不服申立期間経過後に証明書を受領する。", "en": "The grant decision is published in the Official Gazette, and the certificate is generally available after the one-month appeal period."}, "sourceRefs": ["gov_cnipa_extension", "dsedt_spc"]},
+        {"key": "term_calculation", "label": {"ja": "期間の計算", "en": "Term calculation"}, "value": {"ja": "直接出願の発明特許はマカオ出願日から20年。CNIPA効力延長は基礎となる中国出願日から20年を超えない。実用特許はマカオ出願日から10年。", "en": "A directly filed invention patent runs 20 years from the Macao filing date. A CNIPA extension cannot outlast 20 years from the underlying Chinese filing date. A utility patent runs 10 years from its Macao filing date."}, "sourceRefs": ["macao_code", "dsedt_annuity"]},
+        {"key": "annuities", "label": {"ja": "年金", "en": "Annuities"}, "value": {"ja": "特許・実用特許の維持には年金納付が必要。CNIPA効力延長申請の手数料には最初の3年分が含まれ、その後はマカオで別途管理する。", "en": "Annuities are required to maintain invention and utility patents. The CNIPA-extension application fee includes the first three annuities, after which Macao payments must be docketed separately."}, "sourceRefs": ["gov_cnipa_extension", "dsedt_annuity"]},
+        {"key": "annuity_schedule", "label": {"ja": "CNIPA延長特許の年金額", "en": "CNIPA-extension annuity schedule"}, "value": {"ja": "公式案内では第4～5年は年500パタカ、第6～20年は年800パタカ。手数料は改定され得るため納付時に確認する。", "en": "Official guidance lists MOP 500 per year for years 4–5 and MOP 800 per year for years 6–20. Verify the current fee at payment."}, "sourceRefs": ["dsedt_annuity"]},
+        {"key": "fee_grace_period", "label": {"ja": "年金の追納期間", "en": "Annuity grace period"}, "value": {"ja": "年金は満了前6か月以内に納付でき、期限後も6か月以内であれば割増料とともに納付できる。追納期間も過ぎると権利が失効し得る。", "en": "An annuity may be paid during the six months before it falls due and, with surcharge, during the six months after the due date. Missing the grace period may cause lapse."}, "sourceRefs": ["gov_cnipa_faq", "dsedt_annuity"]},
+        {"key": "spc", "label": {"ja": "医薬品等の補充保護証明書", "en": "Complementary protection certificate"}, "value": {"ja": "マカオで最初の販売承認を得た医薬品・植物薬製品について、特許権者は要件を満たせば補充保護証明書を申請できる。証明書による延長は基礎特許期間を7年を超えて延長できない。", "en": "For a medicine or phyto-pharmaceutical product with its first Macao marketing authorization, the patent proprietor may apply for a complementary protection certificate if the statutory conditions are met. The certificate may not extend the underlying patent term by more than seven years."}, "sourceRefs": ["dsedt_spc", "gov_spc", "macao_code_101_200"]},
+        {"key": "correction", "label": {"ja": "訂正", "en": "Correction"}, "value": {"ja": "登録簿または特許文書の誤りは所定手続で訂正を申請する。訂正により実質的に権利範囲を拡張しない。", "en": "Errors in the register or patent documents may be corrected through the prescribed procedure, without using correction to substantively broaden scope."}, "sourceRefs": ["macao_code"]},
+        {"key": "ownership_changes", "label": {"ja": "権利者変更", "en": "Change of ownership"}, "value": {"ja": "譲渡、合併、名称・住所変更をDSEDTへ記録する。CNIPA延長案件では中国側の出願人・特許権者との一致を示す証拠が必要となり得る。", "en": "Record assignments, mergers, and name or address changes with DSEDT. In a CNIPA-extension case, evidence aligning the Macao applicant with the Chinese applicant or proprietor may be required."}, "sourceRefs": ["gov_cnipa_faq", "macao_code"]},
+        {"key": "license_recordal", "label": {"ja": "ライセンス記録", "en": "License recordal"}, "value": {"ja": "ライセンスを設定でき、DSEDTへの記録が可能。第三者効、権利行使資格およびロイヤルティ管理のため記録を検討する。", "en": "A patent may be licensed and the license recorded with DSEDT. Recordal should be considered for third-party effect, standing to enforce, and royalty administration."}, "sourceRefs": ["gov_cnipa_faq", "macao_code"]},
+        {"key": "compulsory_license", "label": {"ja": "強制実施権", "en": "Compulsory license"}, "value": {"ja": "不実施・不十分な実施、従属発明、公共利益等について、法典の条件を満たす場合に強制実施権が問題となり得る。", "en": "A compulsory license may be available under the Code for non-working or insufficient working, dependent inventions, public interest, or other specified grounds."}, "sourceRefs": ["macao_code"]}
+      ]
+    },
+    {
+      "id": "opposition_invalidity",
+      "title": {"ja": "異議・無効", "en": "Opposition and invalidity"},
+      "facts": [
+        {"key": "pre_grant_opposition", "label": {"ja": "付与前異議", "en": "Pre-grant opposition"}, "value": {"ja": "出願公告後、利害関係人は法定期間内に異議を提出できる。公報の公告日と提出期限を個別に確認する。", "en": "After publication, an interested party may file an opposition within the statutory period. Confirm the Gazette publication date and filing deadline for the specific case."}, "sourceRefs": ["macao_code"]},
+        {"key": "opposition_deadline", "label": {"ja": "異議期間", "en": "Opposition period"}, "value": {"ja": "工業所有権法典上、出願公告から2か月が基本となるが、公告種別・延長可否を現行手続で確認する。", "en": "The Industrial Property Code generally provides a two-month period from publication of the application, but the type of publication and any extension must be checked under current procedure."}, "sourceRefs": ["macao_code"]},
+        {"key": "post_grant_opposition", "label": {"ja": "付与後異議", "en": "Post-grant opposition"}, "value": {"ja": "付与後に独立した一般的行政異議を当然に利用できるとは限らず、無効・取消しは裁判手続が中心となる。", "en": "A general standalone administrative post-grant opposition should not be assumed; court invalidity or cancellation proceedings are the principal route after grant."}, "sourceRefs": ["macao_code"]},
+        {"key": "invalidation", "label": {"ja": "無効・取消し", "en": "Invalidity and cancellation"}, "value": {"ja": "特許要件欠如、開示不十分、保護対象外、追加事項、権利帰属等の法定理由により、裁判所で全部または一部の無効・取消しを求め得る。", "en": "A court may be asked to invalidate or cancel all or part of a patent for statutory grounds such as lack of patentability, insufficiency, excluded subject matter, added matter, or entitlement defects."}, "sourceRefs": ["macao_code"]},
+        {"key": "standing", "label": {"ja": "申立適格", "en": "Standing"}, "value": {"ja": "手続と主張理由により、利害関係または検察当局等の関与要件が異なる。提訴前に適格を確認する。", "en": "Standing requirements vary with the procedure and ground, including possible involvement of interested parties or the public prosecutor. Confirm standing before filing."}, "sourceRefs": ["macao_code"]},
+        {"key": "invalidity_grounds", "label": {"ja": "主な無効理由", "en": "Principal invalidity grounds"}, "value": {"ja": ["新規性・進歩性・産業上の利用可能性の欠如", "発明の十分な開示の欠如", "当初開示を超える追加事項", "特許対象から除外される事項", "正当な権利者でない者への付与"], "en": ["Lack of novelty, inventive step, or industrial applicability", "Insufficient disclosure", "Added matter beyond the application as filed", "Excluded subject matter", "Grant to a person not entitled"]}, "sourceRefs": ["macao_code"]},
+        {"key": "evidence_discovery", "label": {"ja": "証拠", "en": "Evidence"}, "value": {"ja": "先行技術、翻訳、専門家意見、実験データおよび権利承継資料を早期に整備する。英語資料は訴訟用の公用語訳が必要となり得る。", "en": "Prepare prior art, translations, expert opinions, experimental data, and entitlement records early. English material may require translation into an official language for litigation."}, "sourceRefs": ["macao_code", "macao_judiciary"]}
+      ]
+    },
+    {
+      "id": "enforcement",
+      "title": {"ja": "権利行使", "en": "Enforcement"},
+      "facts": [
+        {"key": "courts", "label": {"ja": "裁判所", "en": "Courts"}, "value": {"ja": "特許侵害・無効等の民事紛争はマカオの司法裁判所で扱われ、通常は第一審裁判所から開始する。", "en": "Civil patent infringement and invalidity disputes are handled by the Macao judicial courts, ordinarily beginning in the Court of First Instance."}, "sourceRefs": ["macao_code", "macao_judiciary"]},
+        {"key": "specialist_court", "label": {"ja": "専門裁判所", "en": "Specialist court"}, "value": {"ja": "特許事件のみを扱う独立した特許裁判所はない。技術的争点では専門家証拠が重要となる。", "en": "There is no standalone patent court devoted exclusively to patent cases. Expert evidence is important for technical issues."}, "sourceRefs": ["macao_judiciary"]},
+        {"key": "claim_construction", "label": {"ja": "クレーム解釈", "en": "Claim construction"}, "value": {"ja": "クレーム文言を基礎とし、明細書・図面を参照して保護範囲を判断する。翻訳の精度が直接影響する。", "en": "Scope is determined from the claim language with reference to the description and drawings. Translation accuracy has a direct effect."}, "sourceRefs": ["macao_code"]},
+        {"key": "doctrine_of_equivalents", "label": {"ja": "均等論", "en": "Equivalents"}, "value": {"ja": "文言外の構成については法典上の保護範囲原則と判例に照らして評価する。均等論を米国法と同一に扱わない。", "en": "Non-literal variants should be assessed under the Code's scope principles and local case law; do not assume a U.S.-identical doctrine of equivalents."}, "sourceRefs": ["macao_code", "macao_judiciary"]},
+        {"key": "indirect_infringement", "label": {"ja": "間接的関与", "en": "Indirect participation"}, "value": {"ja": "侵害への教唆・幇助、部品供給または共同関与は、特許法典と一般民事責任の双方から評価する。", "en": "Inducement, assistance, component supply, or joint participation should be assessed under both the patent provisions and general civil-liability rules."}, "sourceRefs": ["macao_code", "macao_civil_code"]},
+        {"key": "evidence_collection", "label": {"ja": "証拠収集", "en": "Evidence collection"}, "value": {"ja": "販売記録、製品サンプル、ウェブ表示、輸入資料、試験結果等を適法に保存し、必要に応じ公証または証拠保全を検討する。", "en": "Lawfully preserve sales records, product samples, web pages, import materials, and test results, and consider notarization or preservation measures where appropriate."}, "sourceRefs": ["macao_code", "macao_civil_procedure"]},
+        {"key": "preliminary_injunction", "label": {"ja": "仮処分", "en": "Interim injunction"}, "value": {"ja": "緊急性、権利の蓋然性、回復困難な損害等を立証して暫定的差止め・保全措置を求める余地がある。担保が求められる場合がある。", "en": "Interim injunctive or preservation relief may be sought upon proof including urgency, likelihood of the right, and harm difficult to repair. Security may be required."}, "sourceRefs": ["macao_code", "macao_civil_procedure"]},
+        {"key": "permanent_injunction", "label": {"ja": "終局的差止め", "en": "Final injunction"}, "value": {"ja": "侵害が認められれば、侵害行為の停止、侵害品の市場からの除去等の救済を求め得る。", "en": "If infringement is established, relief may include cessation of infringing acts and removal of infringing goods from the market."}, "sourceRefs": ["macao_code"]},
+        {"key": "damages", "label": {"ja": "損害賠償", "en": "Damages"}, "value": {"ja": "侵害により生じた損害について、因果関係、逸失利益、侵害者利益、合理的な使用料その他の事情を踏まえて賠償を請求する。", "en": "Compensation may be claimed for loss caused by infringement, considering causation, lost profits, infringer's profits, reasonable royalty, and other relevant circumstances."}, "sourceRefs": ["macao_code", "macao_civil_code"]},
+        {"key": "limitation_period", "label": {"ja": "時効", "en": "Limitation"}, "value": {"ja": "侵害差止め・損害賠償・不当利得等で期間と起算点が異なり得る。侵害認識時点と各行為日を記録し、現地弁護士へ早期確認する。", "en": "Limitation periods and triggers may differ for injunctions, damages, and unjust enrichment. Record knowledge and act dates and obtain early local advice."}, "sourceRefs": ["macao_civil_code", "macao_code"]},
+        {"key": "customs", "label": {"ja": "税関・刑事措置", "en": "Customs and criminal measures"}, "value": {"ja": "侵害の態様により税関協力または刑事規定が関係し得るが、商標・著作権と同じ水際登録制度を当然に前提とせず個別確認する。", "en": "Customs cooperation or criminal provisions may be relevant depending on the conduct, but do not assume the same border-recordal regime used for trademarks or copyright; verify case by case."}, "sourceRefs": ["macao_code", "macao_customs"]}
+      ]
+    },
+    {
+      "id": "practical_notes",
+      "title": {"ja": "実務上の注意", "en": "Practical notes"},
+      "facts": [
+        {"key": "practical_highlights", "label": {"ja": "最重要ポイント", "en": "Critical points"}, "value": {"ja": ["中国特許はマカオへ自動的に及ばない", "CNIPA登録公告後3か月の期限は延長不可", "直接発明特許は7年、実用特許は4年の審査請求期限を管理", "手続言語は中国語またはポルトガル語", "マカオ年金を中国年金と別に管理"], "en": ["A Chinese patent does not automatically cover Macao", "The three-month post-CNIPA-grant period is non-extendable", "Docket the seven-year invention and four-year utility examination periods", "Proceedings are in Chinese or Portuguese", "Docket Macao annuities separately from Chinese annuities"]}, "sourceRefs": ["gov_cnipa_extension", "gov_cnipa_faq", "macao_code", "dsedt_annuity"]},
+        {"key": "local_practice", "label": {"ja": "ルート選択", "en": "Choosing a route"}, "value": {"ja": "中国本土でも権利化する案件はCNIPA効力延長が効率的なことがある。一方、マカオ固有の早期出願日、独自クレームまたは中国出願に依存しない権利が必要なら直接出願を比較する。", "en": "For inventions also pursued in mainland China, CNIPA extension may be efficient. Compare a direct filing where an independent Macao filing date, distinct claims, or a right not dependent on the Chinese application is important."}, "sourceRefs": ["gov_cnipa_extension", "macao_code"]},
+        {"key": "custom_cnipa_event_docketing", "label": {"ja": "CNIPAイベント管理", "en": "Docketing CNIPA events"}, "value": {"ja": "CNIPAの公開、出願人変更、付与、登録公告、補正、無効・失効をマカオ案件と連携して監視する。特に登録公告日から3か月を自動起票する。", "en": "Monitor CNIPA publication, applicant changes, grant, grant publication, amendment, invalidation, and lapse in connection with the Macao file. Automatically docket three months from publication of grant."}, "sourceRefs": ["gov_cnipa_extension", "gov_cnipa_faq"]},
+        {"key": "custom_translation_control", "label": {"ja": "翻訳管理", "en": "Translation control"}, "value": {"ja": "英語原稿から中国語・ポルトガル語へ翻訳する場合、クレーム用語集、原文対照、数値・符号チェックを行い、補正で修復できない新規事項や不一致を防ぐ。", "en": "When translating an English draft into Chinese or Portuguese, use a claim glossary, source-text concordance, and numerical/reference-sign checks to prevent discrepancies or new matter that amendment cannot cure."}, "sourceRefs": ["macao_code", "dsedt_spc"]},
+        {"key": "custom_name_consistency", "label": {"ja": "名義の一致", "en": "Applicant-name consistency"}, "value": {"ja": "CNIPA効力延長では中国側とマカオ側の出願人が一致していることを確認し、相違があれば譲渡・合併・名称変更証拠を期限前に準備する。", "en": "For a CNIPA extension, ensure that Chinese and Macao applicant names are consistent; if not, prepare assignment, merger, or name-change evidence before the deadline."}, "sourceRefs": ["gov_cnipa_faq"]},
+        {"key": "custom_fee_separation", "label": {"ja": "料金・年金の分離", "en": "Separate fees and annuities"}, "value": {"ja": "CNIPA手数料・年金の納付はマカオの手数料・年金を代替しない。別法域、別通貨、別期限として管理する。", "en": "CNIPA fees and annuities do not replace Macao fees and annuities. Docket them as separate jurisdictions, currencies, and deadlines."}, "sourceRefs": ["gov_cnipa_extension", "dsedt_annuity"]},
+        {"key": "recent_developments", "label": {"ja": "更新確認", "en": "Current-practice check"}, "value": {"ja": "法典は長期運用されている一方、様式、電子出願、手数料、DSEDTの部門名・運用は更新される。各出願時に最新案内を確認する。", "en": "Although the Code has been in force for many years, forms, e-filing, fees, DSEDT organization, and practice change. Check current guidance for every filing."}, "sourceRefs": ["dsedt_home", "dsedt_procedures"]}
+      ]
+    },
+    {
+      "id": "local_counsel_faq",
+      "title": {"ja": "現地代理人への確認事項", "en": "Questions for local counsel"},
+      "facts": [
+        {"key": "local_counsel_question", "label": {"ja": "どのルートを選ぶべきか", "en": "Which route should we choose?"}, "value": {"ja": "CNIPA効力延長と直接発明特許を、費用、審査時期、クレーム柔軟性、中国案件への依存、権利期間の観点から比較してください。", "en": "Please compare CNIPA extension and direct invention filing for cost, examination timing, claim flexibility, dependence on the Chinese case, and patent term."}, "sourceRefs": ["gov_cnipa_extension", "macao_code"]},
+        {"key": "local_counsel_question", "label": {"ja": "直近の期限は何か", "en": "What is the next deadline?"}, "value": {"ja": "CNIPAの公開日・登録公告日、マカオ申請日、審査請求期限、年金期限を確認し、延長不可期限を明示してください。", "en": "Please confirm the CNIPA publication and grant-publication dates, Macao filing date, examination deadline, and annuity date, and identify every non-extendable period."}, "sourceRefs": ["gov_cnipa_extension", "gov_cnipa_faq", "dsedt_annuity"]},
+        {"key": "local_counsel_question", "label": {"ja": "必要な翻訳は何か", "en": "What translations are required?"}, "value": {"ja": "中国語・ポルトガル語のどちらが望ましいか、明細書・クレーム・優先権書類・委任状・譲渡証の翻訳および認証範囲を確認してください。", "en": "Please advise whether Chinese or Portuguese is preferable and the translation and certification requirements for the specification, claims, priority papers, power, and assignment."}, "sourceRefs": ["gov_cnipa_extension", "dsedt_spc"]},
+        {"key": "local_counsel_question", "label": {"ja": "審査報告はどう取得するか", "en": "How is the examination report obtained?"}, "value": {"ja": "直接出願・実用特許について、指定審査機関、請求手続、費用、見込み期間、応答言語を確認してください。", "en": "For a direct invention or utility application, please confirm the designated examining entity, request procedure, cost, expected timing, and response language."}, "sourceRefs": ["macao_code", "dsedt_procedures"]},
+        {"key": "local_counsel_question", "label": {"ja": "実用特許に適するか", "en": "Is a utility patent suitable?"}, "value": {"ja": "対象が物品の形状・構造・機構・配置として適格か、方法クレームを除外すべきか、発明特許との併願・変更が可能か確認してください。", "en": "Please confirm whether the subject matter qualifies as an article's shape, structure, mechanism, or arrangement, whether method claims must be excluded, and whether parallel filing or conversion with an invention patent is available."}, "sourceRefs": ["macao_code"]},
+        {"key": "local_counsel_question", "label": {"ja": "SPCの申請期限は何か", "en": "What is the CPC filing deadline?"}, "value": {"ja": "医薬品・植物薬製品について、基礎特許、マカオ最初の販売承認、申請期限、対象製品、最大期間の計算を確認してください。", "en": "For a medicine or phyto-pharmaceutical product, please confirm the basic patent, first Macao marketing authorization, filing deadline, eligible product, and calculation of the maximum certificate term."}, "sourceRefs": ["dsedt_spc", "gov_spc", "macao_code_101_200"]},
+        {"key": "local_counsel_question", "label": {"ja": "権利行使前に何が必要か", "en": "What is needed before enforcement?"}, "value": {"ja": "権利の有効性、年金、名義、翻訳、侵害分析、証拠保全、仮処分の要件、無効反訴リスクを確認してください。", "en": "Please confirm validity, annuities, ownership, translations, infringement analysis, evidence preservation, interim-relief requirements, and invalidity-counterclaim risk before enforcement."}, "sourceRefs": ["macao_code", "macao_civil_procedure"]}
+      ]
+    }
+  ],
+  "sources": [
+    {"id": "macao_code", "title": {"ja": "工業所有権法典（第97/99/M号法令、英訳）", "en": "Industrial Property Code (Decree-Law No. 97/99/M, English translation)"}, "publisher": {"ja": "マカオ特別行政区印務局", "en": "Printing Bureau, Macao SAR"}, "url": "https://bo.dsaj.gov.mo/bo/i/99/50/codrjpien/default.asp?printer=1", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "macao_code_101_200", "title": {"ja": "工業所有権法典 第101条～第200条（英訳）", "en": "Industrial Property Code, Articles 101–200 (English translation)"}, "publisher": {"ja": "マカオ特別行政区印務局", "en": "Printing Bureau, Macao SAR"}, "url": "https://bo.dsaj.gov.mo/bo/i/99/50/codrjpien/codrjpi101.asp?printer=1", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "dsedt_home", "title": {"ja": "経済及科技発展局―知的財産", "en": "Economic and Technological Development Bureau – Intellectual Property"}, "publisher": {"ja": "マカオ特別行政区政府経済及科技発展局", "en": "Economic and Technological Development Bureau"}, "url": "https://www.dsedt.gov.mo/en_US/pg_home", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "dsedt_procedures", "title": {"ja": "知的財産行政手続案内", "en": "Intellectual Property Administrative Procedures"}, "publisher": {"ja": "マカオ特別行政区政府経済及科技発展局", "en": "Economic and Technological Development Bureau"}, "url": "https://www.dsedt.gov.mo/en_US/web/public/pg_ip_ap", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "gov_cnipa_extension", "title": {"ja": "CNIPA発明特許出願の効力延長―申請", "en": "Extension of Application of Invention Patent from CNIPA – Application for Extension"}, "publisher": {"ja": "マカオ特別行政区政府ポータル", "en": "Macao SAR Government Portal"}, "url": "https://www.gov.mo/en/services/ps-1341/ps-1341a/", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "gov_cnipa_faq", "title": {"ja": "CNIPA発明特許出願の効力延長―FAQ", "en": "Extension of Application of Invention Patent from CNIPA – FAQs"}, "publisher": {"ja": "マカオ特別行政区政府ポータル", "en": "Macao SAR Government Portal"}, "url": "https://www.gov.mo/en/services/ps-1341/faqs/", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "dsedt_annuity", "title": {"ja": "CNIPA発明特許の効力延長―年金案内", "en": "Extension of CNIPA Invention Patent – Annual Fee Information"}, "publisher": {"ja": "マカオ特別行政区政府経済及科技発展局", "en": "Economic and Technological Development Bureau"}, "url": "https://www.dsedt.gov.mo/en_US/web/public/pg_ip_ap?slug=ps-1310b", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "gov_spc", "title": {"ja": "医薬品・植物薬製品の補充保護証明書", "en": "Complementary Certificate for the Protection of Medicines and Phyto-pharmaceutical Products"}, "publisher": {"ja": "マカオ特別行政区政府ポータル", "en": "Macao SAR Government Portal"}, "url": "https://www.gov.mo/en/services/ps-1346/", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "dsedt_spc", "title": {"ja": "補充保護証明書―申請手続", "en": "Complementary Protection Certificate – Application Procedure"}, "publisher": {"ja": "マカオ特別行政区政府経済及科技発展局", "en": "Economic and Technological Development Bureau"}, "url": "https://www.dsedt.gov.mo/en_US/web/public/pg_ip_ap?slug=ps-1346a", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "wipo_macao_profile", "title": {"ja": "WIPO Lex マカオ法域プロファイル", "en": "WIPO Lex Jurisdiction Profile: Macao"}, "publisher": "WIPO", "url": "https://www.wipo.int/wipolex/en/members/profile/MO", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "wipo_st26", "title": {"ja": "WIPO標準ST.26", "en": "WIPO Standard ST.26"}, "publisher": "WIPO", "url": "https://www.wipo.int/standards/en/sequence/index.html", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "macao_judiciary", "title": {"ja": "マカオ特別行政区法院", "en": "Courts of the Macao Special Administrative Region"}, "publisher": {"ja": "マカオ特別行政区法院", "en": "Courts of the Macao SAR"}, "url": "https://www.court.gov.mo/en/", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "macao_civil_code", "title": {"ja": "マカオ民法典", "en": "Macao Civil Code"}, "publisher": {"ja": "マカオ特別行政区印務局", "en": "Printing Bureau, Macao SAR"}, "url": "https://bo.dsaj.gov.mo/bo/i/99/31/codcivien/default.asp", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "macao_civil_procedure", "title": {"ja": "マカオ民事訴訟法典", "en": "Macao Code of Civil Procedure"}, "publisher": {"ja": "マカオ特別行政区印務局", "en": "Printing Bureau, Macao SAR"}, "url": "https://bo.dsaj.gov.mo/bo/i/99/40/codprocivien/default.asp", "language": "en", "accessedAt": "2026-09-18"},
+    {"id": "macao_customs", "title": {"ja": "マカオ税関", "en": "Macao Customs Service"}, "publisher": {"ja": "マカオ特別行政区政府税関", "en": "Macao Customs Service"}, "url": "https://www.customs.gov.mo/en/", "language": "en", "accessedAt": "2026-09-18"}
+  ]
+}
