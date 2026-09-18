@@ -1,0 +1,617 @@
+{
+  "id": "pl",
+  "type": "country",
+  "flag": "🇵🇱",
+  "region": "europe",
+  "names": {
+    "ja": "ポーランド共和国",
+    "en": "Republic of Poland",
+    "pl": "Rzeczpospolita Polska"
+  },
+  "office": {
+    "ja": "ポーランド共和国特許庁（UPRP）",
+    "en": "Patent Office of the Republic of Poland (UPRP)",
+    "pl": "Urząd Patentowy Rzeczypospolitej Polskiej (UPRP)"
+  },
+  "availableLanguages": [
+    "pl"
+  ],
+  "createdAt": "2026-09-13",
+  "updatedAt": "2026-09-13",
+  "status": "review",
+  "facts": {
+    "authority": {
+      "ja": "ポーランド共和国特許庁（UPRP）。国内商標の出願、審査、登録、異議、取消・無効手続を担当する。",
+      "en": "Patent Office of the Republic of Poland (UPRP), responsible for national trademark applications, examination, registration, opposition, revocation and invalidity.",
+      "pl": "Urząd Patentowy Rzeczypospolitej Polskiej (UPRP), właściwy w sprawach krajowych zgłoszeń, rejestracji, sprzeciwów, wygaszenia i unieważnienia znaków towarowych."
+    },
+    "protectionScope": {
+      "ja": "商品・役務の個別商標、共同商標、保証商標等。EU商標およびポーランド指定の国際登録も効力を有する。",
+      "en": "Individual marks for goods/services, collective marks and guarantee marks. EUTMs and international registrations designating Poland also have effect.",
+      "pl": "Indywidualne znaki towarowe dla towarów i usług, wspólne znaki towarowe i wspólne znaki gwarancyjne. W Polsce skuteczne są także znaki UE i rejestracje międzynarodowe wyznaczające Polskę."
+    },
+    "markTypes": {
+      "ja": "文字、図形、結合、立体、位置、模様、色彩、音、動き、マルチメディア、ホログラム等。明確かつ正確に表示できることが必要。",
+      "en": "Word, figurative, combined, shape, position, pattern, color, sound, motion, multimedia and hologram marks, if represented clearly and precisely.",
+      "pl": "Znaki słowne, graficzne, słowno-graficzne, przestrzenne, pozycyjne, deseń, kolor, dźwiękowe, ruchome, multimedialne i holograficzne, jeżeli mogą być przedstawione jasno i precyzyjnie."
+    },
+    "madridAccessionDate": {
+      "ja": "1991年3月18日（マドリッド協定）、1997年3月4日（マドリッド協定議定書）。",
+      "en": "18 March 1991 (Madrid Agreement); 4 March 1997 (Madrid Protocol).",
+      "pl": "18 marca 1991 r. (Porozumienie madryckie); 4 marca 1997 r. (Protokół madrycki)."
+    },
+    "niceClassification": {
+      "ja": "採用。出願時の最新版、TMclassおよびUPRPの表示実務を確認する。",
+      "en": "Adopted; consult the current edition, TMclass and UPRP specification practice at filing.",
+      "pl": "Stosowana jest klasyfikacja nicejska; przy zgłoszeniu należy sprawdzić aktualną edycję, TMclass i praktykę UPRP."
+    },
+    "classHeadingPractice": {
+      "ja": "類見出しは通常の字義範囲に限られ、区分全体を当然には包含しない。商品・役務を明確かつ具体的に記載する。",
+      "en": "Class headings cover their ordinary literal meaning and do not automatically cover the whole class; specify goods and services clearly and precisely.",
+      "pl": "Nagłówki klas obejmują ich zwykłe literalne znaczenie, a nie automatycznie całą klasę; towary i usługi należy określić jasno i precyzyjnie."
+    },
+    "retailServices": {
+      "ja": "第35類で可。小売・卸売の対象商品を具体的に記載する。",
+      "en": "Available in Class 35; specify the goods to which retail or wholesale services relate.",
+      "pl": "Dopuszczalne w klasie 35; należy wskazać towary, których dotyczą usługi sprzedaży detalicznej lub hurtowej."
+    },
+    "multiClassApplication": {
+      "ja": "可。追加区分ごとに料金。",
+      "en": "Available, with fees for additional classes.",
+      "pl": "Dopuszczalne; za kolejne klasy pobierane są opłaty."
+    },
+    "applicationForm": {
+      "ja": "UPRPの電子サービスまたは所定様式で、出願人、標章、商品・役務、優先権等を提出する。手続言語はポーランド語。",
+      "en": "File electronically or on the prescribed form, identifying the applicant, mark, goods/services and priority. Proceedings are conducted in Polish.",
+      "pl": "Zgłoszenie elektroniczne lub na formularzu powinno wskazywać zgłaszającego, znak, towary/usługi i pierwszeństwo. Postępowanie prowadzi się w języku polskim."
+    },
+    "powerOfAttorney": {
+      "ja": "代理人を選任する場合は委任状を提出する。EEA外の出願人は原則としてポーランドの弁理士等による代理が必要。",
+      "en": "File a power of attorney when appointing a representative. Applicants outside the EEA generally require a qualified Polish representative.",
+      "pl": "Przy ustanowieniu pełnomocnika składa się pełnomocnictwo. Zgłaszający spoza EOG co do zasady działają przez uprawnionego pełnomocnika w Polsce."
+    },
+    "priorityDocuments": {
+      "ja": "パリ優先権は最初の出願から6か月以内に主張し、UPRPが定める期限内に証明書および必要な翻訳を提出する。",
+      "en": "Claim Paris priority within six months from the first filing and submit the certificate and any required translation within the UPRP deadline.",
+      "pl": "Pierwszeństwo konwencyjne należy zgłosić w ciągu sześciu miesięcy i przedłożyć dokument pierwszeństwa oraz wymagane tłumaczenie w terminie UPRP."
+    },
+    "homeRegistrationCertificate": {
+      "ja": "通常の直接出願には不要。パリ条約第6条の5に基づく本国登録援用等では個別確認する。",
+      "en": "Not normally required for a direct filing; check separately when relying on home-country registration under Paris Convention Article 6quinquies.",
+      "pl": "Zwykle niewymagane przy zgłoszeniu krajowym; należy sprawdzić przy powołaniu się na rejestrację w kraju pochodzenia zgodnie z art. 6quinquies konwencji paryskiej."
+    },
+    "useEvidenceAtFiling": {
+      "ja": "通常不要。使用による識別力、周知性、名声、先使用等を主張する場合にポーランドでの証拠を提出する。",
+      "en": "Not normally required; Polish evidence is needed for acquired distinctiveness, reputation, well-known status or prior-use claims.",
+      "pl": "Zwykle niewymagane; dowody dotyczące Polski są potrzebne przy wtórnej zdolności odróżniającej, renomie, powszechnej znajomości lub wcześniejszym używaniu."
+    },
+    "notarizationCertification": {
+      "ja": "通常の委任状は公証・アポスティーユ不要。ただし署名、譲渡、合併、外国公文書は手続別に確認する。",
+      "en": "An ordinary power generally requires no notarization or apostille; check signatures, assignments, mergers and foreign official documents separately.",
+      "pl": "Zwykłe pełnomocnictwo co do zasady nie wymaga notarialnego poświadczenia ani apostille; odrębnie należy sprawdzić podpisy, cesje, połączenia i dokumenty zagraniczne."
+    },
+    "otherDocuments": {
+      "ja": "標章表示、優先権証明、共同・保証商標の規則、非伝統的商標ファイル、使用による識別力・名声の証拠等。",
+      "en": "Representation, priority document, regulations for collective/guarantee marks, non-traditional mark files and evidence of acquired distinctiveness or reputation.",
+      "pl": "Przedstawienie znaku, dokument pierwszeństwa, regulamin znaku wspólnego lub gwarancyjnego, pliki znaków nietradycyjnych oraz dowody wtórnej zdolności odróżniającej lub renomy."
+    },
+    "absoluteGroundsExamination": {
+      "ja": "あり。UPRPが職権審査する。",
+      "en": "Yes; examined ex officio by UPRP.",
+      "pl": "Tak; UPRP bada bezwzględne przeszkody z urzędu."
+    },
+    "distinctivenessGrounds": {
+      "ja": "識別力欠如、普通名称、記述的・慣用的表示等。使用による識別力を立証できる場合がある。",
+      "en": "Non-distinctive, generic, descriptive or customary signs may be refused; acquired distinctiveness may be established.",
+      "pl": "Odmowie mogą podlegać oznaczenia pozbawione charakteru odróżniającego, rodzajowe, opisowe lub zwyczajowe; możliwe jest wykazanie wtórnej zdolności odróżniającej."
+    },
+    "otherAbsoluteGrounds": {
+      "ja": "公序良俗、欺瞞性、国旗・紋章等の公的記章、機能的・本質的形状、地理的表示、伝統的用語、植物品種名称、悪意等。",
+      "en": "Grounds include public order or morality, deception, official emblems, functional or inherent shapes, GIs, traditional terms, plant-variety names and bad faith.",
+      "pl": "Przeszkody obejmują porządek publiczny lub dobre obyczaje, wprowadzanie w błąd, godła urzędowe, kształty funkcjonalne, oznaczenia geograficzne, określenia tradycyjne, nazwy odmian roślin i złą wiarę."
+    },
+    "relativeGroundsExamination": {
+      "ja": "原則として職権審査なし。先行権利者が公告から3か月以内に異議を申し立てる。出願前のクリアランス調査が重要。",
+      "en": "Generally not examined ex officio. Earlier-right owners must oppose within three months from publication, making pre-filing clearance important.",
+      "pl": "Co do zasady brak badania z urzędu. Uprawniony z wcześniejszego prawa musi wnieść sprzeciw w ciągu trzech miesięcy od publikacji; istotne jest badanie przed zgłoszeniem."
+    },
+    "disclaimer": {
+      "ja": "権利範囲の限定・非識別部分の扱いは標章全体と具体的決定により判断される。任意のディスクレームで絶対的拒絶を当然に解消できる制度とは考えない。",
+      "en": "Treatment of non-distinctive matter depends on the mark as a whole and the decision; a voluntary disclaimer should not be assumed automatically to cure an absolute-ground objection.",
+      "pl": "Zakres ochrony elementów nieodróżniających zależy od znaku jako całości i decyzji; dobrowolne zrzeczenie nie usuwa automatycznie przeszkody bezwzględnej."
+    },
+    "consent": {
+      "ja": "先行権利者の同意のみで登録が当然に認められるとは限らない。異議の取下げ、共存合意および公序の観点を個別に確認する。",
+      "en": "Consent alone does not necessarily guarantee registration; assess withdrawal of opposition, coexistence terms and public-interest considerations individually.",
+      "pl": "Sama zgoda nie gwarantuje rejestracji; należy odrębnie ocenić cofnięcie sprzeciwu, warunki koegzystencji i interes publiczny."
+    },
+    "acceleratedExamination": {
+      "ja": "一般的な早期審査制度の利用可否は最新UPRP実務を確認する。緊急事情は理由・証拠を添えて事前相談する。",
+      "en": "Verify current UPRP practice on acceleration; urgent circumstances should be discussed with reasons and supporting evidence.",
+      "pl": "Należy sprawdzić aktualną praktykę UPRP dotyczącą przyspieszenia; pilne okoliczności powinny być uzasadnione i udokumentowane."
+    },
+    "thirdPartyObservation": {
+      "ja": "絶対的拒絶理由に関する第三者情報提出の可否とは別に、先行権利は正式な3か月異議で主張する。",
+      "en": "Apart from any observations on absolute grounds, earlier rights should be asserted through the formal three-month opposition procedure.",
+      "pl": "Niezależnie od ewentualnych uwag dotyczących przeszkód bezwzględnych, wcześniejsze prawa należy podnosić w formalnym sprzeciwie w terminie trzech miesięcy."
+    },
+    "responsePeriod": {
+      "ja": "通知で指定される期間（実務上2か月となることが多い）内に応答する。通知ごとに起算日と期限を確認する。",
+      "en": "Respond within the period set in the notice (often two months in practice); verify the start date and deadline in each communication.",
+      "pl": "Odpowiedzi udziela się w terminie wyznaczonym w piśmie (w praktyce często dwóch miesięcy); każdorazowo należy sprawdzić początek i koniec terminu."
+    },
+    "extensionAvailable": {
+      "ja": "手続・期限により可能。法定の延長不能期限に注意。",
+      "en": "Available for certain procedural deadlines; statutory non-extendable periods require care.",
+      "pl": "Możliwe dla niektórych terminów procesowych; należy uważać na ustawowe terminy nieprzedłużalne."
+    },
+    "extensionLength": {
+      "ja": "通知、期限の性質およびUPRPの決定による。",
+      "en": "Depends on the notice, nature of the deadline and UPRP decision.",
+      "pl": "Zależy od pisma, charakteru terminu i decyzji UPRP."
+    },
+    "extensionRequirements": {
+      "ja": "期限前の申請、理由および場合により料金が必要。期限徒過後の救済要件は別途厳格に確認する。",
+      "en": "A timely request, reasons and possibly a fee may be required; post-deadline remedies have separate strict conditions.",
+      "pl": "Może być wymagany wniosek przed terminem, uzasadnienie i opłata; przywrócenie terminu podlega odrębnym rygorystycznym warunkom."
+    },
+    "refusalResponseRoute": {
+      "ja": "審査官の通知には意見書・補正等で応答。最終拒絶決定にはUPRPへの再審理申立てを経て行政裁判所への不服申立てが可能。",
+      "en": "Answer examination objections by observations or amendment. A final refusal may be challenged by a request for reconsideration before UPRP and then before the administrative courts.",
+      "pl": "Na zastrzeżenia odpowiada się wyjaśnieniami lub zmianą wykazu. Ostateczną odmowę można zaskarżyć wnioskiem o ponowne rozpatrzenie przez UPRP, a następnie do sądu administracyjnego."
+    },
+    "refusalAppealPeriod": {
+      "ja": "決定送達後の再審理申立て・裁判所出訴期限は決定の教示を確認する。一般に再審理申立ては14日または1か月となり得るため案件別確認必須。",
+      "en": "Check the instructions attached to the decision for reconsideration and court deadlines; Polish procedural periods vary by decision and route.",
+      "pl": "Terminy wniosku o ponowne rozpatrzenie i skargi sądowej należy sprawdzić w pouczeniu decyzji; różnią się zależnie od rodzaju decyzji i trybu."
+    },
+    "appealRoute": {
+      "ja": "UPRPへの再審理申立て、その後ワルシャワ県行政裁判所、さらに最高行政裁判所への上告経路がある。",
+      "en": "A request for reconsideration before UPRP may be followed by review in the Warsaw Voivodeship Administrative Court and cassation to the Supreme Administrative Court.",
+      "pl": "Możliwy jest wniosek o ponowne rozpatrzenie przez UPRP, następnie skarga do WSA w Warszawie i skarga kasacyjna do NSA."
+    },
+    "publicDatabase": {
+      "ja": "UPRP電子検索（e‑Wyszukiwarka）",
+      "en": "UPRP e‑Search",
+      "pl": "e‑Wyszukiwarka UPRP",
+      "url": "https://ewyszukiwarka.pue.uprp.gov.pl/"
+    },
+    "publicationStage": {
+      "ja": "形式・絶対的要件の審査後、出願を特許庁公報（BUP）に公告し、3か月の異議期間に入る。",
+      "en": "After formal and absolute-ground examination, the application is published in the Patent Office Bulletin (BUP) for a three-month opposition period.",
+      "pl": "Po badaniu formalnym i bezwzględnych przeszkód zgłoszenie publikuje się w Biuletynie Urzędu Patentowego (BUP), rozpoczynając trzymiesięczny okres sprzeciwowy."
+    },
+    "oppositionPeriod": {
+      "ja": "BUPでの出願公告日から3か月。",
+      "en": "Three months from publication of the application in BUP.",
+      "pl": "Trzy miesiące od publikacji zgłoszenia w BUP."
+    },
+    "oppositionExtension": {
+      "ja": "法定3か月は原則延長不可。異議受理後、当事者には和解のため2か月のクーリングオフ期間があり、共同申請で延長可能。",
+      "en": "The statutory three-month period is generally not extendable. After opposition, the parties have a two-month cooling-off period, extendable on joint request.",
+      "pl": "Ustawowy termin trzech miesięcy co do zasady nie podlega przedłużeniu. Po wniesieniu sprzeciwu strony mają dwumiesięczny okres ugodowy, który może być przedłużony na wspólny wniosek."
+    },
+    "directExaminationPeriod": {
+      "ja": "標準案件の平均期間は変動する。UPRPの最新処理統計を確認し、異議なしでも数か月以上を見込む。",
+      "en": "Average timing varies; consult current UPRP statistics and allow several months or more even without opposition.",
+      "pl": "Średni czas jest zmienny; należy sprawdzić aktualne statystyki UPRP i zakładać co najmniej kilka miesięcy nawet bez sprzeciwu."
+    },
+    "madridExaminationPeriod": {
+      "ja": "ポーランド指定の暫定拒絶通知期間は原則18か月枠。実際の審査期間はUPRP・WIPOの最新情報を確認する。",
+      "en": "The notification period for a Poland designation is generally within the 18-month Madrid framework; check current UPRP/WIPO timing.",
+      "pl": "Termin notyfikacji dla wyznaczenia Polski mieści się co do zasady w 18-miesięcznych ramach madryckich; należy sprawdzić aktualne dane UPRP/WIPO."
+    },
+    "averagePendency": {
+      "ja": "出願内容、異議、補正、料金納付等で変動。登録決定後の保護期間料金の納付も完了時期に影響する。",
+      "en": "Depends on objections, opposition, amendments and fee payment; payment of the protection-period fee after allowance also affects completion.",
+      "pl": "Zależy od zastrzeżeń, sprzeciwu, zmian i opłat; na zakończenie wpływa również wniesienie opłaty za pierwszy okres ochrony po decyzji."
+    },
+    "term": {
+      "ja": "10年",
+      "en": "10 years",
+      "pl": "10 lat"
+    },
+    "termStart": {
+      "ja": "出願日から。10年ごとに更新可能。",
+      "en": "From the filing date; renewable for successive ten-year periods.",
+      "pl": "Od daty zgłoszenia; prawo może być przedłużane na kolejne okresy dziesięcioletnie."
+    },
+    "renewalWindow": {
+      "ja": "満了前6か月以内に更新手続を行う。最新の料金・方式を確認する。",
+      "en": "Renew within six months before expiry; verify current fees and formalities.",
+      "pl": "Przedłużenia dokonuje się w ciągu sześciu miesięcy przed upływem ochrony; należy sprawdzić aktualne opłaty i wymogi."
+    },
+    "gracePeriod": {
+      "ja": "満了後6か月。割増料金が必要で、この追加期間自体は回復不可。",
+      "en": "Six months after expiry, subject to a surcharge; the additional period itself is not restorable.",
+      "pl": "Sześć miesięcy po upływie ochrony, za opłatą dodatkową; tego dodatkowego terminu nie można przywrócić."
+    },
+    "renewalEvidence": {
+      "ja": "通常、使用証拠は更新要件ではない。更新申請・料金および名義情報を確認する。",
+      "en": "Proof of use is not normally a renewal requirement; verify the renewal request, fee and owner details.",
+      "pl": "Dowód używania zwykle nie jest warunkiem przedłużenia; należy sprawdzić wniosek, opłatę i dane uprawnionego."
+    },
+    "nonUseCancellation": {
+      "ja": "あり。UPRPへの行政上の権利消滅申立て。",
+      "en": "Available through an administrative request for revocation before UPRP.",
+      "pl": "Dostępne w drodze wniosku o stwierdzenie wygaśnięcia prawa przed UPRP."
+    },
+    "nonUsePeriod": {
+      "ja": "登録後5年間、正当な理由なくポーランドで真正な使用がない場合。継続5年の使用中断も対象。",
+      "en": "Five years without genuine use in Poland after registration, absent proper reasons; an uninterrupted five-year suspension also applies.",
+      "pl": "Pięć lat braku rzeczywistego używania w Polsce bez usprawiedliwionych powodów; dotyczy również nieprzerwanego pięcioletniego zaprzestania używania."
+    },
+    "nonUseDefenses": {
+      "ja": "関連期間の真正使用、正当な不使用理由、申立前3か月より前の使用開始・再開等を証拠化する。立証責任と部分取消に注意。",
+      "en": "Evidence genuine use, proper reasons for non-use, or commencement/resumption before the relevant three-month pre-action period; consider burden of proof and partial revocation.",
+      "pl": "Należy wykazać rzeczywiste używanie, usprawiedliwione powody nieużywania albo rozpoczęcie/wznowienie używania przed odpowiednim trzymiesięcznym okresem; możliwe jest częściowe wygaśnięcie."
+    },
+    "otherCancellation": {
+      "ja": "普通名称化、誤認を生じさせる使用、団体・保証商標規則違反等による権利消滅があり得る。",
+      "en": "Revocation may also arise from genericide, misleading use or breach of collective/guarantee-mark regulations.",
+      "pl": "Wygaśnięcie może nastąpić także wskutek utraty charakteru odróżniającego, używania w sposób wprowadzający w błąd lub naruszenia regulaminu znaku wspólnego/gwarancyjnego."
+    },
+    "invalidation": {
+      "ja": "あり。絶対的理由、悪意または先行権利等に基づきUPRPへ請求できる。",
+      "en": "Available before UPRP on absolute grounds, bad faith, earlier rights and other statutory bases.",
+      "pl": "Dostępne przed UPRP z powodu przeszkód bezwzględnych, złej wiary, wcześniejszych praw i innych podstaw ustawowych."
+    },
+    "colourPriorityIdentity": {
+      "ja": "EUIPN共通実務CP4を参照。白黒・グレースケールと色彩版は、色差が些細で平均的消費者が気づきにくい場合に限り同一となり得る。",
+      "en": "Consult CP4: black-and-white/greyscale and color versions are identical for priority only where color differences are insignificant and may go unnoticed by the average consumer.",
+      "pl": "Zgodnie z CP4 wersje czarno-biała/skali szarości i kolorowa są identyczne dla pierwszeństwa tylko wtedy, gdy różnice kolorystyczne są nieistotne i mogą pozostać niezauważone przez przeciętnego konsumenta."
+    },
+    "colourRelativeGrounds": {
+      "ja": "「同一」はCP4の厳格基準。差が些細でなければ同一でなくても、標章全体、識別的要素、色彩の役割から類似・混同のおそれを判断する。",
+      "en": "Identity follows the strict CP4 test; even where not identical, similarity and confusion are assessed globally, including distinctive elements and the role of color.",
+      "pl": "Identyczność ocenia się rygorystycznie według CP4; mimo braku identyczności podobieństwo i ryzyko konfuzji ocenia się całościowo, z uwzględnieniem elementów odróżniających i roli koloru."
+    },
+    "colourGenuineUse": {
+      "ja": "色の変更が識別性を変えず、主要な識別要素が一致する等のCP4基準を満たせば、登録色と異なる使用が真正使用として認められ得る。",
+      "en": "Use in a different color may count if the CP4 criteria are met, including unchanged distinctive character and coincidence of the main distinctive elements.",
+      "pl": "Używanie w innym kolorze może zostać uznane, jeżeli spełnia kryteria CP4, w szczególności nie zmienia charakteru odróżniającego i zachowuje główne elementy odróżniające."
+    },
+    "colourFilingStrategy": {
+      "ja": "色自体がブランドの中核なら色彩版を出願し、色に依存しないロゴは白黒版も検討する。優先権基礎・使用予定・証拠保存を一体で設計する。",
+      "en": "If color is core to the brand, file the color version; for color-independent logos consider a black-and-white filing. Align priority, intended use and evidence retention.",
+      "pl": "Jeżeli kolor jest kluczowy dla marki, warto zgłosić wersję kolorową; dla logo niezależnego od koloru rozważyć wersję czarno-białą. Należy spójnie zaplanować pierwszeństwo, używanie i dowody."
+    },
+    "colourInfringementScope": {
+      "ja": "侵害判断は標章と商品・役務を全体比較する。登録色、実使用、色彩の識別力、類似度および混同のおそれを個別評価する。",
+      "en": "Infringement requires an overall comparison of signs and goods/services, considering registered color, actual use, color distinctiveness, similarity and confusion.",
+      "pl": "Naruszenie ocenia się całościowo przez porównanie oznaczeń oraz towarów/usług, uwzględniając kolor rejestracji, rzeczywiste używanie, charakter odróżniający koloru, podobieństwo i ryzyko konfuzji."
+    },
+    "civilInjunction": {
+      "ja": "仮処分・終局的差止めが可能。緊急性、被保全権利、侵害および利益衡量を立証する。",
+      "en": "Interim and final injunctions are available, subject to proof of the right, infringement, urgency and proportionality.",
+      "pl": "Dostępne są zabezpieczenie roszczeń i zakaz w wyroku, pod warunkiem wykazania prawa, naruszenia, pilności i proporcjonalności."
+    },
+    "civilDamages": {
+      "ja": "損害賠償、侵害者利益・不当利得の返還等。故意過失、因果関係、算定方法を事案別に検討する。",
+      "en": "Damages and surrender of profits/unjust enrichment may be available; fault, causation and calculation require case-specific analysis.",
+      "pl": "Możliwe jest odszkodowanie oraz wydanie korzyści; wina, związek przyczynowy i sposób obliczenia wymagają analizy sprawy."
+    },
+    "civilEvidencePreservation": {
+      "ja": "証拠保全、情報開示、文書提出等の手続を利用できる場合がある。秘密保持と比例性に注意。",
+      "en": "Evidence preservation, disclosure of information and production measures may be available, subject to confidentiality and proportionality.",
+      "pl": "Możliwe są zabezpieczenie dowodów, wyjawienie informacji i wydanie dokumentów, z uwzględnieniem poufności i proporcjonalności."
+    },
+    "civilOther": {
+      "ja": "侵害品の回収・廃棄、判決公表、費用等。専門知財裁判所の管轄を確認する。",
+      "en": "Recall/destruction, publication of judgment and costs may be ordered; verify jurisdiction of the specialized IP courts.",
+      "pl": "Możliwe są wycofanie lub zniszczenie towarów, publikacja wyroku i koszty; należy sprawdzić właściwość wyspecjalizowanych sądów własności intelektualnej."
+    },
+    "borderMeasures": {
+      "ja": "EU税関規則に基づく水際措置あり。税関への申請、真正品識別資料、連絡体制を準備する。",
+      "en": "EU customs border measures are available; prepare an application for action, product-identification materials and rapid-response contacts.",
+      "pl": "Dostępne są środki celne UE; należy przygotować wniosek o podjęcie działania, materiały identyfikujące oryginały i kontakt do szybkiej reakcji."
+    },
+    "administrativeRaid": {
+      "ja": "税関・警察・検察等による摘発があり得る。UPRP自体は通常、侵害摘発機関ではない。",
+      "en": "Customs, police and prosecutors may act against counterfeiting; UPRP itself is not normally an infringement-enforcement agency.",
+      "pl": "Organy celne, Policja i prokuratura mogą zwalczać podróbki; UPRP co do zasady nie jest organem egzekwującym roszczenia z naruszenia."
+    },
+    "administrativeOther": {
+      "ja": "税関差止め、留置、情報提供および市場監視等。EU域内手続との連携を確認する。",
+      "en": "Customs suspension, detention, information measures and market surveillance may apply in coordination with EU procedures.",
+      "pl": "Możliwe są zatrzymanie celne, wstrzymanie zwolnienia, przekazanie informacji i nadzór rynku, w powiązaniu z procedurami UE."
+    },
+    "criminalAvailability": {
+      "ja": "故意の商標偽造・偽造標章商品の取引等について刑事手続あり。",
+      "en": "Criminal proceedings are available for intentional counterfeiting and trade in counterfeit-marked goods.",
+      "pl": "Postępowanie karne jest możliwe w przypadku umyślnego podrabiania znaków i obrotu towarami oznaczonymi podrobionym znakiem."
+    },
+    "criminalFine": {
+      "ja": "罰金あり。犯罪態様・規模・継続性等により異なる。",
+      "en": "Fines are available and depend on the conduct, scale and continuity of the offense.",
+      "pl": "Możliwa jest grzywna, zależna od sposobu działania, skali i ciągłości czynu."
+    },
+    "criminalImprisonment": {
+      "ja": "拘禁・懲役があり得る。恒常的事業または高額商品等では加重され得る。",
+      "en": "Restriction or imprisonment may be available, with aggravated exposure for organized or high-value activity.",
+      "pl": "Możliwe jest ograniczenie albo pozbawienie wolności, w tym surowsza odpowiedzialność przy stałej działalności lub znacznej wartości towarów."
+    },
+    "criminalOther": {
+      "ja": "侵害品・製造手段の没収、廃棄等があり得る。",
+      "en": "Forfeiture and destruction of infringing goods and production tools may be ordered.",
+      "pl": "Możliwe są przepadek i zniszczenie towarów oraz narzędzi służących do popełnienia czynu."
+    }
+  },
+  "statistics": {
+    "coverage": "2016–2025",
+    "status": "pending",
+    "series": []
+  },
+  "notablePoints": [
+    {
+      "title": {
+        "ja": "先行権利は異議で守る",
+        "en": "Earlier rights depend on opposition",
+        "pl": "Wcześniejsze prawa chroni się przez sprzeciw"
+      },
+      "detail": {
+        "ja": "UPRPは相対的拒絶理由を原則職権審査しない。3か月の異議期限監視と出願前検索が実務上重要。",
+        "en": "UPRP generally does not examine relative grounds ex officio; watch the three-month opposition window and clear before filing.",
+        "pl": "UPRP co do zasady nie bada względnych przeszkód z urzędu; kluczowe są monitoring trzymiesięcznego terminu sprzeciwu i badanie przed zgłoszeniem."
+      }
+    },
+    {
+      "title": {
+        "ja": "国内・EU・マドプロの三経路",
+        "en": "National, EU and Madrid routes",
+        "pl": "Droga krajowa, unijna i madrycka"
+      },
+      "detail": {
+        "ja": "ポーランドのみなら国内UPRP、EU全域ならEU商標、国際展開ならポーランド指定またはEU指定を比較する。EU商標の単一性リスクも考慮する。",
+        "en": "Compare UPRP for Poland only, EUTM for EU-wide cover, and Madrid designation of Poland or the EU; include EUTM unitary-risk analysis.",
+        "pl": "Należy porównać zgłoszenie UPRP, znak UE oraz wyznaczenie Polski lub UE w systemie madryckim, uwzględniając jednolity charakter znaku UE."
+      }
+    },
+    {
+      "title": {
+        "ja": "登録後5年の使用管理",
+        "en": "Five-year use management",
+        "pl": "Zarządzanie używaniem po pięciu latach"
+      },
+      "detail": {
+        "ja": "真正使用の証拠は請求書、広告、販売資料、ウェブ履歴等を年次・商品役務別に保存する。部分取消にも注意。",
+        "en": "Retain annual, goods/services-specific evidence such as invoices, advertising, sales materials and web archives; partial revocation is possible.",
+        "pl": "Należy corocznie przechowywać dowody według towarów/usług, m.in. faktury, reklamy, materiały sprzedażowe i archiwa stron; możliwe jest częściowe wygaśnięcie."
+      }
+    },
+    {
+      "title": {
+        "ja": "ポーランド語による手続",
+        "en": "Proceedings in Polish",
+        "pl": "Postępowanie w języku polskim"
+      },
+      "detail": {
+        "ja": "商品役務表示、UPRP通知、異議・取消の書面はポーランド語運用を前提に、現地代理人と翻訳品質を確保する。",
+        "en": "Specifications and UPRP contentious correspondence require a Polish-language workflow and reliable local representation.",
+        "pl": "Wykazy towarów/usług i pisma UPRP wymagają obsługi w języku polskim oraz zapewnienia właściwego pełnomocnika i jakości tłumaczeń."
+      }
+    },
+    {
+      "title": {
+        "ja": "色彩変更はCP4基準で管理",
+        "en": "Manage color changes under CP4",
+        "pl": "Zmiany kolorów według CP4"
+      },
+      "detail": {
+        "ja": "優先権の同一性は厳格だが、真正使用では識別性を変えない色変更が許容され得る。出願版と実使用版の対応表を残す。",
+        "en": "Priority identity is strict, while genuine use may tolerate color changes that do not alter distinctive character; retain a version map.",
+        "pl": "Identyczność dla pierwszeństwa jest rygorystyczna, lecz używanie może tolerować zmianę koloru bez zmiany charakteru odróżniającego; warto zachować mapę wersji."
+      }
+    }
+  ],
+  "news": [
+    {
+      "id": "annual-report-2025",
+      "type": "statistics",
+      "date": "2026-08-01",
+      "title": {
+        "ja": "UPRPが2025年年次報告を公表",
+        "en": "UPRP publishes its 2025 annual report",
+        "pl": "UPRP publikuje raport roczny za 2025 r."
+      },
+      "summary": {
+        "ja": "出願・登録等の最新件数は年次報告から統計欄へ転記する。カードの10年系列はWIPO統計との定義差を注記して更新する。",
+        "en": "Use the annual report to update filings and grants; reconcile definitions with WIPO before extending the ten-year series.",
+        "pl": "Dane o zgłoszeniach i udzielonych prawach należy aktualizować z raportu, uzgadniając definicje ze statystykami WIPO."
+      },
+      "sourceUrl": "https://uprp.gov.pl/pl/publikacje/raport-roczny-uprp"
+    },
+    {
+      "id": "annual-report-2024",
+      "type": "statistics",
+      "date": "2025-08-05",
+      "title": {
+        "ja": "UPRPが2024年年次報告を公開",
+        "en": "UPRP releases its 2024 annual report",
+        "pl": "UPRP udostępnia raport roczny za 2024 r."
+      },
+      "summary": {
+        "ja": "2024年の商標関連統計および庁の運用状況を確認できる一次資料。",
+        "en": "An official source for 2024 trademark statistics and Office operations.",
+        "pl": "Oficjalne źródło statystyk znaków towarowych i informacji o działalności Urzędu w 2024 r."
+      },
+      "sourceUrl": "https://uprp.gov.pl/pl/aktualnosci/informacje/raport-roczny-uprp-za-2024-rok-juz-dostepny"
+    },
+    {
+      "id": "act-2023",
+      "type": "law",
+      "date": "2023-03-09",
+      "title": {
+        "ja": "産業財産法の2023年改正を反映",
+        "en": "Industrial Property Law amendments reflected through 2023",
+        "pl": "Uwzględnienie zmian Prawa własności przemysłowej do 2023 r."
+      },
+      "summary": {
+        "ja": "現行カードは2023年3月9日改正までを収録するWIPO Lex法令版を基礎資料の一つとする。以後の改正は官報・UPRPで継続確認する。",
+        "en": "This card uses the WIPO Lex text amended through 9 March 2023 as one baseline; later amendments require continued monitoring of official sources.",
+        "pl": "Jedną z podstaw karty jest tekst w WIPO Lex ze zmianami do 9 marca 2023 r.; późniejsze zmiany należy stale sprawdzać w źródłach urzędowych."
+      },
+      "sourceUrl": "https://www.wipo.int/wipolex/en/legislation/details/22308"
+    }
+  ],
+  "faqs": [
+    {
+      "tag": "Route",
+      "question": {
+        "ja": "ポーランド国内出願、EU商標、マドプロのポーランド指定・EU指定のどれが適切ですか。",
+        "en": "Should we file nationally, as an EUTM, or designate Poland/the EU through Madrid?",
+        "pl": "Czy wybrać zgłoszenie krajowe, znak UE czy wyznaczenie Polski/UE w systemie madryckim?"
+      },
+      "followUp": {
+        "ja": "費用、地域、単一性リスク、使用立証、先行権利への耐性を比較してください。",
+        "en": "Please compare cost, territory, unitary risk, proof of use and vulnerability to earlier rights.",
+        "pl": "Proszę porównać koszty, terytorium, ryzyko jednolitego charakteru, dowody używania i podatność na wcześniejsze prawa."
+      }
+    },
+    {
+      "tag": "Opposition",
+      "question": {
+        "ja": "この出願を監視し、3か月以内に異議を申し立てるべきですか。",
+        "en": "Should we monitor and oppose this application within three months?",
+        "pl": "Czy należy monitorować to zgłoszenie i wnieść sprzeciw w ciągu trzech miesięcy?"
+      },
+      "followUp": {
+        "ja": "使用証明要求、和解期間、証拠・費用・勝算も教えてください。",
+        "en": "Please address proof-of-use requests, cooling-off, evidence, cost and prospects.",
+        "pl": "Proszę omówić dowód używania, okres ugodowy, dowody, koszty i szanse."
+      }
+    },
+    {
+      "tag": "Filing",
+      "question": {
+        "ja": "商品・役務表示はUPRPでそのまま受理されますか。",
+        "en": "Will UPRP accept this goods/services specification as filed?",
+        "pl": "Czy UPRP zaakceptuje ten wykaz towarów i usług?"
+      },
+      "followUp": {
+        "ja": "ポーランド語訳、TMclass、限定案、追加区分料金を確認してください。",
+        "en": "Please check the Polish translation, TMclass terms, fallback limitations and extra-class fees.",
+        "pl": "Proszę sprawdzić polskie tłumaczenie, terminy TMclass, warianty ograniczenia i opłaty za dodatkowe klasy."
+      }
+    },
+    {
+      "tag": "Refusal",
+      "question": {
+        "ja": "この通知への応答期限、延長、再審理・裁判所経路は何ですか。",
+        "en": "What are the response deadline, extensions and reconsideration/court routes for this notice?",
+        "pl": "Jaki jest termin odpowiedzi, możliwość przedłużenia oraz tryb ponownego rozpatrzenia i skargi?"
+      },
+      "followUp": {
+        "ja": "補正で解消できる範囲と、期限徒過時の救済要件も確認してください。",
+        "en": "Please also confirm the permissible amendment and any remedy for a missed deadline.",
+        "pl": "Proszę także potwierdzić dopuszczalną zmianę i środki po uchybieniu terminu."
+      }
+    },
+    {
+      "tag": "Use",
+      "question": {
+        "ja": "5年不使用取消に備えるため、どの証拠を保存すべきですか。",
+        "en": "What evidence should we retain against a five-year non-use attack?",
+        "pl": "Jakie dowody zachować na wypadek zarzutu pięcioletniego nieużywania?"
+      },
+      "followUp": {
+        "ja": "オンライン販売、EU域内取引、色彩変更、部分使用の扱いを教えてください。",
+        "en": "Please address online sales, EU transactions, color variants and partial use.",
+        "pl": "Proszę omówić sprzedaż internetową, transakcje w UE, warianty kolorystyczne i częściowe używanie."
+      }
+    },
+    {
+      "tag": "Enforcement",
+      "question": {
+        "ja": "ポーランドで最も迅速な侵害対応は何ですか。",
+        "en": "What is the fastest enforcement route in Poland?",
+        "pl": "Jaka jest najszybsza droga egzekwowania praw w Polsce?"
+      },
+      "followUp": {
+        "ja": "証拠保全、仮処分、税関申請、刑事告訴、管轄裁判所を比較してください。",
+        "en": "Please compare evidence preservation, interim relief, customs, criminal complaint and court jurisdiction.",
+        "pl": "Proszę porównać zabezpieczenie dowodów, środki tymczasowe, cło, zawiadomienie karne i właściwość sądu."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "label": "UPRP – Trademarks",
+      "url": "https://uprp.gov.pl/pl/przedmioty-ochrony/znaki-towarowe",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "UPRP – National procedure",
+      "url": "https://uprp.gov.pl/pl/przedmioty-ochrony/znaki-towarowe/procedura-krajowa-/procedura-sprzeciwowa",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "UPRP – Application publication",
+      "url": "https://uprp.gov.pl/pl/przedmioty-ochrony/znaki-towarowe/procedura-krajowa-/procedura-sprzeciwowa/publikacja-w-bup",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "UPRP – Renewal fees",
+      "url": "https://uprp.gov.pl/pl/przedmioty-ochrony/znaki-towarowe/procedura-krajowa-/oplaty-za-ochrone-przedluzenie",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "UPRP e-Search",
+      "url": "https://ewyszukiwarka.pue.uprp.gov.pl/",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "UPRP Annual Reports",
+      "url": "https://uprp.gov.pl/pl/publikacje/raport-roczny-uprp",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "WIPO Lex – Poland Industrial Property Law",
+      "url": "https://www.wipo.int/wipolex/en/legislation/details/22308",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "WIPO – Poland IP profile",
+      "url": "https://www.wipo.int/en/web/country-profiles/PL",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "WIPO – Madrid members",
+      "url": "https://www.wipo.int/en/web/madrid-system/members/index",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "EUIPO – CP4 black-and-white marks",
+      "url": "https://euipo.europa.eu/knowledge/course/view.php?id=1791",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "EUIPO – Search IP / TMview",
+      "url": "https://www.euipo.europa.eu/en/search-ip",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "EU Access2Markets",
+      "url": "https://trade.ec.europa.eu/access-to-markets/en/home",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    },
+    {
+      "label": "EU Customs IP enforcement",
+      "url": "https://taxation-customs.ec.europa.eu/customs/prohibitions-restrictions/counterfeit-piracy-and-other-ipr-violations_en",
+      "type": "official",
+      "checkedAt": "2026-09-13"
+    }
+  ]
+}
